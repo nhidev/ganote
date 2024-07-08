@@ -58,7 +58,12 @@ const SurveySection = memo(({ className = "" }: SurveySectionProps) => {
 
   const surveySlide = (item: SurveyProps, index: number) => {
     return (
-      <div key={index} className={`${styles.SurveySlide} scroll-element`}>
+      <div key={index} className={`${styles.SurveySlide} scroll-element`} ref={(el: HTMLDivElement) => {
+        if (el && !elementsRef.current.includes(el)) {
+          elementsRef.current.push(el);
+        }
+      }
+      }>
         <div className="text-wrap">
           <Image className="survey-icon" width={96} height={96} quality={100} src={`/iconsN/${item.icon}`} alt="icon" />
           <div className="desc-wrap">

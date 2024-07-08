@@ -10,7 +10,6 @@
       margin: 0 auto;
 
       .cleaningSection_b-head {
-        max-width: 197rem;
         text-align: center;
         margin: auto;
         margin-bottom: 40rem;
@@ -43,10 +42,6 @@
           width: 100%;
           padding: 29rem 28rem;
 
-          svg {
-            @include P1_20pt_medium;
-          }
-
           .type {
             @include P1_20pt_medium;
             width: 11ch;
@@ -71,10 +66,6 @@
           box-shadow: var(--drop-shadow1);
           border-radius: var(--Spacing-4, 16rem);
           width: 100%;
-
-          svg {
-            @include P1_20pt_medium;
-          }
 
           li {
             display: flex;
@@ -109,8 +100,9 @@
             border-radius: var(--Spacing-5, 20rem);
             gap: var(--Spacing-4, 16rem);
 
-            svg {
-              @include H4_26pt_medium;
+            img {
+              width: 26rem;
+              height: 26rem;
             }
 
             .type {
@@ -124,8 +116,9 @@
             padding: var(--Spacing-6, 24rem) 36rem;
             border-radius: var(--Spacing-5, 20rem);
 
-            svg {
-              @include P1_20pt_medium;
+            img {
+              width: 22rem;
+              height: 22rem;
             }
 
             li {

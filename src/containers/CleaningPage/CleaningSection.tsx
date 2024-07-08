@@ -1,9 +1,7 @@
 'use client';
 
 import { memo } from 'react';
-
-import { SearchOutlined } from '@ant-design/icons';
-
+import Image from 'next/image';
 import styles from './cleaningSection.module.scss';
 
 const searchResult = [
@@ -21,13 +19,13 @@ const CleaningSection = memo(() => (
       </div>
       <div className="cleaningSection_b-body">
         <div className='text-field'>
-          <SearchOutlined />
+          <Image src="/iconsN/gg_search.svg" width={20} height={20} alt="search" />
           <span className="type">사무실 청소 방법</span>
         </div>
         <ul className='search-list'>
           {searchResult.map(item =>
             <li key={item.id}>
-              <SearchOutlined />
+              <Image src="/iconsN/gg_search_gray.svg" width={18} height={18} alt="search" />
               {item.name}
             </li>
           )}
