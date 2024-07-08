@@ -106,7 +106,7 @@ const PIE_02_DATA: any = [
   },
 ];
 
-const PIE_04_DATA: RequestItemProps[] = [
+const PIE_04_DATA: any = [
   {
     key: 1,
     type: '양이 부족함',

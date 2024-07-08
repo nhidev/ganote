@@ -61,7 +61,7 @@ const CleaningSection2nd = memo(({ className = "" }: CleaningSection2ndProps) =>
   }, []);
 
   const cleaningCycleSlide = (item: CleaningCycleProps, index: number) => (
-    <div key={index} className={`${styles.CleaningCycleSlide} scroll-element`} ref={(el: HTMLDivElement) => elementsRef.current.push(el)}>
+    <div key={index} className={`${styles.CleaningCycleSlide} scroll-element`} >
       <div className="text-wrap">
         <div className="desc-wrap">
           <Image src="/iconsN/tabler_checkbox.svg" alt="arrow-right" width={28} height={28} />
