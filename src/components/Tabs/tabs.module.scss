@@ -1,0 +1,40 @@
+.Tabs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.TabsNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.TabsNavItem {
+  min-width: 86px;
+  padding: 6px 32px 6px 32px;
+  border-radius: 8px;
+  margin-right: 10px;
+  background-color: #e8e9ed;
+  color: #7c7c7c;
+  font-weight: 500;
+  size: 14px;
+  cursor: default;
+}
+
+.TabsNavActive {
+  background-color: #db6a05;
+  color: #ffffff;
+}
+
+@media (max-width: 991px) {
+  .TabsNav {
+    justify-content: center;
+  }
+  .TabsNavItem {
+    padding: 6px 8px 6px 8px;
+    min-width: 70px;
+  }
+}

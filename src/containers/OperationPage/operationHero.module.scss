@@ -1,0 +1,178 @@
+.OperationHero {
+  padding: 48rem 0;
+  background-color: var(--f-4-f-6-f-9);
+  :global {
+    .hero-container {
+      padding: 0 20rem;
+      max-width: 1150rem;
+      margin: 0 auto;
+      box-sizing: content-box;
+      .hero_b-left {
+        margin-bottom: 32rem;
+        .hero-top {
+          text-align: center;
+          margin-bottom: 30rem;
+          h1 {
+            font-size: 34rem;
+            font-weight: 700;
+            line-height: 140%;
+            letter-spacing: -1px;
+            margin-bottom: 8rem;
+          }
+          p {
+            font-size: 18rem;
+            font-weight: 500;
+            color: var(--414751);
+          }
+        }
+        .hero-bottom {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 8rem;
+        }
+      }
+      .hero_b-right {
+        display: flex;
+        flex-direction: column-reverse;
+        .hero-top {
+          text-align: center;
+          h4 {
+            font-size: 20rem;
+            font-weight: 700;
+            line-height: 140%;
+            letter-spacing: -0.2px;
+            margin-bottom: 4rem;
+            position: relative;
+            height: 38rem;
+            overflow: hidden;
+            display: inline-block;
+            padding: 0 18rem;
+            width: 226rem;
+            text-align: center;
+            span {
+              display: inline-block;
+              line-height: 43rem;
+              height: 38rem;
+              animation-name: change;
+              animation-duration: 10s;
+              animation-iteration-count: infinite;
+              display: block;
+            }
+            &:before {
+              content: '[';
+              left: 0;
+              color: var(--be-7346);
+              font-size: 34rem;
+              position: absolute;
+              line-height: 38rem;
+              transform: translate(0, -50%);
+              top: 50%;
+            }
+            &:after {
+              content: ']';
+              font-size: 34rem;
+              position: absolute;
+              top: 50%;
+              color: var(--be-7346);
+              right: 0;
+              line-height: 38rem;
+              transform: translate(0, -50%);
+            }
+          }
+          p {
+            font-size: 18rem;
+            font-weight: 500;
+            line-height: 38rem;
+          }
+        }
+        .hero-bottom {
+          text-align: center;
+          margin-bottom: 18rem;
+          img {
+            width: 335rem;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .OperationHero {
+    padding: 112rem 0;
+    :global {
+      .hero-container {
+        display: flex;
+        align-items: center;
+        .hero_b-left {
+          margin-bottom: 0;
+          width: calc(100% - 600rem);
+          .hero-top {
+            text-align: left;
+            margin-bottom: 60rem;
+            h1 {
+              font-size: 56rem;
+              margin-bottom: 16rem;
+            }
+            p {
+              font-size: 20rem;
+            }
+          }
+          .hero-bottom {
+            gap: 16rem;
+            justify-content: flex-start;
+          }
+        }
+        .hero_b-right {
+          display: block;
+          width: 600rem;
+          .hero-top {
+            text-align: left;
+            display: flex;
+            align-items: center;
+            margin-bottom: 34rem;
+            justify-content: center;
+            h4 {
+              font-size: 26rem;
+              height: 56rem;
+              padding: 0 20rem;
+              width: 300rem;
+              font-size: 26rem;
+              margin-bottom: 0;
+              margin-right: 6rem;
+              span {
+                line-height: 61rem;
+                height: 56rem;
+              }
+              &:before {
+                font-size: 40rem;
+                line-height: 56rem;
+                top: 50%;
+              }
+              &:after {
+                font-size: 40rem;
+                line-height: 56rem;
+              }
+            }
+
+            p {
+              font-size: 20rem;
+              font-weight: 400;
+              height: 38rem;
+              line-height: 46rem;
+            }
+          }
+          .hero-bottom {
+            margin-bottom: 0;
+            img {
+              width: 639rem;
+              height: 360rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

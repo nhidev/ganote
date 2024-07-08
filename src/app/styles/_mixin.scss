@@ -1,0 +1,240 @@
+@mixin font($font-size, $font-weight, $line-height, $letter-spacing: normal) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+    font-style: normal;
+}
+
+// --- TYPOGRAPHY ---
+// PC size
+  @mixin H1_56pt_bold {
+    @include font(56rem, 700, 140%, -1px);
+  }
+  
+  @mixin H2_48pt_bold { 
+    @include font(48rem, 700, 140%, -1px);
+  }
+  
+  @mixin H3_40pt_bold {
+    @include font(40rem, 700, 140%, -1px);
+  }
+  
+  @mixin H4_30pt_bold {
+    @include font(30rem, 700, 140%, -0.3rem);
+  }
+
+  @mixin H4_30pt_medium {
+    @include font(30rem, 500, 140%, -0.3rem);
+  }
+
+  @mixin H4_26pt_medium {
+    @include font(26rem, 500, 140%, -0.26rem);
+  }
+  
+  @mixin P1_20pt_bold {
+    @include font(20rem, 700, 170%);
+  }
+  
+  @mixin P1_20pt_semi {
+    @include font(20rem, 600, 170%);
+  }
+  
+  @mixin P1_20pt_medium {
+    @include font(20rem, 500, 170%);
+  }
+  
+  @mixin P1_20pt_regular {
+    @include font(20rem, 400, 170%);
+  }
+  
+  @mixin P2_18pt_bold {
+    @include font(18rem, 700, 170%);
+  }
+  
+  @mixin P2_18pt_semi {
+    @include font(18rem, 600, 170%);
+  }
+  
+  @mixin P2_18pt_medium {
+    @include font(18rem, 500, 170%);
+  }
+  
+  @mixin P3_16pt_bold {
+    @include font(16rem, 700, 170%);
+  }
+  
+  @mixin P3_16pt_medium {
+    @include font(16rem, 500, 170%);
+  }
+  
+  @mixin P3_16pt_regular {
+    @include font(16rem, 400, 170%);
+  }
+  
+  @mixin P4_14pt_semi {
+    @include font(14rem, 600, 170%);
+  }
+  
+  @mixin P4_14pt_medium {
+    @include font(14rem, 500, 170%);
+  }
+  
+  @mixin P4_14pt_regular {
+    @include font(14rem, 400, 170%);
+  }
+  
+  @mixin P5_12pt_bold {
+    @include font(12rem, 700, 170%);
+  }
+  
+  // Mobile size
+  
+  @mixin H1_34pt_bold {
+    @include font(34rem, 700, 140%, -1px);
+  }
+  
+  @mixin H2_30pt_bold {
+    @include font(30rem, 700, 140%, -1px);
+  }
+  
+  @mixin H4_26pt_bold {
+    @include font(26rem, 700, 140%, -0.26rem);
+  }
+  
+  @mixin H3_22pt_bold {
+    @include font(22rem, 700, 140%, -1px);
+  }
+
+  @mixin H3_24pt_bold {
+    @include font(24rem, 700, 140%, -1px);
+  }
+  
+  @mixin H4_20pt_bold {
+    @include font(20rem, 700, 140%, -0.2rem);
+  }
+  
+  @mixin H4_20pt_medium {
+    @include font(20rem, 500, 140%, -0.2rem);
+  }
+  
+  @mixin P1_18pt_bold {
+    @include font(18rem, 700, 170%);
+  }
+  
+  @mixin P1_18pt_semi {
+    @include font(18rem, 600, 170%);
+  }
+  
+  @mixin P1_18pt_medium {
+    @include font(18rem, 600, 170%);
+  }
+  @mixin P1_18pt_regular {
+    @include font(18rem, 500, 170%);
+  }
+  
+  @mixin P2_16pt_bold {
+    @include font(16rem, 700, 170%);
+  }
+  
+  @mixin P2_16pt_semi {
+    @include font(16rem, 600, 170%);
+  }
+  
+  @mixin P2_16pt_medium {
+    @include font(16rem, 500, 170%);
+  }
+  
+  @mixin P2_16pt_regular {
+    @include font(16rem, 400, 170%);
+  }
+  
+  @mixin P3_14pt_bold {
+    @include font(14rem, 700, 170%);
+  }
+  
+  @mixin P3_14pt_medium {
+    @include font(14rem, 500, 170%);
+  }
+  
+  @mixin P3_14pt_regular {
+    @include font(14rem, 400, 170%);
+  }
+  
+  @mixin P4_12pt_semi {
+    @include font(12rem, 600, 170%);
+  }
+  
+  @mixin P4_12pt_medium {
+    @include font(12rem, 500, 170%);
+  }
+  
+  @mixin P4_12pt_regular {
+    @include font(12rem, 400, 170%);
+  }
+  
+  @mixin P5_10pt_bold {
+    @include font(10rem, 700, 170%);
+  }
+  @mixin P5_10pt_regular {
+    @include font(10rem, 400, 170%);
+  }
+  
+  // MO_graph size
+
+  @mixin h3_24pt_bold {
+    @include font(24rem, 700, 140%, -0.24rem);
+  }
+  
+  @mixin h3_22pt_bold {
+    @include font(22rem, 700, 140%, -0.22rem);
+  }
+  
+  @mixin h4_18pt_bold {
+    @include font(18rem, 700, 140%, -0.18rem);
+  }
+  
+  @mixin p1-3_12pt_bold {
+    @include font(12rem, 700, 170%);
+  }
+  
+  @mixin p1-3_12pt_semi {
+    @include font(12rem, 600, 170%);
+  }
+  
+  @mixin p1-3_12pt_medium {
+    @include font(12rem, 500, 170%);
+  }
+
+  @mixin p1-P2_18pt_semi {
+    @include font(18rem, 600, 170%);
+  }
+  
+  @mixin p1-3_12pt_regular {
+    @include font(12rem, 400, 170%);
+  }
+  
+  @mixin p4_10pt_semi {
+    @include font(10rem, 600, 170%);
+  }
+  
+  @mixin p4_10pt_medium {
+    @include font(10rem, 500, 170%);
+  }
+  
+  @mixin p4_10pt_regular {
+    @include font(10rem, 400, 170%);
+  }
+  
+  @mixin p5_7pt_bold {
+    @include font(7rem, 700, 170%);
+  }
+  
+  @mixin p5_7pt_medium {
+    @include font(7rem, 500, 170%);
+  }
+  
+  @mixin p5_7pt_regular {
+    @include font(7rem, 400, 170%);
+  }
+  

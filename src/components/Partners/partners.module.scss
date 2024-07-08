@@ -1,0 +1,39 @@
+.partner {
+  height: 152px;
+  background-color: #F1F4F8;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+.swiperSlide {
+  display: flex;
+  width: max-content;
+}
+
+.swiperSlide img {
+  margin-right: 140px;
+}
+
+.swiperWrapper :global(.swiper-wrapper) {
+  transition-timing-function: linear;
+}
+
+@media (max-width: 1024px) {
+  .swiperSlide img {
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .swiperSlide img {
+    margin-right: 65px;
+  }
+}
+
+@media (max-width: 500px) {
+  .swiperSlide img {
+    margin-right: 50px;
+  }
+}

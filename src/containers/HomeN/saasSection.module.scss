@@ -1,0 +1,85 @@
+@import '@/app/styles/_mixin';
+
+.SaasSection {
+  display: flex;
+  padding: 130rem 20rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40rem;
+  background: var(--f-4-f-6-f-9);
+  :global {
+    h2 {
+      @include H2_30pt_bold;
+      text-align: center;
+      color: var(--a-9-a-9-a-9);
+      white-space: break-spaces;
+      &.title-bottom {
+        color: var(--09101-d);
+      }
+    }
+  }
+
+  .Saas_InventorySavingBlock {
+    background: var(--fff-4-ec);
+    margin-bottom: 20rem;
+  }
+  
+  .Saas_RequestBlock {
+    background: var(--ffddc-7);
+    width: 100%;
+    :global {
+      .requestBlock_b-container {
+        .requestBlock_b-right {
+          .requestBlock_block {
+            ul {
+              li {
+                label {
+                  &.highlight {
+                    background: var(--ffb-17-b);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .SaasSection {
+    padding: 160rem 0;
+    margin: auto;
+    gap: unset;
+    :global {
+      .saas-container {
+        max-width: 1280rem;
+        display: flex;
+        flex-flow: row wrap;
+        gap: 40rem;
+        align-items: center;
+      }
+      .title-box {
+        margin-bottom: 80rem;
+        h2 {
+          @include H2_48pt_bold;
+          &:not(.title-bottom) {
+            white-space: unset;
+          }
+        }
+      }
+    }
+
+    .Saas_InventorySavingBlock {
+      flex: 1;
+      align-self: start;
+      max-width: 620rem;
+    }
+    .Saas_ReportDocument {
+      flex: 1;
+      margin-top: 120rem;
+    }
+  }
+}

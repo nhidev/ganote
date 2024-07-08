@@ -1,0 +1,157 @@
+.Expand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ExpandBtn {
+  margin-bottom: 32px;
+}
+.Process {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 112px;
+  margin-bottom: 48px;
+}
+.Process .PackProcess:last-child {
+  margin-right: 0;
+}
+.BoundaryLine {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+/* table*/
+.Table {
+  margin-bottom: 24px;
+}
+.TitleRow {
+  border: 1px solid #e1e2e8;
+  border-bottom: 0;
+  border-top: 0;
+  background: #e8e9ed;
+  padding: 3px 16px;
+  text-align: left;
+}
+.TableRow {
+  display: flex;
+  flex-direction: row;
+}
+.TableData {
+  width: 120px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 24px;
+  border: 1px solid #e1e2e8;
+  border-bottom: 0;
+  border-left: 0;
+}
+.RowHeader {
+  height: 56px;
+}
+.DataHeader {
+  color: #212121;
+}
+.RowData {
+  height: 32px;
+}
+.DataItem {
+  color: #b0b0b0;
+}
+.RowHeader .DataHeader:first-child,
+.RowData .DataItem:first-child {
+  color: #212121;
+  width: 160px;
+  border-left: 1px solid #e1e2e8;
+}
+.RowHeader .DataHeader:first-child {
+  font-family:
+    var(--font-Pretendard-bold),
+    -apple-system,
+    BlinkMacSystemFont,
+    'Malgun Gothic',
+    sans-serif;
+}
+.RowHeader .DataHeader:nth-child(2) {
+  color: #db6a05;
+}
+.RowData .DataItem:first-child {
+  justify-content: flex-start;
+  padding-left: 32px;
+}
+.Table .RowData:last-child {
+  border-bottom: 1px solid #e1e2e8;
+}
+/*table*/
+.TableCaption {
+  color: #212121;
+  text-align: center;
+  font-size: 16px;
+}
+
+@media (max-width: 540px) {
+  .TitleRow {
+    font-size: 13px;
+    padding-left: 3px;
+  }
+  .Table {
+    width: 100%;
+  }
+  .TableData {
+    min-width: 70px;
+    height: 100%;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.5px;
+  }
+  .DataHeader {
+    font-size: 14px;
+  }
+  .RowHeader,
+  .RowData {
+    height: 36px;
+    width: 100%;
+  }
+  .RowHeader .DataHeader:first-child,
+  .RowData .DataItem:first-child {
+    min-width: 118px;
+  }
+  .RowData .DataItem:first-child {
+    padding-left: 16px;
+  }
+}
+@media (max-width: 350px) {
+  .TitleRow {
+    padding: 6px 8px;
+  }
+  .TableData {
+    min-width: 60px;
+  }
+  .RowHeader .DataHeader:first-child,
+  .RowData .DataItem:first-child {
+    min-width: 108px;
+  }
+  .TableCaption {
+    color: #212121;
+    text-align: center;
+    font-size: 13px;
+  }
+}
+@media (max-width: 460px) {
+  .Process {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .Process .BoundaryLine {
+    height: 164px;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+}

@@ -1,0 +1,505 @@
+.operationServiceContainer {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 20px;
+
+  width: 100%;
+  margin-bottom: 142px;
+}
+
+.mainTitle {
+  color: #212121;
+  font-size: 28px;
+  font-family:
+    var(--font-Pretendard-bold),
+    -apple-system,
+    BlinkMacSystemFont,
+    'Malgun Gothic',
+    sans-serif;
+  line-height: 40px;
+  text-align: center;
+}
+
+.subTitle {
+  color: #212121;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+
+  margin-top: 16px;
+}
+
+.officeInteriorContainer {
+  display: inline-flex;
+  padding: 40px 48px;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  border-radius: 32px;
+  background: #f6f6f5;
+}
+
+.officeInteriorTitleWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.officeInteriorTitle {
+  color: #db6a05;
+  text-align: center;
+  font-size: 20px;
+  font-family:
+    var(--font-Pretendard-bold),
+    -apple-system,
+    BlinkMacSystemFont,
+    'Malgun Gothic',
+    sans-serif;
+  line-height: normal;
+}
+
+.officeInteriorDesc {
+  color: #212121;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.officeInterior_ImageList {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 24px;
+  row-gap: 48px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.officeInterior_ImageItem {
+  display: flex;
+  width: 328px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.officeInterior_ImageItem img {
+  border-radius: 16px;
+}
+
+.officeInterior_ImageItem p {
+  color: #212121;
+  text-align: center;
+  font-size: 16px;
+  font-family:
+    var(--font-Pretendard-bold),
+    -apple-system,
+    BlinkMacSystemFont,
+    'Malgun Gothic',
+    sans-serif;
+  line-height: 24px;
+}
+
+.officeInteriorButton {
+  display: flex;
+  padding: 12px 18px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  border-radius: 100px;
+  border: 1px solid #b0b0b0;
+
+  color: #212121;
+  font-size: 14px;
+  font-family:
+    var(--font-Pretendard-bold),
+    -apple-system,
+    BlinkMacSystemFont,
+    'Malgun Gothic',
+    sans-serif;
+  line-height: 20px;
+
+  background-color: transparent;
+  cursor: pointer;
+}
+.officeInteriorButton:hover {
+  border: 1px solid #3d3d3d;
+  background: #e8e9ed;
+}
+.officeManagement_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.officeManagement_container {
+  display: inline-flex;
+  padding: 40px 48px 71px;
+  flex-direction: column;
+  align-items: center;
+  border-top-right-radius: 32px;
+  border-top-left-radius: 32px;
+  background: #f6f6f5;
+  margin-top: 32px;
+  max-width: 1128px;
+}
+
+.officeManagement_title {
+  position: relative;
+}
+
+.officeManagement_title p {
+  color: #000;
+  text-align: center;
+  font-size: 20px;
+  font-family:
+    var(--font-Pretendard-bold),
+    -apple-system,
+    BlinkMacSystemFont,
+    'Malgun Gothic',
+    sans-serif;
+  line-height: normal;
+}
+
+.officeManagement_title::after {
+  content: '준비 중';
+  color: #db6a05;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  position: absolute;
+  bottom: 2px;
+  right: -46px;
+}
+
+.officeManagement_desc {
+  color: #212121;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 16px 0 42px;
+}
+
+.officeManagement_desc_mobile {
+  display: none;
+  color: #212121;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 16px 0 42px;
+}
+
+.officeManagement_dashboardChart {
+  padding: 24px 0;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 4px 6px 0px rgba(117, 117, 117, 0.04);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1032px;
+
+  gap: 41px;
+
+  color: #212121;
+  font-size: 13px;
+  font-family:
+    var(--font-Pretendard-bold),
+    -apple-system,
+    BlinkMacSystemFont,
+    'Malgun Gothic',
+    sans-serif;
+  line-height: 16px;
+}
+
+.officeManagement_dashboardChart img {
+  width: 100%;
+  height: 100%;
+
+  padding-inline: 134px;
+}
+
+.chartBlock_container {
+  display: flex;
+  padding: 18px 20px 16px 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 4px 6px 0px rgba(117, 117, 117, 0.04);
+
+  color: #212121;
+  font-size: 13px;
+  font-family:
+    var(--font-Pretendard-bold),
+    -apple-system,
+    BlinkMacSystemFont,
+    'Malgun Gothic',
+    sans-serif;
+  line-height: 16px;
+}
+
+.chartBlock_container > img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.officeManagement_chartList {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin: 24px 0 36px;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.officeManagement_checkList {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.officeManagement_checkList > * {
+  width: calc(33.33% - 24px);
+}
+
+.checkBlock_container {
+  display: flex;
+  padding: 24px 94px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.checkBlock_container div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.officeManagement_detailContainer {
+  background: #f6f6f5;
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+
+  max-width: 1128px;
+}
+
+.officeManagement_titleDetail {
+  color: #212121;
+  text-align: center;
+  font-size: 18px;
+  font-family:
+    var(--font-Pretendard-bold),
+    -apple-system,
+    BlinkMacSystemFont,
+    'Malgun Gothic',
+    sans-serif;
+  line-height: 24px;
+  position: absolute;
+  top: -11px;
+  background-color: #f6f6f5;
+  padding-inline: 10px;
+}
+
+.officeManagement_detailList {
+  position: relative;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 43px 48px 40px;
+  border-top: 0.5px dashed #daaa80;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.officeManagement_detailItem {
+  display: flex;
+  width: 240px;
+  padding: 10px 0;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: #fff;
+  column-gap: 9px;
+}
+
+.officeManagement_detailItem::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 100rem;
+  background-color: #db6a05;
+  aspect-ratio: 1;
+}
+
+.officeManagement_detailItem p {
+  color: #212121;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+@media (max-width: 1200px) {
+  .officeManagement_chartList {
+    gap: 12px;
+    width: 100%;
+  }
+  .officeManagement_chartList > * {
+    width: calc(25% - 12px);
+  }
+}
+
+@media (max-width: 1160px) {
+  .officeManagement_checkList > * {
+    width: calc(50% - 12px);
+    padding: 24px 56px;
+  }
+
+  .officeManagement_chartList > * {
+    width: calc(50% - 24px);
+  }
+}
+@media (max-width: 1023px) {
+  .chartBlock_container {
+    gap: 0;
+  }
+}
+@media (max-width: 991px) {
+  .officeManagement_chartList > * {
+    width: calc(50% - 12px);
+  }
+
+  .officeManagement_checkList > * {
+    padding: 24px 30px;
+  }
+}
+@media (max-width: 767px) {
+  .operationServiceContainer {
+    margin-bottom: 90px;
+  }
+
+  .mainTitle {
+    font-size: 22px;
+    text-align: center;
+    padding-inline: 8px;
+  }
+
+  .subTitle {
+    font-size: 14px;
+  }
+
+  .officeInteriorTitle {
+    font-size: 18px;
+  }
+
+  .officeInteriorDesc {
+    font-size: 14px;
+  }
+
+  .officeInteriorContainer {
+    padding: 25px;
+    width: 100%;
+  }
+
+  .officeManagement_dashboardChart img {
+    padding-inline: 50px;
+  }
+
+  .officeInterior_ImageItem p {
+    font-size: 14px;
+  }
+
+  .officeManagement_title p {
+    font-size: 18px;
+  }
+
+  .officeManagement_desc {
+    font-size: 14px;
+    display: none;
+  }
+
+  .officeManagement_desc_mobile {
+    display: block;
+  }
+
+  .checkBlock_container div {
+    font-size: 14px;
+  }
+
+  .officeManagement_detailItem p {
+    font-size: 14px;
+  }
+
+  .officeManagement_titleDetail {
+    font-size: 16px;
+  }
+
+  .officeManagement_container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .officeManagement_detailItem {
+    padding-inline: 20px;
+    column-gap: 10px;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .officeManagement_dashboardChart img {
+    padding-inline: 10px;
+  }
+  .chartBlock_container {
+    width: 100%;
+  }
+
+  .chartBlock_container img {
+    margin: 0 auto;
+  }
+
+  .officeManagement_checkList > * {
+    width: 100%;
+  }
+}
+
+@media (max-width: 410px) {
+  .officeManagement_dashboardChart {
+    min-width: 240px;
+  }
+
+  .checkBlock_container {
+    padding: 24px;
+    min-width: 100%;
+    width: auto;
+  }
+}

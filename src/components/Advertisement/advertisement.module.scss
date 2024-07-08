@@ -1,0 +1,32 @@
+.Advertisement {
+  padding: 58px 15px;
+  background-color: #db6a05;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+}
+
+.AdvertisementText {
+  font-size: 28px;
+  font-family:
+    var(--font-Pretendard-bold),
+    -apple-system,
+    BlinkMacSystemFont,
+    'Malgun Gothic',
+    sans-serif;
+  color: #fff;
+}
+
+.Highlight {
+  color: #212121;
+}
+
+.Mobile {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .Mobile {
+    display: block;
+  }
+}

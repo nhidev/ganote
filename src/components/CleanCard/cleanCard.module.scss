@@ -1,0 +1,69 @@
+@import '@/app/styles/_mixin';
+
+.CleanCard {
+  padding: 30px var(--Spacing-6, 24px);
+  border-radius: var(--Spacing-5, 20px);
+  background: #fff7ef;
+  overflow: hidden;
+  box-shadow: var(--drop-shadow1);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+
+  :global {
+    .cleanCard_b-head {
+      display: flex;
+      flex-direction: column;
+      gap: 12rem;
+
+      h3 {
+        @include H3_24pt_bold;
+        white-space: pre-line;
+      }
+
+      p {
+        @include P4_12pt_medium;
+        color: var(--414751);
+        white-space: pre-line;
+
+        .sub-text {
+          color: var(--798087, #798087);
+          @include P4_12pt_medium;
+          display: block;
+        }
+      }
+    }
+
+    img {
+      margin-left: auto;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .CleanCard {
+    padding: 80rem;
+    border-radius: 40rem;
+    flex-direction: row;
+    gap: var(--Spacing-5, 20px);
+
+    :global {
+      .cleanCard_b-head {
+
+        h3 {
+          @include H3_40pt_bold;
+          margin-bottom: 12rem;
+        }
+
+        p {
+          @include P1_20pt_medium;
+
+          .sub-text {
+            @include P3_14pt_medium;
+          }
+        }
+      }
+    }
+  }
+}

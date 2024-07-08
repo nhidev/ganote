@@ -1,0 +1,122 @@
+.CheckingBlock {
+  border-radius: 20rem;
+  background: var(--ffffff, #fff);
+  box-shadow:
+    20rem 20rem 60rem 0rem rgba(139, 140, 160, 0.4),
+    5rem 5rem 15rem 0rem rgba(139, 140, 160, 0.15);
+  padding: 30rem 20rem;
+  position: relative;
+  :global {
+    .checkingBlock_b-head {
+      margin-bottom: 40rem;
+      padding-left: 10rem;
+      h3 {
+        font-size: 24rem;
+        line-height: 140%;
+        letter-spacing: -1px;
+        margin-bottom: 20rem;
+        word-break: keep-all;
+        white-space: break-spaces;
+        max-width: 200rem;
+      }
+      p {
+        font-size: 12rem;
+        font-weight: 500;
+      }
+    }
+    .checkingBlock_b-body {
+      padding-top: 97rem;
+      position: relative;
+      margin-bottom: 20rem;
+      .checkingBlock_b-pie {
+        padding-top: 16rem;
+        padding-bottom: 16rem;
+        position: absolute;
+        top: 0;
+        left: 12rem;
+        background: var(--ffe-8-ce, #ffe8ce);
+        width: 162rem;
+        z-index: 1;
+      }
+    }
+    .checkingBlock_b-foot {
+      padding-left: 10rem;
+      .checkingBlock-title {
+        font-size: 12rem;
+        font-weight: 600;
+      }
+      .checkingBlock-item {
+        padding: 8rem 0;
+        border-bottom: 1px solid #e3e7eb;
+        p {
+          color: var(--798087, #798087);
+          font-size: 10rem;
+          font-weight: 400;
+          word-break: keep-all;
+          &:first-child {
+            color: var(--798087, #798087);
+            font-weight: 600;
+          }
+        }
+        &:last-child {
+          padding-bottom: 0;
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .CheckingBlock {
+    border-radius: 40rem;
+    padding: 80rem;
+    :global {
+      .checkingBlock_b-head {
+        margin-bottom: 40rem;
+        padding-left: 0;
+        h3 {
+          font-size: 40rem;
+          max-width: 100%;
+        }
+        p {
+          font-size: 20rem;
+        }
+      }
+      .checkingBlock_b-body {
+        padding-top: 0;
+        margin-bottom: 40rem;
+        display: flex;
+        justify-content: space-between;
+        .checkingBlock_b-pie {
+          position: relative;
+          top: initial;
+          left: initial;
+          width: 290rem;
+          z-index: initial;
+          padding-top: 40rem;
+          padding-bottom: 40rem;
+        }
+      }
+      .checkingBlock_b-foot {
+        padding-left: 0;
+        .checkingBlock-title {
+          font-size: 18rem;
+          margin-bottom: 10rem;
+        }
+        .checkingBlock-item {
+          padding: 5rem 0;
+          border-bottom: 1px solid #e3e7eb;
+          display: flex;
+          border-bottom: 0;
+          p {
+            font-size: 14rem;
+            &:first-child {
+              margin-right: 20rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.Description {
+  padding: 80px 20px 98px;
+  text-align: center;
+  background: #f6f6f5;
+  width: 100%;
+}
+
+.Text {
+  margin-bottom: 5px;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.Description button {
+  margin: 0 auto;
+}
+
+.DescriptionWeight {
+  font-family:
+    var(--font-Pretendard-bold),
+    -apple-system,
+    BlinkMacSystemFont,
+    'Malgun Gothic',
+    sans-serif;
+  font-size: 28px;
+}
+
+.DescriptionWeight {
+  margin-bottom: 40px;
+}
+
+.DescriptionWeight br {
+  display: none;
+}
+
+@media (max-width: 479px) {
+  .DescriptionWeight br {
+    display: block;
+  }
+}

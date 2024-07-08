@@ -1,0 +1,105 @@
+.PopularInteriors {
+  background-color: #fcebdb66;
+  padding: 90px 30px;
+  width: 100%;
+}
+
+.PopularInteriorsContainer {
+  max-width: 1128px;
+  margin: 0 auto;
+}
+
+.PopularInteriorsTitle {
+  font-size: 28px;
+  font-family:
+    var(--font-Pretendard-bold),
+    -apple-system,
+    BlinkMacSystemFont,
+    'Malgun Gothic',
+    sans-serif;
+}
+
+.PopularInteriorsDesc {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.PopularInteriorsList {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  gap: 24px;
+}
+
+.bg {
+  position: relative;
+  min-width: 264px;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 24px;
+}
+
+.itemTitle {
+  font-size: 16px;
+  font-family:
+    var(--font-Pretendard-bold),
+    -apple-system,
+    BlinkMacSystemFont,
+    'Malgun Gothic',
+    sans-serif;
+  margin: 24px 0 8px;
+}
+
+.itemDesc {
+  font-size: 14px;
+  font-weight: 400;
+}
+.PopularInteriorsItem img {
+  border-radius: 16px;
+}
+@media (max-width: 991px) {
+  .PopularInteriors {
+    padding: 45px 30px;
+  }
+}
+
+@media (max-width: 1128px) {
+  .PopularInteriorsList {
+    flex-wrap: wrap;
+  }
+  .PopularInteriorsItem {
+    width: calc(100% / 2 - 16px);
+    margin-bottom: 16px;
+  }
+  .PopularInteriorsItem img {
+    width: 100%;
+  }
+  .PopularInteriorsContainer {
+    max-width: 767px;
+  }
+}
+
+@media (max-width: 611px) {
+  @media (max-width: 991px) {
+    .PopularInteriors {
+      padding: 45px 20px;
+    }
+  }
+  .PopularInteriorsItem {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .PopularInteriorsContainer {
+    max-width: calc(100% - 100px);
+  }
+  .PopularInteriorsList {
+    gap: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .PopularInteriorsContainer {
+    max-width: 100%;
+  }
+}

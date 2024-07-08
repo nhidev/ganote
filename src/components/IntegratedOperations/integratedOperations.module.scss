@@ -1,0 +1,309 @@
+@import '@/app/styles/_mixin';
+
+.IntegratedOperations {
+  display: flex;
+  padding: 30rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20rem;
+  border-radius: 20rem;
+  background: var(--d-29-d-7-e);
+  box-shadow: var(--drop-shadow1);
+  margin-bottom: 20rem;
+  :global {
+    .operations-top {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 40rem;
+      width: 100%;
+      h3 {
+        @include h3_24pt_bold;
+        color: var(--ffffff, #fff);
+        margin-bottom: 12rem;
+        white-space: break-spaces;
+      }
+      p {
+        @include p1-3_12pt_medium;
+        color: var(--ffffff, #fff);
+      }
+    }
+    .arrow-icon {
+      transform: rotate(90deg);
+      background-image: url('/iconsN/double-arrow.svg');
+      background-repeat: no-repeat;
+      width: 30rem;
+      height: 30rem;
+      display: block;
+      background-size: 100% 100%;
+    }
+    .operations-bottom {
+      position: relative;
+      margin-top: 20rem;
+      width: 100%;
+      .stacking-layer {
+        &::before,
+        &::after {
+          content: '';
+          display: block;
+          width: 90%;
+          height: 30rem;
+          position: absolute;
+          top: -10rem;
+          border-radius: 6rem;
+          background: var(--f-6-f-6-f-6);
+          box-shadow: var(--drop-shadow3);
+          z-index: 1;
+          left: 50%;
+          right: 50%;
+          transform: translateX(-50%);
+        }
+        &::after {
+          z-index: 0;
+          top: -20rem;
+          width: 75%;
+        }
+      }
+    }
+  }
+}
+
+.msgBox {
+  border-radius: 12rem;
+  background-color: #AD785A;
+  padding: 24rem 20rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  :global {
+    .msg-item {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: 8rem 12rem;
+      gap: 4.074rem;
+      border-radius: 50rem;
+      background-color: var(--ffffff, #FFF);
+      box-shadow: var(--drop-shadow3);
+      color: var(--09101-d);
+      @include p4_10pt_medium;
+      &:first-child {
+        position: relative;
+        margin-right: auto;
+      }
+      &:nth-child(2) {
+        margin: -3rem 0 16rem auto;
+        box-shadow: var(--drop-shadow2);
+      }
+      &:last-child {
+        margin-left: 20rem;
+        margin-right: auto;
+        box-shadow: var(--drop-shadow2);
+      }
+    }
+  }
+}
+
+.dashboardBox {
+  border-radius: 12rem;
+  background: var(--ffffff);
+  box-shadow: var(--drop-shadow3);
+  flex-shrink: 0;
+  padding: 10rem 12rem 0;
+  position: relative;
+  z-index: 1;
+  height: 170rem;
+  overflow-y: hidden;
+
+  :global {
+    h5 {
+      color: var(--09101-d);
+      margin-bottom: 8rem;
+      margin-top: 10rem;
+      @include p1-3_12pt_semi;
+    }
+    .ant-btn {
+      &.g-cta-button {
+        position: absolute;
+        width: 93%;
+        left: 50%;
+        bottom: 8rem;
+        border-radius: 50rem;
+        transform: translateX(-50%);
+        pointer-events: none;
+        height: 20rem;
+        background: var(--be-7346);
+        span {
+          @include p4_10pt_semi;
+          color: var(--ffffff);
+        }
+      }
+    }
+
+    .tabs_b-pie {
+      display: flex;
+      gap: 7.639rem;
+      .tab-pie {
+        width: 78.426rem;
+        height: 105.055rem;
+        padding: 6.98rem 5rem;
+        gap: 1.7rem;
+        box-shadow:
+          2.546px 2.546px 5.093px 0px rgba(139, 140, 160, 0.25),
+          1.019px 1.019px 2.546px 0px rgba(139, 140, 160, 0.1),
+          -0.509px -0.509px 1.019px 0px rgba(255, 255, 255, 0.25);
+        .pie_chart-title {
+          font-size: 10rem;
+          font-weight: 500;
+        }
+        .pie_chart {
+          width: 44rem;
+          height: 44rem;
+          margin-bottom: 6rem;
+        }
+        ul {
+          li {
+            i {
+              width: 1.576px;
+              height: 1.576px;
+              border: 0;
+            }
+            span {
+              font-size: 3.677rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .IntegratedOperations {
+    flex-direction: row;
+    padding: 80rem 56rem;
+    gap: 23rem;
+    width: 100%;
+    :global {
+      .operations-top {
+        gap: 92rem;
+        flex: 1;
+        .operations-head {
+          margin-left: 24rem;
+          h3 {
+            margin-bottom: 20rem;
+            white-space: unset;
+            @include H3_40pt_bold;
+          }
+          p {
+            @include P1_20pt_medium;
+          }
+        }
+      }
+      .arrow-icon {
+        transform: rotate(0);
+        background-image: url('/iconsN/triple-arrow.svg');
+        width: 42rem;
+        height: 18rem;
+        align-self: flex-end;
+        margin-bottom: 12.5%;
+      }
+      .operations-bottom {
+        margin-top: auto;
+        flex: 1;
+        .stacking-layer {
+          &::before,
+          &::after {
+            top: -16rem;
+            border-radius: 12rem;
+            box-shadow: var(--drop-shadow1);
+          }
+          &::after {
+            top: -32rem;
+          }
+        }
+      }
+    }
+  }
+
+  .msgBox {
+    padding: 48rem 58rem;
+    border-radius: 20rem;
+    width: 100%;
+
+    :global {
+      .msg-item {
+        padding: 18px 26px;
+        gap: 8px;
+        border-radius: 100px;
+        box-shadow: var(--drop-shadow2);
+        min-height: 60rem;
+        @include P4_14pt_medium;
+        &:nth-child(2) {
+          margin: -5rem 0 29rem auto;
+        }
+        &:last-child {
+          margin-left: 34rem;
+        }
+      }
+    }
+  }
+
+  .dashboardBox {
+    width: 100%;
+    border-radius: 16rem;
+    box-shadow: var(--drop-shadow2);
+    padding: 24rem 24rem 0;
+    min-width: 540rem;
+    height: 313rem;
+    :global {
+      h5 {
+        margin-bottom: 20rem;
+        margin-top: 0;
+        @include P2_18pt_semi;
+      }
+      .ant-btn {
+        &.g-cta-button {
+          bottom: 15rem;
+          height: 40rem;
+          span {
+            @include P4_14pt_semi;
+          }
+        }
+      }
+
+      .tabs_b-pie {
+        gap: 15rem;
+        .tab-pie {
+          width: 154rem;
+          height: 206.289rem;
+          padding: 17rem 20rem;
+          gap: 9rem;
+          box-shadow:
+            5px 5px 10px 0px rgba(139, 140, 160, 0.25),
+            2px 2px 5px 0px rgba(139, 140, 160, 0.1),
+            -1px -1px 2px 0px rgba(255, 255, 255, 0.25);
+          .pie_chart-title {
+            font-size: 14rem;
+          }
+          .pie_chart {
+            width: 87rem;
+            height: 87rem;
+          }
+          ul {
+            li {
+              i {
+                width: 3.094rem;
+                height: 3.094rem;
+              }
+              span {
+                font-size: 7.22rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

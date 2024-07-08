@@ -1,0 +1,84 @@
+@import '@/app/styles/_mixin';
+
+.ServiceSection {
+  display: flex;
+  padding: 130rem 0rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40rem;
+  background: var(--ffffff);
+  margin: 0 20rem;
+  :global {
+    .service-container {
+      min-width: 335rem;
+    }
+    h2 {
+        @include H2_30pt_bold;
+        text-align: center;
+        color: var(--a-9-a-9-a-9);
+        &.title-bottom {
+            color: var(--09101-d);
+        }
+    }
+  }
+  .ServiceSection_ItemSavingBlock {
+    :global {
+      .itemSavingBlock_b-body {
+        table .ant-table-thead tr .ant-table-cell {
+          background-color: var(--ebd-5-c-7);
+        }
+      }
+    }
+  }
+  
+  .ServiceSection_SavingBlock {
+    background: var(--ebd-5-c-7);
+    :global {
+      .savingBlock_b-head {
+        h3 {
+          color: var(--09101-d);
+        }
+        p {
+          color: var(--414751);
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (min-width: 768px) {
+  .ServiceSection {
+    padding: 160rem 0 320rem;
+    gap: unset;
+    margin: auto;
+    :global {
+      .service-container {
+        display: flex;
+        flex-flow: row-reverse wrap;
+        align-items: center;
+        gap: 40rem;
+        max-width: 1280rem;
+      }
+      .title-box {
+        margin-bottom: 80rem;
+        h2 {
+          @include H2_48pt_bold;
+        }
+      }
+    }
+
+    .ServiceSection_ItemSavingBlock {
+      flex: 1;
+    }
+  
+    .ServiceSection_SavingBlock {
+      margin-right: 0;
+      margin-left: auto;
+      flex: 1;
+      margin-bottom: -45%;
+    }
+  }
+}

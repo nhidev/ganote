@@ -1,0 +1,62 @@
+@import '@/app/styles/_mixin';
+
+.OfficeInteriorSection {
+  padding: 130rem 0;
+  background-color: var(--ffffff);
+  :global {
+    .office-interior_top {
+      text-align: center;
+      margin-bottom: 40rem;
+      h2 {
+        @include H2_30pt_bold;
+        color: var(--09101-d);
+        margin-bottom: 12rem;
+      }
+      p {
+        @include P1_18pt_medium;
+        color: var(--798087);
+        max-width: 190rem;
+        margin: 0 auto 40rem;
+      }
+    }
+
+    .office-interior_bottom {
+      max-width: 100%;
+    }
+
+    .our-service-btn {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 280rem;
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+  .OfficeInteriorSection {
+    padding: 160rem 0;
+    margin: auto;
+    :global {
+      .office-interior_top {
+        margin-bottom: 60rem;
+        h2 {
+          @include H2_48pt_bold;
+          margin-bottom: 20rem;
+        }
+        p {
+          @include P2_18pt_medium;
+          margin-bottom: 40rem;
+          max-width: 100%;
+        }
+      }
+      .office-interior_bottom {
+        max-width: 1060rem;
+        margin: auto;
+      }
+      .our-service-btn {
+        max-width: 258rem;
+      }
+    }
+  }
+}

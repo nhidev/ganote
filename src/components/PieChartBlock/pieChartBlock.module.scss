@@ -1,0 +1,120 @@
+
+@import '@/app/styles/_mixin';
+
+.PieChartBlockWrapper {
+  border-radius: 10rem;
+  background: var(--ffffff);
+  padding: 16rem 10rem;
+  box-shadow: var(--drop-shadow3);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16rem;
+
+  :global {
+    .pie_chart-title {
+      font-size: 12rem;
+      font-weight: 600;
+      line-height: 170%;
+    }
+    .pie_chart {
+      height: 92rem;
+      width: 92rem;
+      display: inline-block;
+      position: relative;
+      margin: 0 auto;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      svg {
+        overflow: unset;
+        filter: drop-shadow(5px 5px 10px rgba(139, 140, 160, 0.25)) drop-shadow(2px 2px 5px rgba(139, 140, 160, 0.1))
+          drop-shadow(-1px -1px 2px rgba(255, 255, 255, 0.25));
+      }
+      &.has-chart-image {
+        &::before {
+          display: none;
+        }
+      }
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        list-style: none;
+        width: 33.33%;
+        display: flex;
+        align-items: center;
+        i {
+          width: 3rem;
+          height: 3rem;
+          border-radius: 50%;
+          border: 1px solid var(--798087);
+          display: block;
+          box-sizing: content-box;
+          margin-right: 2rem;
+        }
+        span {
+          text-align: center;
+          font-size: 10rem;
+          font-weight: 400;
+          white-space: pre;
+          line-height: 170%;
+        }
+        &:nth-child(3n + 2) {
+          padding-left: 4rem;
+        }
+        &:nth-child(3n + 3) {
+          padding-left: 4rem;
+        }
+      }
+      &.pie_chart-2col {
+        width: 112rem;
+        margin: 0 auto;
+        li {
+          width: 50%;
+          &:nth-child(3n + 2) {
+            padding-left: 0;
+          }
+          &:nth-child(3n + 3) {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .PieChartBlockWrapper {
+    border-radius: 30rem;
+    padding: 40rem 34rem 30rem;
+    box-shadow: var(--drop-shadow2);
+    gap: 24rem;
+    :global {
+      .pie_chart-title {
+        font-size: 20rem;
+      }
+      .pie_chart {
+        height: 170rem;
+        width: 170rem;
+      }
+      ul {
+        li {
+          margin-bottom: 2rem;
+          span {
+            font-size: 14rem;
+            i {
+              width: 6rem;
+              height: 6rem;
+              margin-right: 4rem;
+            }
+          }
+        }
+        &.pie_chart-2col {
+          width: 176rem;
+        }
+      }
+    }
+  }
+}

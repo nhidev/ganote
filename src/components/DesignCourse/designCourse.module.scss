@@ -1,0 +1,237 @@
+.DesignCourse {
+  padding: 105px 0 150px;
+}
+
+.Title {
+  font-size: 28px;
+  font-family:
+    var(--font-Pretendard-bold),
+    -apple-system,
+    BlinkMacSystemFont,
+    'Malgun Gothic',
+    sans-serif;
+}
+
+.TitleHightlight {
+  color: #db6a05;
+  margin-bottom: 70px;
+}
+
+.DesignCourseWrap {
+  width: 100%;
+  min-width: 1060px;
+}
+
+.rowFirst {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 88px;
+  gap: 84px;
+}
+.rowLast {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 88px;
+  gap: 98px;
+  max-width: 738px;
+  margin: 0 auto;
+}
+.col3ModifyWidth {
+  position: relative;
+  padding-left: 83px;
+}
+.col2ModifyWidth {
+  width: 100%;
+  position: relative;
+  padding-left: 83px;
+}
+.titleBlock {
+  z-index: 2;
+  position: relative;
+}
+.Desc {
+  z-index: 2;
+  position: relative;
+}
+.BgImage {
+  position: absolute;
+  top: 5px;
+  left: 7px;
+  z-index: 0;
+}
+
+.titleBlock {
+  font-size: 20px;
+  font-family:
+    var(--font-Pretendard-bold),
+    -apple-system,
+    BlinkMacSystemFont,
+    'Malgun Gothic',
+    sans-serif;
+  margin-bottom: 12px;
+}
+
+.Desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.DotBelow {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #db6a05;
+  border: 6px solid #fcebdb;
+  position: absolute;
+  top: -63px;
+  left: 50px;
+}
+
+.DotAbove {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #db6a05;
+  border: 6px solid #fcebdb;
+  position: absolute;
+  bottom: -56px;
+  left: 33px;
+}
+
+.DotAbove.Dot3 {
+  left: 25px;
+}
+
+.col1::after {
+  content: '';
+  position: absolute;
+  width: 150px;
+  border-bottom: 6px solid #fcebdb;
+  bottom: -42px;
+  left: 61px;
+}
+
+.col3::after {
+  content: '';
+  position: absolute;
+  width: 195px;
+  border-bottom: 6px solid #fcebdb;
+  bottom: -42px;
+  left: -167px;
+}
+
+.col3::before {
+  content: '';
+  position: absolute;
+  width: 172px;
+  border-bottom: 6px solid #fcebdb;
+  bottom: -42px;
+  left: 53px;
+}
+
+.col5::before {
+  content: '';
+  position: absolute;
+  width: 194px;
+  border-bottom: 6px solid #fcebdb;
+  bottom: -42px;
+  left: -160px;
+}
+
+.Dot1::after {
+  content: '';
+  position: absolute;
+  width: 41px;
+  border-bottom: 1px dashed #db6a05;
+  top: -18px;
+  left: 12px;
+  transform: rotate(138deg);
+}
+
+.Dot2::after {
+  content: '';
+  position: absolute;
+  width: 54px;
+  border-bottom: 1px dashed #db6a05;
+  bottom: -23px;
+  left: 13px;
+  transform: rotate(42deg);
+}
+
+.Dot3::after {
+  content: '';
+  position: absolute;
+  width: 41px;
+  border-bottom: 1px dashed #db6a05;
+  top: -18px;
+  left: 12px;
+  transform: rotate(138deg);
+}
+.Dot4::after {
+  content: '';
+  position: absolute;
+  width: 54px;
+  border-bottom: 1px dashed #db6a05;
+  bottom: -23px;
+  left: 13px;
+  transform: rotate(42deg);
+}
+.Dot5::after {
+  content: '';
+  position: absolute;
+  width: 41px;
+  border-bottom: 1px dashed #db6a05;
+  top: -18px;
+  left: 12px;
+  transform: rotate(138deg);
+}
+
+.DesignCourseWrapMb {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .DesignCourseWrap {
+    min-width: 991px;
+  }
+
+  .rowLast {
+    gap: 49px;
+    max-width: 689px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .DesignCourseWrap {
+    min-width: 948px;
+  }
+
+  .rowLast {
+    gap: 20px;
+    max-width: 660;
+  }
+}
+
+@media (max-width: 990px) {
+  .DesignCourse {
+    min-width: 100%;
+    padding: 50px 30px 75px;
+  }
+  .DesignCourseWrap {
+    display: none;
+  }
+  .DesignCourseWrapMb {
+    display: flex;
+    flex-direction: column;
+    gap: 49px;
+    width: 320px;
+    margin: 0 auto;
+  }
+  .Title {
+    text-align: center;
+  }
+  .TitleHightlight {
+    margin-bottom: 35px;
+  }
+}

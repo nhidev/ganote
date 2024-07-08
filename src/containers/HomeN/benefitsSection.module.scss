@@ -1,0 +1,78 @@
+@import '@/app/styles/_mixin';
+
+.BenefitsSection {
+  padding: 130rem 0rem;
+  background: var(--ffffff);
+  margin: 0 20rem;
+  :global {
+    h2 {
+        @include H2_30pt_bold;
+        text-align: center;
+        color: var(--09101-d);
+        &.title-bottom {
+            margin-bottom: 40rem;
+        }
+    }
+  }
+
+  .BreakdownBlock {
+    background: var(--ffe-8-ce);
+    margin-bottom: 20rem;
+    :global {
+      .breakdownBlock_b-head {
+        h3 {
+          color: var(--09101-d);
+        }
+         p {
+          color: var(--09101-d);
+         }
+      }
+      .ant-checkbox-checked .ant-checkbox-inner {
+        background-color: var(--ffb-25-c);
+        border-color: var(--ffb-25-c);
+      }
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+  .BenefitsSection {
+    padding: 160rem 0 210rem;
+    margin: auto;
+    :global {
+      .benefits-container {
+        max-width: 1280rem;
+        display: flex;
+        flex-flow: row-reverse wrap;
+        gap: 40rem;
+        align-items: center;
+        margin: auto;
+        justify-content: center
+      }
+      h2 {
+        @include H2_48pt_bold;
+        color:  var(--a-9-a-9-a-9);
+        &.title-bottom {
+          margin-bottom: 80rem;
+          color: var(--09101-d);
+        }
+      }
+    }
+
+    .OfficeInterior {
+      max-width: 1060rem;
+    }
+  
+    .NewBenefits {
+      flex: 1;
+      align-self: flex-end;
+      margin-bottom: -50rem;
+    }
+  
+    .BreakdownBlock {
+      flex: 1;
+      margin-bottom: 0;
+    }
+  }
+}

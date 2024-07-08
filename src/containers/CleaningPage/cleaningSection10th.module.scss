@@ -1,0 +1,142 @@
+@import '@/app/styles/_mixin';
+
+.CleaningSection10th {
+  background: var(--f-4-f-6-f-9, #F4F6F9);
+  padding: 130rem 20rem;
+
+  :global {
+    .cleaningSection10th-wrapper {
+      max-width: 1280rem;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+
+      .cleaningSection10th_b-head {
+        text-align: center;
+        margin-bottom: 40rem;
+
+        h2 {
+          @include H2_30pt_bold;
+
+          &:first-child {
+            color: var(--d-29-d-7-e, #D29D7E);
+            @include H4_20pt_bold;
+          }
+        }
+      }
+
+      .cleaningSection10th_b-body {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        gap: 20rem;
+
+        li {
+          border-radius: var(--Spacing-5, 20rem);
+          background: var(--ffffff, #FFF);
+          box-shadow: var(--drop-shadow1);
+          display: flex;
+          flex-direction: column;
+          overflow: hidden;
+
+          .card-image {
+            width: 100%;
+            height: 160rem;
+            object-fit: cover;
+          }
+
+          .card-body {
+            padding: 30rem;
+          }
+
+          h6 {
+            @include P2_18pt_semi;
+          }
+
+          h3 {
+            @include H3_24pt_bold;
+            margin-bottom: 16rem;
+          }
+
+          p {
+            @include P3_16pt_medium;
+            margin-bottom: 20rem;
+          }
+
+          button {
+            @include P2_18pt_semi;
+            color: var(--ffffff, #FFF);
+            border-radius: 8rem;
+            background: var(--d-29-d-7-e, #D29D7E);
+            display: flex;
+            padding: 6rem 30rem;
+            justify-content: center;
+            align-items: center;
+            gap: 8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .CleaningSection10th {
+    padding: 160rem 0;
+
+    :global {
+      .cleaningSection10th-wrapper {
+        gap: 80rem;
+
+        .cleaningSection10th_b-head {
+          text-align: center;
+          margin-bottom: 0;
+
+          h2 {
+            @include H2_48pt_bold;
+
+            &:first-child {
+              @include H4_26pt_bold;
+              margin-bottom: 8rem;
+            }
+          }
+        }
+
+        .cleaningSection10th_b-body {
+          gap: 38rem;
+          flex-direction: row;
+
+          li {
+            border-radius: var(--Spacing-10, 40rem);
+
+            .card-image {
+              height: 240rem;
+            }
+
+            .card-body {
+              padding: 40rem
+            }
+
+            h6 {
+              @include P1_20pt_semi;
+            }
+
+            h3 {
+              @include H3_40pt_bold;
+              margin-bottom: 18rem
+            }
+
+            p {
+              @include P2_18pt_medium;
+              white-space: pre-line;
+            }
+
+            button {
+              @include P2_18pt_semi;
+            }
+          }
+        }
+      }
+    }
+  }
+}

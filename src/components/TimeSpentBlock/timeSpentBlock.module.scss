@@ -1,0 +1,117 @@
+.TimeSpentBlock {
+  padding: 30rem 20rem;
+  border-radius: 20rem;
+  background: var(--f-6-f-6-f-6, #f6f6f6);
+  box-shadow:
+    20rem 20rem 60rem 0rem rgba(139, 140, 160, 0.4),
+    5rem 5rem 15rem 0rem rgba(139, 140, 160, 0.15);
+  :global {
+    .timeSpentBlock_b-head {
+      margin-bottom: 27rem;
+      h3 {
+        font-size: 24rem;
+        line-height: 140%;
+        letter-spacing: 0.24rem;
+      }
+    }
+    .timeSpentBlock_b-body {
+      .timeSpentBlock_b-top {
+        .timeSpentBlock-chart {
+          padding: 18rem 28rem;
+          border-radius: 12rem;
+          background: var(--ffffff, #fff);
+          margin-bottom: 10rem;
+          box-shadow:
+            5rem 5rem 10rem 0rem rgba(139, 140, 160, 0.25),
+            2rem 2rem 5rem 0rem rgba(139, 140, 160, 0.1);
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+        p {
+          color: var(--414751, #414751);
+          font-size: 12rem;
+          font-weight: 600;
+          width: 100%;
+          text-align: center;
+        }
+      }
+      .timeSpentBlock-vs {
+        padding: 20rem 0;
+        color: var(--798087, #798087);
+        font-size: 10rem;
+        font-weight: 500;
+      }
+
+      .timeSpentBlock_b-bot {
+        img {
+          width: 110rem;
+          height: auto;
+          margin-bottom: 10rem;
+        }
+        p {
+          font-size: 12rem;
+          font-weight: 600;
+          color: var(--414751, #414751);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .TimeSpentBlock {
+    padding: 80rem 165rem 80rem 109rem;
+    border-radius: 40rem;
+    background: var(--ffffff, #fff);
+
+    :global {
+      .timeSpentBlock_b-head {
+        margin-bottom: 60rem;
+        text-align: center;
+        h3 {
+          font-size: 40rem;
+          letter-spacing: -1px;
+        }
+      }
+      .timeSpentBlock_b-body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .timeSpentBlock_b-top {
+          .timeSpentBlock-chart {
+            padding: 26rem 49rem 34rem 46rem;
+            border-radius: 20rem;
+            margin-bottom: 20rem;
+            img {
+              width: 380rem;
+              height: auto;
+            }
+          }
+          p {
+            font-size: 20rem;
+          }
+        }
+        .timeSpentBlock-vs {
+          padding: 0 50rem;
+          font-size: 14rem;
+          font-weight: 600;
+          position: relative;
+          top: -54rem;
+          transform: translateY(50%);
+        }
+
+        .timeSpentBlock_b-bot {
+          img {
+            width: 187rem;
+            margin-bottom: 20rem;
+          }
+          p {
+            font-size: 20rem;
+          }
+        }
+      }
+    }
+  }
+}

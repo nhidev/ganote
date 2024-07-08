@@ -1,0 +1,134 @@
+@import '@/app/styles/_mixin';
+
+.NoteServicesSection {
+  padding: 130rem 0rem;
+  background: var(--d-29-d-7-e);
+  :global {
+    h2 {
+        @include H2_30pt_bold;
+        text-align: center;
+        color: var(--ffffff);
+        margin: 0 auto 40rem;
+        max-width: 250rem;
+    }
+    .note-services-container {
+      .grouped-line {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 4rem;
+        width: 110rem;
+        margin: 12rem auto 0;
+        p {
+          @include p1-3_12pt_medium;
+          color: var(--414751);
+          text-align: center;
+        }
+      }
+      .note-services_bottom {
+        margin-top: 20rem;
+        .grouped-line {
+          width: 176rem;
+        }
+      }
+    }
+  }
+}
+
+.DiagramBlock {
+  display: flex;
+  gap: 10rem;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.DiagramItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  padding: 16rem 0;
+  border-radius: 12rem;
+  background-color: var(--ffffff);
+  box-shadow: var(--drop-shadow3);
+  width: 106rem;
+  height: 120rem;
+  :global {
+    i {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 24rem;
+      height: 34rem;
+      font-size: 24rem;
+      font-style: normal;
+    }
+    p {
+      @include p1-3_12pt_semi;
+      color: var(--09101-d);
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .NoteServicesSection {
+    padding: 160rem 0;
+    margin: auto;
+    :global {
+      h2 {
+        @include H2_48pt_bold;
+        margin-bottom: 80rem;
+        max-width: 100%;
+      }
+      .note-services-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 16rem;
+
+        .grouped-line {
+          gap: 16rem;
+          width: 208rem;
+          margin: 24rem auto 0;
+          p {
+            @include P3_16pt_medium;
+          }
+        }
+
+        .note-services_bottom {
+          margin-top: 0;
+          .grouped-line {
+            width: 422rem;
+          }
+        }
+      }
+    }
+  }
+
+  .DiagramBlock {
+    gap: 16rem;
+  }
+
+  .DiagramItem {
+    gap: 16rem;
+    border-radius: 20rem;
+    box-shadow: var(--drop-shadow1);
+    width: 188rem;
+    height: 260rem;
+    :global {
+      i {
+        width: 40rem;
+        height: 56rem;
+        font-size: 40rem;
+      }
+      p {
+        @include P1_20pt_semi;
+        color: var(--09101-d);
+      }
+    }
+  }
+}

@@ -1,0 +1,173 @@
+@import '@/app/styles/_mixin';
+
+.CleaningSection9th {
+  padding: 130rem 20rem;
+  background: var(--d-29-d-7-e, #D29D7E);
+
+  :global {
+    .cleaningSection9th-container {
+      max-width: 1280rem;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .cleaningSection9th_b-head {
+        text-align: center;
+        margin-bottom: 40rem;
+
+        h2 {
+          @include H2_30pt_bold;
+
+          &:first-child {
+            color: var(--ffffff, #FFF);
+            @include H4_20pt_bold;
+          }
+        }
+      }
+
+      .cleaningSection9th_b-body {
+        margin-bottom: 40rem;
+        text-align: center;
+
+        .custom-table {
+          width: 100%;
+          padding: 0;
+          border-radius: var(--Spacing-4, 16rem);
+          background: var(--ffffff, #FFF);
+          box-shadow: var(--drop-shadow1);
+          margin-bottom: 20rem;
+          overflow: hidden;
+
+          .itemSavingBlock_b-head {
+            display: none;
+          }
+
+          //CUSTOM TABLE ANTD
+          .ant-table-thead {
+            .ant-table-cell {
+              background: var(--ebd-5-c-7, #EBD5C7);
+              color: var(--09101-d, #09101D);
+              padding: 16rem 0;
+              @include P4_12pt_semi;
+              text-align: center;
+              white-space: pre-line;
+
+              &:before {
+                display: none;
+              }
+            }
+          }
+
+          .ant-table-tbody {
+            .ant-table-cell {
+              @include P4_12pt_medium;
+              color: var(--09101-d, #09101D);
+              border-bottom: 1rem solid #E3E7EB;
+              text-align: center;
+              padding: 10rem 0;
+
+              &:first-child {
+                padding-left: 20rem;
+              }
+
+              &:last-child {
+                padding-right: 20rem;
+              }
+
+              span {
+                color: var(--ff-8-f-43, #FF8F43);
+                display: block
+              }
+            }
+          }
+
+          //END CUSTOM TABLE ANTD
+        }
+
+        .table-note {
+          @include P4_12pt_medium;
+          color: var(--414751, #414751);
+          white-space: pre-line;
+        }
+      }
+
+      .cleaningSection9th_b-foot {
+        text-align: center;
+
+        button {
+          display: inline-flex;
+          background: var(--09101-d, #09101d);
+          min-width: 280rem;
+          color: var(--ffffff, #fff);
+
+          &:hover {
+            color: var(--ffffff, #fff);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .CleaningSection9th {
+    padding: 160rem 0;
+
+    :global {
+      .cleaningSection9th-container {
+        .cleaningSection9th_b-head {
+          margin-bottom: 80rem;
+
+          h2 {
+            @include H2_48pt_bold;
+
+            &:first-child {
+              @include H4_26pt_bold;
+              margin-bottom: 8rem;
+            }
+          }
+        }
+
+        .cleaningSection9th_b-body {
+          margin-bottom: 60rem;
+          width: 920rem;
+
+          .custom-table {
+            border-radius: var(--Spacing-5, 20rem);
+
+            //CUSTOM TABLE ANTD
+            .ant-table-thead {
+              .ant-table-cell {
+                @include P1_18pt_semi;
+                padding: 16rem 14rem;
+                white-space: initial;
+              }
+            }
+
+            .ant-table-tbody {
+
+              .ant-table-cell {
+                @include P1_18pt_regular;
+                padding: 16rem 0 17rem;
+
+                span {
+                  display: inline;
+                }
+              }
+            }
+          }
+
+          .table-note {
+            @include P3_14pt_medium;
+            white-space: initial;
+          }
+        }
+
+        .cleaningSection9th_b-foot button {
+          min-width: 362rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,107 @@
+@import '@/app/styles/_mixin';
+
+.CleaningSection3rd {
+  background: var(--f-8-f-1-ec, #F8F1EC);
+  padding-top: 130rem;
+
+  :global {
+    .cleaningSection3rd-wrapper {
+      max-width: 1280rem;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 40rem;
+      padding: 0 20rem;
+
+      h2 {
+        @include H2_30pt_bold;
+        color: var(--09101-d);
+        text-align: center;
+        width: 100%;
+        white-space: pre-line;
+
+        span {
+          color: var(--be-7346, #BE7346);
+        }
+      }
+
+      .cleaningSection3rd_b-body {
+        border-top-left-radius: var(--Spacing-4, 16rem);
+        border-top-right-radius: var(--Spacing-4, 16rem);
+        background: var(--d-29-d-7-e, #D29D7E);
+        padding: 14rem 13rem 0;
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 8rem;
+          list-style: none;
+          background-image: url('/iconsN/double-frame.svg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          padding: 41rem 37rem 0;
+          position: relative;
+
+          li {
+            display: flex;
+            flex-direction: row;
+            gap: 8rem;
+
+            h4 {
+              color: var(--09101-d, #09101D);
+              @include P2_16pt_semi;
+            }
+
+            &.dot {
+              width: 20rem;
+              height: 34rem;
+              background-image: radial-gradient(circle, #000 1rem, transparent 1rem);
+              background-size: 100% 33.33%;
+              margin: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .CleaningSection3rd {
+    padding-top: 110rem;
+
+    :global {
+      .cleaningSection3rd-wrapper {
+        flex-direction: row;
+        gap: 76rem;
+
+        h2 {
+          @include H2_48pt_bold;
+          margin-top: 50rem;
+          max-width: 571rem;
+          text-align: left;
+        }
+
+        .cleaningSection3rd_b-body {
+          max-width: 472rem;
+          padding: 20rem 19rem 0;
+
+          ul {
+            padding: 74rem 87rem 35rem 87rem;
+            gap: 12rem;
+
+            li {
+              h4 {
+                @include P1_18pt_medium;
+              }
+
+              &.dot {
+                height: 44rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

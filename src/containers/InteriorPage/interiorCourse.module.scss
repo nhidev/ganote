@@ -1,0 +1,185 @@
+.InteriorCourse {
+  padding: 130rem 0;
+  background: var(--d-29-d-7-e, #d29d7e);
+  :global {
+    .interiorCourse_b-container {
+      padding: 0 20rem;
+      max-width: 1275rem;
+      margin: 0 auto;
+      box-sizing: content-box;
+      .interiorCourse_b-head {
+        text-align: center;
+        margin: 0 auto 50rem;
+
+        h2 {
+          font-size: 30rem;
+          font-weight: 700;
+          line-height: 140%;
+          letter-spacing: -1px;
+          white-space: break-spaces;
+          span {
+            color: var(--ffffff, #fff);
+          }
+        }
+      }
+
+      .interiorCourse_b-body {
+        .ant-timeline {
+          .ant-timeline-item {
+            padding: 0;
+            position: relative;
+            .ant-timeline-item-tail {
+              top: 50%;
+            }
+            .ant-timeline-item-head {
+              padding: 0;
+              top: 50%;
+              transform: translate(-50%, -90%);
+              button {
+                border-radius: 50%;
+                border: 1px solid var(--09101-d, #09101d);
+                background: var(--d-29-d-7-e, #d29d7e);
+                font-size: 12rem;
+                font-weight: 600;
+                width: 24rem;
+                height: 24rem;
+                padding: 0;
+                color: var(--09101-d, #09101d);
+                &:hover {
+                  cursor: pointer;
+                }
+                &.isActive {
+                  background: var(--ffffff, #fff);
+                  box-shadow:
+                    20rem 20rem 60rem 0px rgba(139, 140, 160, 0.4),
+                    5rem 5rem 15rem 0px rgba(139, 140, 160, 0.15);
+                  border: 0;
+                }
+              }
+            }
+            .ant-timeline-item-content {
+              margin-left: 36rem;
+              .interiorCourse-item {
+                padding: 16rem 24rem;
+                p {
+                  white-space: break-spaces;
+                  &.interiorCourse-title {
+                    color: var(--09101-d, #09101d);
+                    font-size: 18rem;
+                    font-weight: 600;
+                    margin-bottom: 4rem;
+                  }
+                  &.interiorCourse-desc {
+                    color: var(--ebd-5-c-7, #ebd5c7);
+                    font-size: 16rem;
+                    font-weight: 500;
+                  }
+                }
+
+                &::before {
+                  content: '';
+                  background: url('/iconsN/polygon-right-w.svg') no-repeat center;
+                  position: absolute;
+                  top: 50%;
+                  left: 0;
+                  width: 24rem;
+                  height: 24rem;
+                  transform: translate(-50%, -50%);
+                  opacity: 0;
+                }
+
+                &.isActive {
+                  border-radius: 12rem;
+                  background: var(--ffffff, #fff);
+                  box-shadow:
+                    20rem 20rem 60rem 0px rgba(139, 140, 160, 0.4),
+                    5rem 5rem 15rem 0px rgba(139, 140, 160, 0.15);
+                  position: relative;
+                  p {
+                    &.interiorCourse-title {
+                      color: var(--be-7346);
+                    }
+                    &.interiorCourse-desc {
+                      color: var(--414751);
+                    }
+                  }
+                  &::before {
+                    opacity: 1;
+                  }
+                }
+              }
+            }
+
+            &:nth-child(4) {
+              .ant-timeline-item-tail {
+                height: calc(100% - 20rem);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .InteriorCourse {
+    padding: 160rem 0;
+    :global {
+      .interiorCourse_b-container {
+        display: flex;
+        justify-content: space-between;
+        .interiorCourse_b-head {
+          text-align: left;
+          margin: 0;
+          padding-top: 75rem;
+          h2 {
+            font-size: 48rem;
+          }
+        }
+
+        .interiorCourse_b-body {
+          width: 720rem;
+          .ant-timeline {
+            .ant-timeline-item {
+              .ant-timeline-item-head {
+                transform: translate(-50%, -75%);
+                button {
+                  font-size: 14rem;
+                  width: 36rem;
+                  height: 36rem;
+                }
+              }
+              .ant-timeline-item-content {
+                margin-left: 42rem;
+                .interiorCourse-item {
+                  padding: 30rem 40rem;
+                  p {
+                    white-space: break-spaces;
+                    &.interiorCourse-title {
+                      font-size: 20rem;
+                    }
+                    &.interiorCourse-desc {
+                      font-size: 18rem;
+                      white-space: initial;
+                    }
+                  }
+
+                  &.isActive {
+                    border-radius: 20rem;
+                  }
+                }
+              }
+
+              &:nth-child(4) {
+                .ant-timeline-item-tail {
+                  height: calc(100% - 20rem);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

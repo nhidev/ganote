@@ -1,0 +1,36 @@
+.SuccessModal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 408px;
+  padding: 40px 0 60px;
+}
+
+.SuccessTitle {
+  font-size: 20px;
+  font-family:
+    var(--font-Pretendard-bold),
+    -apple-system,
+    BlinkMacSystemFont,
+    'Malgun Gothic',
+    sans-serif;
+  margin: 42px 0 18px;
+}
+
+.SuccessDesc {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 34px;
+}
+
+@media (max-width: 450px) {
+  .SuccessModal {
+    width: 310px;
+  }
+
+  .SuccessDesc {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,697 @@
+@import '@/app/styles/_mixin';
+
+.CleaningSection5th {
+  padding: 130rem 0;
+  background: var(--ffffff, #FFF);
+
+  :global {
+    .cleaningSection5th-container {
+      max-width: 1280rem;
+      margin: 0 20rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .cleaningSection5th_b-head {
+        text-align: center;
+        margin-bottom: 20rem;
+
+        h2 {
+          @include H2_30pt_bold;
+
+          &:first-child {
+            color: var(--d-29-d-7-e, #D29D7E);
+            @include H4_20pt_bold;
+          }
+        }
+      }
+
+      .cleaningSection5th_b-body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 40rem;
+
+        // CUTOM ANTDTABS
+        .ant-tabs {
+          display: flex;
+          align-items: center;
+          width: 100%;
+
+          .ant-tabs-nav {
+            margin-bottom: 0;
+
+            &::before {
+              display: none;
+            }
+
+            .ant-tabs-ink-bar {
+              background-color: transparent;
+            }
+
+            .ant-tabs-nav-list {
+              padding: 20rem 0;
+            }
+
+            .ant-tabs-tab {
+              padding: 0 6rem;
+              margin: 0;
+            }
+
+            .ant-tabs-tab .ant-tabs-tab-btn {
+              @include P1_18pt_semi;
+              color: var(--d-29-d-7-e, #D29D7E);
+              width: 106rem;
+              padding: var(--Spacing-2, 8rem);
+              border-radius: var(--Spacing-2, 8rem);
+              background: var(--f-8-f-1-ec, #F8F1EC);
+              box-shadow: var(--drop-shadow2);
+              text-align: center;
+            }
+
+            .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+              color: var(--ffffff, #FFF);
+              background: var(--d-29-d-7-e, #D29D7E);
+            }
+          }
+
+          .ant-tabs-content-holder {
+            display: flex;
+            align-items: flex-start;
+            overflow: hidden;
+            min-height: 480rem;
+            border-radius: var(--Spacing-5, 20rem);
+            background: var(--d-29-d-7-e, #D29D7E);
+            box-shadow: var(--drop-shadow1);
+            width: 100%;
+            padding: 30rem 20rem 0 20rem;
+          }
+        }
+
+        // END CUTOM ANTDTABS
+
+        .tabs-content {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          gap: 24rem;
+
+          .tabs-content-left {
+            h3 {
+              @include H3_24pt_bold;
+              color: var(--ffffff, #FFF);
+              margin-bottom: 12rem
+            }
+
+            p {
+              @include P4_12pt_medium;
+              color: var(--ffffff, #FFF);
+            }
+          }
+
+          .tabs-content-right {
+            max-width: 580rem;
+            border-radius: var(--Spacing-3, 12rem);
+            padding: 24rem 37rem 24rem 24rem;
+            width: 100%;
+
+            .loungeInfo_b-top {
+              p {
+                @include p4_10pt_semi;
+              }
+
+              .right-text {
+                font-size: 8rem;
+              }
+            }
+
+            .loungeInfo_b-mid {
+              .loungeInfo-head {
+                p {
+                  font-size: 8rem;
+                }
+
+                .right-label {
+                  font-size: 7rem;
+                }
+              }
+
+              .loungeInfo_b-img {
+                img {
+                  width: 220rem;
+                }
+
+                p {
+                  display: none;
+                }
+              }
+            }
+
+            .loungeInfo_b-bot {
+              .loungeInfo-head {
+                p {
+                  font-size: 8rem;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .cleaningSection5th_b-foot {
+        text-align: center;
+
+        button {
+          display: inline-flex;
+          background: var(--09101-d, #09101d);
+          min-width: 277rem;
+          color: var(--ffffff, #fff);
+
+          &:hover {
+            color: var(--ffffff, #fff);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .CleaningSection5th {
+    padding: 160rem 0;
+
+    :global {
+      .cleaningSection5th-container {
+        margin: 0 auto;
+
+        .cleaningSection5th_b-head {
+          margin-bottom: 60rem;
+
+          h2 {
+            @include H2_48pt_bold;
+
+            &:first-child {
+              @include H4_26pt_bold;
+              margin-bottom: 8rem;
+
+            }
+          }
+        }
+
+        .cleaningSection5th_b-body {
+          margin-bottom: 60rem;
+
+          // CUTOM ANTDTABS
+          .ant-tabs {
+            .ant-tabs-nav {
+              .ant-tabs-nav-list {
+                padding: 20rem;
+                margin-bottom: 20rem;
+              }
+
+              .ant-tabs-tab {
+                padding: 0 6rem;
+                margin: 0;
+              }
+
+              .ant-tabs-tab .ant-tabs-tab-btn {
+                @include P1_20pt_semi;
+                width: 140rem;
+                padding: var(--Spacing-2, 8rem) var(--Spacing-6, 24rem);
+              }
+            }
+
+            .ant-tabs-content-holder {
+              border-radius: var(--Spacing-10, 40rem);
+              padding: 0 106rem 0 80rem;
+            }
+          }
+
+          // END CUTOM ANTDTABS
+
+          .tabs-content {
+            flex-direction: row;
+            gap: 0;
+            min-height: 480rem;
+
+            .tabs-content-left {
+              margin-top: 80rem;
+
+              h3 {
+                @include H3_40pt_bold;
+                margin-bottom: 20rem;
+              }
+
+              p {
+                @include P1_20pt_medium;
+              }
+            }
+
+            .tabs-content-right {
+              border-radius: var(--Spacing-5, 20rem);
+              padding: 48rem 72rem 40rem 48rem;
+              align-self: flex-end;
+              margin-right: 26rem;
+
+              .loungeInfo_b-top {
+                p {
+                  @include P1_20pt_semi;
+                }
+
+                .right-text {
+                  @include P3_16pt_medium;
+                }
+              }
+
+              .loungeInfo_b-mid {
+                .loungeInfo-head {
+                  p {
+                    @include P3_16pt_medium;
+                  }
+
+                  .right-label {
+                    @include P4_14pt_medium;
+                  }
+                }
+
+                .loungeInfo_b-img {
+                  img {
+                    width: 220rem;
+                  }
+                }
+              }
+
+              .loungeInfo_b-bot {
+                .loungeInfo-head {
+                  p {
+                    @include P3_16pt_medium;
+                  }
+                }
+
+                .loungeInfo-body {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.ManagementGraphChart {
+  margin-bottom: 23rem;
+
+  .ManagementGraph {
+    margin: 0 0 6rem;
+    width: 295rem;
+    background-color: var(--ffffff);
+    padding: 5rem 25rem;
+
+    :global {
+      .graphBlock-head {
+        width: 100%;
+        margin-bottom: 6rem;
+
+        .graphBlock-title {
+          text-align: center;
+          @include p4_10pt_semi;
+        }
+
+        .graphBlock-subtitle {
+          margin-bottom: 6rem;
+        }
+      }
+    }
+  }
+
+  .ManagementDiagram {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 36rem;
+  }
+
+  .ManagementStepItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    :global {
+      .management-step_top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 280rem;
+        min-height: 64rem;
+        gap: 20rem;
+        border-radius: 12rem;
+        background-color: var(--ffffff);
+        box-shadow: var(--drop-shadow3);
+        text-align: center;
+
+        h4 {
+          @include h4_18pt_bold;
+          color: var(--be-7346);
+        }
+
+        span {
+          @include p1-3_12pt_medium;
+          color: var(--09101-d);
+        }
+      }
+
+      img {
+        margin-bottom: 10rem;
+        height: 19rem;
+      }
+
+      .management-step_bottom {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8rem;
+
+        .management-step-task {
+          display: flex;
+          min-width: 184rem;
+          min-height: 36rem;
+          padding: 8rem;
+          justify-content: center;
+          align-items: center;
+          gap: 8rem;
+          border-radius: 100rem;
+          background: var(--ffffff);
+          box-shadow: var(--drop-shadow3);
+          color: var(--414751);
+          @include p1-3_12pt_medium;
+        }
+      }
+    }
+  }
+
+  .ManagementPieChartBlock {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 5.5rem;
+    justify-content: flex-end;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+
+    :global {
+      img {
+        transform: translateX(10rem);
+      }
+
+      .managementPieChart-pie {
+        width: 50%;
+        max-width: 69rem;
+        padding: 9rem 7rem 13rem 7rem;
+        gap: 5rem;
+
+        .pie_chart-title {
+          font-size: 5rem;
+
+        }
+
+        .pie_chart {
+          width: 39rem;
+          height: 39rem;
+        }
+
+        ul {
+          li {
+            i {
+              width: 1rem;
+              height: 1rem;
+            }
+
+            span {
+              font-size: 3rem;
+            }
+          }
+
+          &.pie_chart-2col {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .RequestBlock {
+    display: flex;
+    width: 50%;
+    max-width: 69rem;
+    padding: 16rem 10rem;
+    padding: 9rem 6rem 8rem 6rem;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8rem;
+    background: var(--f-6-f-6-f-6);
+    box-shadow: var(--drop-shadow3);
+
+    :global {
+      h5 {
+        font-size: 4rem;
+        margin-bottom: 4rem;
+        color: var(--09101-d);
+      }
+
+      .request-item {
+        display: flex;
+        padding: 4rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3rem;
+        background-color: var(--ffffff);
+        box-shadow: var(--drop-shadow5);
+        margin: 0 0 4rem;
+        width: 100%;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        h5 {
+          @include p4_10pt_semi;
+        }
+
+        p {
+          color: var(--798087);
+          width: 100%;
+          font-size: 3rem;
+        }
+
+        label {
+          color: var(--be-7346);
+          text-align: right;
+          width: 100%;
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .RequestBlock {
+      display: flex;
+      max-width: 151rem;
+      padding: 20rem 12rem 14rem 12rem;
+
+      flex-direction: column;
+      align-items: center;
+      border-radius: 20rem;
+      background: var(--f-6-f-6-f-6);
+      box-shadow: var(--drop-shadow3);
+
+      :global {
+        h5 {
+          @include p4_10pt_semi;
+          margin-bottom: 10rem;
+          color: var(--09101-d);
+        }
+
+        .request-item {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border-radius: 6rem;
+          background-color: var(--ffffff);
+          box-shadow: var(--drop-shadow5);
+          width: 100%;
+          padding: 8rem 10rem;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          h5 {
+            @include p4_10pt_semi;
+          }
+
+          p {
+            color: var(--798087);
+            width: 100%;
+            @include p5_7pt_medium;
+          }
+
+          label {
+            color: var(--be-7346);
+            text-align: right;
+            width: 100%;
+            font-size: 9rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .ManagementGraphChart {
+    margin-bottom: 0;
+    align-self: center;
+
+    .ManagementGraph {
+      margin: 14rem 0 36rem;
+
+      :global {
+        margin: 0;
+        width: 530rem;
+        padding: 14rem 50rem 36rem;
+        flex-direction: column;
+      }
+    }
+
+    .ManagementPieChartBlock {
+      margin: -30rem 0 0 20rem;
+      gap: 12rem;
+
+      :global {
+        width: 652rem;
+
+        .managementPieChart-pie {
+          max-width: 151rem;
+          border-radius: 20rem;
+          padding: 20rem 22.25rem 15rem 21.75rem;
+          gap: 12rem;
+
+          .pie_chart-title {
+            @include p4_10pt_semi;
+
+          }
+
+          .pie_chart {
+            width: 85rem;
+            height: 85rem;
+          }
+
+          ul {
+            li {
+              i {
+                width: 3rem;
+                height: 3rem;
+              }
+
+              span {
+                @include p5_7pt_medium;
+              }
+            }
+
+            &.pie_chart-2col {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.NewBenefits {
+  padding: 0;
+  border-radius: 0;
+  margin: 0;
+  background: none;
+  box-shadow: none;
+  max-width: 580rem;
+  min-width: initial;
+  align-self: flex-end;
+
+  :global {
+    .newBenefits_b-head {
+      display: none;
+    }
+
+    .newBenefits_b-body {
+      padding: 20.362px 19.328px 0px 19.327px;
+      border-radius: 12rem;
+
+      h4 {
+        font-size: 7rem;
+      }
+
+      p {
+        font-size: 10rem;
+        margin-bottom: 12rem;
+      }
+
+      .image-block {
+        .image-item label {
+          font-size: 7rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .NewBenefits {
+    margin-right: 26rem;
+
+    :global {
+
+      .newBenefits_b-body {
+        padding: 38rem 42rem 0;
+        border-radius: 20rem 20rem 0 0;
+
+        h4 {
+          @include P4_14pt_medium;
+        }
+
+        p {
+          @include P1_20pt_semi;
+          margin-bottom: 12rem;
+        }
+
+        .image-block {
+          justify-content: space-between;
+          gap: 20rem;
+          max-height: 280rem;
+          overflow: hidden;
+
+          .image-item {
+            width: 257rem;
+            height: auto;
+
+            label {
+              margin-top: 10rem;
+              @include P4_14pt_medium;
+            }
+          }
+        }
+      }
+    }
+  }
+}

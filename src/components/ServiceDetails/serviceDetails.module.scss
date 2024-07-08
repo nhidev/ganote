@@ -1,0 +1,401 @@
+.ServiceDetails {
+  width: 100%;
+  padding: 0 0 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ServiceDetailsTitle {
+  font-size: 28px;
+  font-family:
+    var(--font-Pretendard-bold),
+    -apple-system,
+    BlinkMacSystemFont,
+    'Malgun Gothic',
+    sans-serif;
+  margin-bottom: 129px;
+  text-align: center;
+  padding: 0 30px;
+}
+
+.ServiceDetailsTitle br {
+  display: none;
+}
+
+.ItemService {
+  display: flex;
+  justify-content: center;
+}
+.ItemServiceChart .blockRight {
+  padding-left: 20px;
+}
+
+.ItemServiceBottom {
+  margin-bottom: 80px;
+}
+
+.BlockLeft {
+  padding: 0 20px 0 46px;
+  min-width: 370px;
+}
+
+.blockRight {
+  padding-left: 10px;
+}
+
+.Content {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.ContentpdTop {
+  padding-top: 17px;
+}
+
+.ContentWeightColor {
+  font-size: 20px;
+  font-family:
+    var(--font-Pretendard-bold),
+    -apple-system,
+    BlinkMacSystemFont,
+    'Malgun Gothic',
+    sans-serif;
+  color: #db6a05;
+}
+
+.ContentWeight {
+  font-size: 20px;
+  font-family:
+    var(--font-Pretendard-bold),
+    -apple-system,
+    BlinkMacSystemFont,
+    'Malgun Gothic',
+    sans-serif;
+}
+
+.Note {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.Note p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 2px;
+}
+
+.ServiceList {
+  width: 552px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-radius: 32px;
+  gap: 24px;
+  position: relative;
+}
+
+.Chart {
+  width: 100%;
+  height: 190px;
+  position: relative;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 18px 20px;
+}
+
+.Chart img {
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.ChartTitle {
+  font-family:
+    var(--font-Pretendard-bold),
+    -apple-system,
+    BlinkMacSystemFont,
+    'Malgun Gothic',
+    sans-serif;
+  text-align: left;
+  font-size: 13px;
+  line-height: 16px;
+  margin-bottom: 8px;
+}
+
+.ServiceList1 {
+  width: 552px;
+  display: flex;
+  flex-direction: row;
+  background-color: #fef7f1;
+  padding: 24px;
+  justify-content: space-around;
+  border-radius: 32px;
+  gap: 24px;
+}
+
+.ServiceList2 {
+  width: 552px;
+  display: flex;
+  flex-direction: row;
+  background-color: #fef7f1;
+  padding: 28px 14px;
+  justify-content: space-around;
+  border-radius: 32px;
+}
+
+.ContentBold {
+  font-size: 16px;
+  font-family:
+    var(--font-Pretendard-bold),
+    -apple-system,
+    BlinkMacSystemFont,
+    'Malgun Gothic',
+    sans-serif;
+  margin-top: 22px;
+  margin-bottom: 5px;
+}
+
+.ContentLine {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 6px;
+  color: #7c7c7c;
+}
+
+.ServiceContent {
+  border: 1px #f8af6d dashed;
+  padding: 16px 16px 23px;
+  border-radius: 12px;
+  position: relative;
+  height: 290px;
+}
+
+.ServiceContentModify {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ServiceContent::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 19px;
+  border: 1px #f8af6d dashed;
+  left: 50%;
+  bottom: -23px;
+}
+
+.Service {
+  width: calc(50% - 24px);
+}
+
+.Text {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 100px;
+  padding: 12px 12px 3px;
+  margin-bottom: 19px;
+  position: relative;
+}
+
+.Text p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+
+.Text img {
+  position: absolute;
+  left: 23px;
+  bottom: -10px;
+}
+
+.ServiceNote {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 44px 22px 24px;
+  margin-top: -30px;
+  z-index: 1;
+  font-family:
+    var(--font-Pretendard-bold),
+    -apple-system,
+    BlinkMacSystemFont,
+    'Malgun Gothic',
+    sans-serif;
+  font-size: 16px;
+}
+
+.ServiceNote br {
+  display: none;
+}
+
+.CircleOrange {
+  background-color: #ed8c36;
+  border-radius: 100px;
+  font-size: 16px;
+  font-family:
+    var(--font-Pretendard-bold),
+    -apple-system,
+    BlinkMacSystemFont,
+    'Malgun Gothic',
+    sans-serif;
+  width: 63px;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 21px auto 0;
+  z-index: 2;
+  position: relative;
+}
+
+.CircleYellow {
+  background-color: #ffd361;
+  border-radius: 100px;
+  font-size: 16px;
+  font-family:
+    var(--font-Pretendard-bold),
+    -apple-system,
+    BlinkMacSystemFont,
+    'Malgun Gothic',
+    sans-serif;
+  width: 63px;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 21px auto 0;
+  z-index: 2;
+  position: relative;
+}
+
+.ContentOrange {
+  font-size: 18px;
+  font-family:
+    var(--font-Pretendard-bold),
+    -apple-system,
+    BlinkMacSystemFont,
+    'Malgun Gothic',
+    sans-serif;
+  color: #db6a05;
+  margin-bottom: 8px;
+  margin-top: 14px;
+}
+
+.DownArrowIcon {
+  margin-bottom: 16px;
+}
+
+.FileIcon {
+  margin-bottom: 1px;
+}
+
+.ContentText1 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 37px;
+}
+
+.ContentText2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media (max-width: 991px) {
+  .ServiceDetailsTitle {
+    margin-bottom: 40px;
+  }
+  .ItemService {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  .ItemService .Tabs {
+    width: 552px;
+    margin: 0 auto;
+  }
+  .ItemService .BlockLeft {
+    margin-bottom: 30px;
+  }
+  .ItemService .blockRight {
+    margin: 0 auto;
+    padding-left: 0;
+  }
+
+  .ItemServiceSummary .blockRight {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #f8af6d;
+  }
+
+  .ItemServiceChart .blockRight {
+    border-bottom: 1px solid #f8af6d;
+  }
+  .ItemServiceBottom {
+    margin-bottom: 40px;
+  }
+  .ServiceList2,
+  .ServiceList1,
+  .ServiceList {
+    margin: 0 auto;
+  }
+
+  .ServiceList {
+    width: 100%;
+    max-width: 552px;
+  }
+
+  .ServiceList2 {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .ItemService {
+    justify-content: space-between;
+  }
+  .ItemService .BlockLeft {
+    min-width: 300px;
+    padding: 0 30px;
+  }
+  .ItemService .blockRight {
+    width: 100%;
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 614px) {
+  .ServiceList2 {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .ServiceList1 {
+    flex-direction: column;
+    width: 100%;
+  }
+  .Service {
+    width: 100%;
+    margin: 0 auto 30px;
+  }
+  .ServiceDetails .ItemService .blockRight {
+    width: 100%;
+  }
+
+  .ServiceList img {
+    height: auto;
+  }
+}
+
+@media (max-width: 479px) {
+  .ServiceNote br {
+    display: block;
+  }
+  .ServiceDetailsTitle br {
+    display: block;
+  }
+}

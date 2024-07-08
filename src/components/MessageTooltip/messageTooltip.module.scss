@@ -1,0 +1,49 @@
+.MessageTooltip {
+  :global {
+    .messageTooltip_b-wrapper {
+      position: relative;
+      padding: 14rem 20rem;
+      font-size: 14rem;
+      font-weight: 500;
+      border-radius: 16rem;
+      line-height: 170%;
+      background: var(--ffffff);
+      text-align: left;
+      box-shadow:
+        5px 5px 10px 0px rgba(139, 140, 160, 0.25),
+        2px 2px 5px 0px rgba(139, 140, 160, 0.1),
+        -1px -1px 2px 0px rgba(255, 255, 255, 0.25);
+      white-space: break-spaces;
+      word-break: keep-all;
+      .icon {
+        position: absolute;
+        left: 40rem;
+        bottom: 0;
+        transform: translateY(40%);
+        width: 25rem;
+        height: 26rem;
+        z-index: 0;
+        &.right {
+          left: inherit;
+          right: 40rem;
+          transform: translateY(40%) rotateZ(90deg);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .MessageTooltip {
+    :global {
+      .messageTooltip_b-wrapper {
+        padding: 24rem 40rem;
+        font-size: 16rem;
+        .icon {
+          width: 28rem;
+          height: 30rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,208 @@
+@import '@/app/styles/_mixin';
+
+.CleaningSection4th {
+  padding: 130rem 0 0;
+  background: var(--f-4-f-6-f-9, #F4F6F9);
+
+  :global {
+    .cleaningSection4th-container {
+      max-width: 1280rem;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .cleaningSection4th_b-head {
+        text-align: center;
+        margin-bottom: 40rem;
+
+        h2 {
+          @include H2_30pt_bold;
+
+          span {
+            color: var(--be-7346, #BE7346);
+          }
+
+          &:first-child {
+            color: var(--d-29-d-7-e, #D29D7E);
+            @include P1_20pt_bold;
+          }
+        }
+      }
+
+      .cleaningSection4th_b-body {
+        padding: 0 20rem;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 12rem;
+        text-align: center;
+        width: 100%;
+        z-index: 1;
+
+        li {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          gap: 10rem;
+          padding: var(--Spacing-4, 16rem) 0;
+          box-shadow: var(--drop-shadow1);
+          border-radius: var(--Spacing-4, 16rem);
+          background: var(--ffffff, #FFF);
+          height: 116rem;
+
+          h4 {
+            color: var(--09101-d, #09101D);
+            @include P2_16pt_medium;
+          }
+
+          .text-color {
+            color: var(--be-7346, #BE7346);
+            @include H4_20pt_bold;
+          }
+        }
+      }
+
+      .cleaningSection4th_b-bot {
+        background: var(--ebd-5-c-7, #EBD5C7);
+        padding: 116rem 19rem 129rem 19rem;
+        margin-top: -76rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .CleaningSection4th {
+    padding: 160rem 0 113rem;
+
+    :global {
+      .cleaningSection4th-container {
+        .cleaningSection4th_b-head {
+          margin-bottom: 80rem;
+
+          h2 {
+            @include H2_48pt_bold;
+
+            &:first-child {
+              @include H4_26pt_bold;
+              margin-bottom: 8rem;
+            }
+          }
+        }
+
+        .cleaningSection4th_b-body {
+          gap: 192rem;
+          flex-direction: row;
+          padding: 44rem 133rem 44rem 134rem;
+          border-radius: var(--Spacing-5, 20rem);
+          max-width: 1060rem;
+          box-shadow: var(--drop-shadow1);
+          border-radius: var(--Spacing-4, 16rem);
+          background: var(--ffffff, #FFF);
+          padding: 35rem 0;
+
+          li {
+            box-shadow: none;
+            border-radius: 0;
+            height: auto;
+
+            &:after {
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              right: -96rem;
+              margin: auto;
+              content: '';
+              background: #E3E7EB;
+              height: 100%;
+              width: 1rem;
+
+            }
+
+            &:last-child:after {
+              display: none;
+            }
+
+            h4 {
+              @include P1_18pt_regular;
+              white-space: pre-line;
+            }
+
+            .text-color {
+              white-space: pre-line;
+              @include H4_26pt_bold;
+            }
+          }
+        }
+
+        .cleaningSection4th_b-bot {
+          border-radius: var(--Spacing-5, 20rem);
+          padding: 164rem 244rem 72rem 244rem;
+          margin-top: -92rem;
+        }
+      }
+    }
+  }
+}
+
+.CleaningSwiper {
+  max-width: 337rem; //max-width: 792rem;
+  box-shadow: none;
+
+  :global {
+    .slide-item {
+
+      .slide-item_desc {
+        display: flex;
+        flex-direction: column;
+        gap: var(--Spacing-6, 24rem);
+        text-align: center;
+
+        h3 {
+          color: #000;
+          @include P2_18pt_medium;
+
+          br {
+            display: none;
+          }
+        }
+
+        p {
+          color: var(--798087, #798087);
+          @include P4_14pt_medium;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .CleaningSwiper {
+    max-width: 835rem;
+
+    :global {
+      .slide-item {
+
+        .slide-item_desc {
+          flex-direction: column;
+          gap: var(--Spacing-6, 24rem);
+
+          h3 {
+            @include P1_20pt_regular;
+
+            br {
+              display: initial
+            }
+          }
+
+          p {
+            @include P3_16pt_medium;
+          }
+        }
+      }
+    }
+  }
+}

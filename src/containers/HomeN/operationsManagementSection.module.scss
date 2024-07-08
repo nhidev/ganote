@@ -1,0 +1,315 @@
+@import '@/app/styles/_mixin';
+
+.OperationsManagementSection {
+  padding: 91rem 0 130rem;
+  background: var(--f-4-f-6-f-9);
+  position: relative;
+  z-index: 1;
+  &:before {
+    position: absolute;
+    top: 0;
+    height: 368rem;
+    background-color: var(--ffffff);
+    width: 100%;
+    content: '';
+    z-index: -1;
+  }
+  :global {
+    .operations-management_top {
+      text-align: center;
+      h2 {
+        @include H2_30pt_bold;
+        color: var(--09101-d);
+      }
+      p {
+        @include P1_18pt_medium;
+        color: var(--798087);
+        white-space: break-spaces;
+        margin: 12rem auto 40rem;
+      }
+    }
+
+    .operations-management_bottom {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    .g-cta-button {
+      &.ant-btn-primary {
+        margin: 40rem auto 0;
+        width: 100%;
+        max-width: 280rem;
+      }
+    }
+  }
+
+  .ManagementGraph {
+    margin: 36rem 20rem 10rem;
+    background-color: var(--ffffff);
+    :global {
+      .graphBlock-head {
+        .graphBlock-title {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .ManagementDiagram {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 36rem;
+  }
+
+  .ManagementStepItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    :global {
+      .management-step_top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 280rem;
+        min-height: 64rem;
+        gap: 20rem;
+        border-radius: 12rem;
+        background-color: var(--ffffff);
+        box-shadow: var(--drop-shadow3);
+        text-align: center;
+        h4 {
+          @include h4_18pt_bold;
+          color: var(--be-7346);
+        }
+        span {
+          @include p1-3_12pt_medium;
+          color: var(--09101-d);
+        }
+      }
+      img {
+        margin-bottom: 10rem;
+        height: 19rem;
+      }
+      .management-step_bottom {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8rem;
+        .management-step-task {
+          display: flex;
+          min-width: 184rem;
+          min-height: 36rem;
+          padding: 8rem;
+          justify-content: center;
+          align-items: center;
+          gap: 8rem;
+          border-radius: 100rem;
+          background: var(--ffffff);
+          box-shadow: var(--drop-shadow3);
+          color: var(--414751);
+          @include p1-3_12pt_medium;
+        }
+      }
+    }
+  }
+
+  .ManagementPieChartBlock {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10rem;
+    justify-content: center;
+    margin: 0 20rem;
+    :global {
+      img {
+        transform: translateX(10rem);
+      }
+      .managementPieChart-pie {
+        width: 50%;
+        max-width: 162rem;
+      }
+    }
+  }
+
+  .RequestBlock {
+    display: flex;
+    width: 50%;
+    max-width: 162rem;
+    padding: 16rem 10rem;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20rem;
+    background: var(--f-6-f-6-f-6);
+    box-shadow: var(--drop-shadow3);
+    :global {
+      h5 {
+        @include p1-3_12pt_semi;
+        margin-bottom: 10rem;
+        color: var(--09101-d);
+      }
+      .request-item {
+        display: flex;
+        padding: 8rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 6rem;
+        background-color: var(--ffffff);
+        box-shadow: var(--drop-shadow5);
+        margin: 0 20rem 4rem;
+        width: 100%;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        p {
+          color: var(--798087);
+          width: 100%;
+          @include p4_10pt_medium;
+        }
+        label {
+          color: var(--be-7346);
+          text-align: right;
+          width: 100%;
+          @include p1-3_12pt_semi;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .OperationsManagementSection {
+    padding: 180rem 0 160rem;
+    margin: auto;
+    &:before {
+      height: 27.5%;
+    }
+    :global {
+      .operations-management_top {
+        padding-bottom: 80rem;
+        h2 {
+          @include H2_48pt_bold;
+          margin-bottom: 20rem;
+        }
+        p {
+          @include P2_18pt_medium;
+          white-space: unset;
+          max-width: 100%;
+        }
+      }
+      .g-cta-button {
+        &.ant-btn-primary {
+          margin-top: 0;
+          max-width: 258rem;
+        }
+      }
+    }
+
+    .ManagementGraph {
+      max-width: 1060rem;
+      margin: 24rem 0 24rem;
+      background-color: var(--ffffff);
+      flex-direction: column;
+      border-radius: 40rem;
+      box-shadow: var(--drop-shadow1);
+      width: 100%;
+      :global {
+        .graphBlock-head {
+          width: 100%;
+          margin-right: 0;
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .ManagementDiagram {
+      max-width: 1280rem;
+      flex-direction: row;
+      align-items: baseline;
+      gap: 80rem;
+    }
+
+    .ManagementStepItem {
+      :global {
+        .management-step_top {
+          flex-direction: column;
+          min-height: 140rem;
+          gap: 8rem;
+          border-radius: 20rem;
+          box-shadow: var(--drop-shadow2);
+          h4 {
+            @include H4_26pt_bold;
+          }
+          span {
+            @include P2_18pt_medium;
+          }
+        }
+        img {
+          margin-bottom: 40rem;
+          height: 100%;
+          width: auto;
+        }
+        .management-step_bottom {
+          gap: 16rem;
+          .management-step-task {
+            min-width: 300rem;
+            min-height: 72rem;
+            border-radius: 16rem;
+            box-shadow: var(--drop-shadow2);
+            @include P3_16pt_medium;
+          }
+        }
+      }
+    }
+
+    .ManagementPieChartBlock {
+      max-width: 1280rem;
+      margin: 0 auto;
+      gap: 24rem;
+      :global {
+        .managementPieChart-pie {
+          padding-top: 40rem;
+          padding-bottom: 40rem;
+          max-width: unset;
+          flex: 1;
+        }
+      }
+    }
+
+    .RequestBlock {
+      padding: 40rem 24rem 24rem 24rem;
+      border-radius: 40rem;
+      box-shadow: var(--drop-shadow1);
+      flex: 1;
+      max-width: unset;
+      :global {
+        h5 {
+          @include P1_20pt_semi;
+          margin-bottom: 17rem;
+        }
+        .request-item {
+          padding: 16rem;
+          border-radius: 12rem;
+          box-shadow: var(--drop-shadow4);
+          margin: 0 0 12rem;
+          min-width: 254rem;
+          p {
+            @include P4_14pt_medium;
+          }
+          label {
+            @include p1-P2_18pt_semi;
+          }
+        }
+      }
+    }
+  }
+}

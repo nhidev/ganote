@@ -1,0 +1,301 @@
+.InteriorOffice {
+  padding: 130rem 0;
+  background: var(--e-3-e-7-eb, #e3e7eb);
+  :global {
+    .interiorOffice_b-container {
+      .interiorOffice_b-head {
+        text-align: center;
+        margin: 0 auto 60rem;
+        label {
+          border-radius: 100rem;
+          background: var(--f-4-f-6-f-9, #f4f6f9);
+          margin-bottom: 12rem;
+          display: inline-flex;
+          padding: 0 16rem;
+          height: 28rem;
+
+          img {
+            width: 16rem;
+            height: auto;
+            margin-right: 2rem;
+          }
+          p {
+            color: var(--798087, #798087);
+            font-size: 14rem;
+            font-weight: 700;
+            line-height: 28rem;
+          }
+        }
+        h2 {
+          font-size: 30rem;
+          font-weight: 700;
+          line-height: 140%;
+          letter-spacing: -1px;
+          &:nth-child(2) {
+            color: var(--a-9-a-9-a-9, #b1b7bd);
+          }
+        }
+      }
+
+      .interiorOffice_b-body {
+        .interiorOffice_b-left {
+          .interiorOffice-title {
+            padding: 0 40rem;
+            margin-bottom: 32rem;
+            h4 {
+              font-size: 24rem;
+              font-weight: 700;
+              line-height: 140%;
+              letter-spacing: -1px;
+              white-space: break-spaces;
+              margin-bottom: 8rem;
+              color: var(--a-9-a-9-a-9, #b1b7bd);
+            }
+
+            h3 {
+              font-size: 20rem;
+              font-weight: 700;
+              line-height: 140%;
+              letter-spacing: -0.2rem;
+              white-space: break-spaces;
+            }
+          }
+        }
+
+        .interiorOffice_b-right {
+          .interiorOffice-slider-wrapper {
+            .interiorOffice-slider {
+              padding: 32rem 0 20rem 20rem;
+              .swiper-wrapper {
+                margin-bottom: 12rem;
+                .swiper-slide {
+                  width: 260rem;
+                  height: 360rem;
+                  img {
+                    border-radius: 20rem;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                    box-shadow:
+                      20rem 20rem 60rem 0rem rgba(139, 140, 160, 0.4),
+                      5rem 5rem 15rem 0rem rgba(139, 140, 160, 0.15);
+                  }
+                  &.swiper-slide-next {
+                    opacity: 0.8;
+                    background: var(--414751, #414751);
+                    mix-blend-mode: multiply;
+                    border-radius: 20rem;
+                    img {
+                      background: var(--414751, #414751);
+                      mix-blend-mode: multiply;
+                    }
+                  }
+                }
+              }
+              .swiper-scrollbar {
+                left: 62rem;
+                bottom: initial;
+                transform: translateY(5px);
+                background: var(--e-3-e-7-eb);
+                height: 2rem;
+              }
+              .swiper-pagination {
+                display: inline-flex;
+                margin-right: 12rem;
+                color: var(--e-3-e-7-eb, #e3e7eb);
+                font-size: 16rem;
+                font-weight: 500;
+                position: relative;
+                z-index: 1;
+                line-height: 170%;
+                span {
+                  &.swiper-pagination-current {
+                    color: var(--798087, #798087);
+                  }
+                  &.swiper-pagination-total {
+                    color: var(--e-3-e-7-eb, #e3e7eb);
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .interiorOffice-desc {
+          padding: 16rem 40rem;
+          background: var(--f-4-f-6-f-9, #f4f6f9);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          h4 {
+            font-size: 18rem;
+            font-weight: 700;
+            line-height: 140%;
+            letter-spacing: -0.18rem;
+            margin-right: 20rem;
+          }
+          p {
+            color: var(--798087, #798087);
+            font-size: 12rem;
+            font-weight: 500;
+            white-space: break-spaces;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .InteriorOfficeSliderBg {
+    :global {
+      .swiper-wrapper {
+        .swiper-slide {
+          position: relative;
+          width: 660rem;
+          height: 540rem;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+          &::after {
+            content: '';
+            left: 0;
+            right: 0;
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            opacity: 0.8;
+            background: var(--414751, #414751);
+            mix-blend-mode: multiply;
+          }
+        }
+      }
+    }
+  }
+
+  .InteriorOffice {
+    padding: 160rem 0 291rem;
+    position: relative;
+
+    :global {
+      .interiorOffice_b-container {
+        .interiorOffice_b-head {
+          max-width: 100%;
+          margin: 0 auto 160rem;
+          label {
+            margin-bottom: 20rem;
+            padding: 0 20rem;
+            height: 38rem;
+            img {
+              width: 20rem;
+              margin-right: 2rem;
+            }
+            p {
+              font-size: 16rem;
+              line-height: 38rem;
+            }
+          }
+          h2 {
+            font-size: 48rem;
+          }
+        }
+
+        .interiorOffice_b-body {
+          border-radius: 40rem;
+          background: var(--ffffff, #fff);
+          box-shadow:
+            20rem 20rem 60rem 0rem rgba(139, 140, 160, 0.4),
+            5rem 5rem 15rem 0rem rgba(139, 140, 160, 0.15);
+          display: flex;
+          justify-content: space-between;
+          padding: 80rem;
+          width: 1280rem;
+          margin: 0 auto;
+          position: absolute;
+          bottom: 160rem;
+          left: 50%;
+          transform: translate(-50%, 0);
+          z-index: 3;
+
+          .interiorOffice_b-left {
+            .interiorOffice-title {
+              padding: 0;
+              margin-bottom: 215rem;
+              h4 {
+                font-size: 26rem;
+                margin-bottom: 20rem;
+              }
+              h3 {
+                font-size: 40rem;
+              }
+            }
+          }
+
+          .interiorOffice_b-right {
+            .interiorOffice-slider-wrapper {
+              position: relative;
+              .interiorOffice-slider {
+                padding: 0;
+                .swiper-wrapper {
+                  margin-bottom: 20rem;
+                  width: 660rem;
+                  .swiper-slide {
+                    width: 660rem;
+                    height: 540rem;
+                    img {
+                      box-shadow: none;
+                    }
+                  }
+                }
+                .swiper-scrollbar {
+                  left: 40rem;
+                  transform: translateY(6rem);
+                  background: var(--e-3-e-7-eb)
+                }
+                .swiper-pagination {
+                  margin-right: 16rem;
+                  font-size: 18rem;
+                  width: auto;
+                }
+              }
+
+              &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 50rem;
+                right: 0;
+                border-radius: 40rem;
+
+                box-shadow:
+                  20rem 20rem 60rem 0rem rgba(139, 140, 160, 0.4),
+                  5rem 5rem 15rem 0rem rgba(139, 140, 160, 0.15);
+              }
+            }
+          }
+
+          .interiorOffice-desc {
+            padding: 30rem;
+            border-radius: 16rem;
+
+            align-items: self-start;
+            flex-direction: column-reverse;
+            h4 {
+              font-size: 26rem;
+              margin-right: 0;
+            }
+            p {
+              font-size: 18rem;
+              margin-bottom: 8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

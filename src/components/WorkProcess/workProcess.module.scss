@@ -1,0 +1,403 @@
+.WorkProcess {
+  padding: 104px 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.LabelStep {
+  background-color: #fcebdb;
+  padding: 4px 10px;
+  font-size: 16px;
+  font-family:
+    var(--font-Pretendard-bold),
+    -apple-system,
+    BlinkMacSystemFont,
+    'Malgun Gothic',
+    sans-serif;
+  border-radius: 100px;
+}
+
+.HeaderStep {
+  font-size: 28px;
+  font-family:
+    var(--font-Pretendard-bold),
+    -apple-system,
+    BlinkMacSystemFont,
+    'Malgun Gothic',
+    sans-serif;
+  margin-bottom: 34px;
+  margin-top: 24px;
+}
+.Desc {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.FirstProcess {
+  display: flex;
+  max-width: 555px;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 55px auto 0;
+  gap: 33px;
+}
+
+.Process {
+  position: relative;
+  padding: 31px 0 0;
+}
+
+.Process1::after {
+  content: '';
+  position: absolute;
+  width: calc(50% + 35px);
+  border-bottom: 1px dashed #db6a05;
+  top: 0;
+  left: 50%;
+  margin-top: 2px;
+  margin-left: 10px;
+}
+
+.Process2::after {
+  content: '';
+  position: absolute;
+  width: calc(50% + 34px);
+  border-bottom: 1px dashed #db6a05;
+  top: 0;
+  left: 0;
+  margin-top: 2px;
+  margin-left: calc(-50% - 13px);
+}
+.Process2::before {
+  content: '';
+  position: absolute;
+  width: calc(50% + 35px);
+  border-bottom: 1px dashed #db6a05;
+  top: 0;
+  left: 50%;
+  margin-top: 2px;
+  margin-left: 10px;
+}
+.Process3::after {
+  content: '';
+  position: absolute;
+  width: calc(50% + 31px);
+  border-bottom: 1px dashed #db6a05;
+  top: 0;
+  left: 0;
+  margin-top: 2px;
+  margin-left: calc(-50% - 20px);
+}
+.Process3::before {
+  content: '';
+  position: absolute;
+  width: calc(50% + 31px);
+  border-bottom: 1px dashed #db6a05;
+  top: 0;
+  left: 50%;
+  margin-top: 2px;
+  margin-left: 12px;
+}
+.Process4::after {
+  content: '';
+  position: absolute;
+  width: calc(50% + 28px);
+  border-bottom: 1px dashed #db6a05;
+  top: 0;
+  left: 0;
+  margin-top: 2px;
+  margin-left: calc(-50% - 8px);
+}
+
+.Dot {
+  position: absolute;
+  background-color: #db6a05;
+  border-radius: 50%;
+  left: 50%;
+}
+
+.Dot1 {
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  top: 0px;
+}
+
+.Dot1:after {
+  content: '';
+  position: absolute;
+  border: 1px dashed #db6a05;
+  border-radius: 50%;
+  top: -4px;
+  left: -4px;
+  padding: 6px;
+}
+
+.Dot2 {
+  width: 10px;
+  height: 10px;
+  margin-left: -5px;
+  top: -2px;
+}
+
+.Dot2:after {
+  content: '';
+  position: absolute;
+  border: 1px dashed #db6a05;
+  border-radius: 50%;
+  top: -4px;
+  left: -4px;
+  padding: 8px;
+}
+
+.Dot3 {
+  width: 12px;
+  height: 12px;
+  margin-left: -6px;
+  top: -4px;
+}
+
+.Dot3:after {
+  content: '';
+  position: absolute;
+  border: 1px dashed #db6a05;
+  border-radius: 50%;
+  top: -5px;
+  left: -5px;
+  padding: 10px;
+}
+
+.Dot4 {
+  width: 14px;
+  height: 14px;
+  margin-left: -7px;
+  top: -5px;
+}
+
+.Dot4:after {
+  content: '';
+  position: absolute;
+  border: 1px dashed #db6a05;
+  border-radius: 50%;
+  top: -6px;
+  left: -6px;
+  padding: 12px;
+}
+
+.LastStepBg {
+  margin: 35px auto 0;
+  height: auto;
+}
+
+.FirstStep {
+  margin-bottom: 85px;
+}
+
+.SecondStep {
+  margin-bottom: 85px;
+}
+
+.LastStep {
+  margin-bottom: 55px;
+}
+
+.PolicyList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
+  margin: 40px auto 48px;
+}
+
+.Policy {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  width: 160px;
+  height: 146px;
+  background-color: #f6f6f5;
+  border-radius: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.TextNote {
+  margin-top: 16px;
+}
+
+.PolicyBlock button {
+  margin: 0 auto;
+}
+
+.DesignConstruction {
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+  justify-content: center;
+  padding-top: 233px;
+  margin-bottom: 38px;
+}
+.Step {
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.HighLight {
+  font-family:
+    var(--font-Pretendard-bold),
+    -apple-system,
+    BlinkMacSystemFont,
+    'Malgun Gothic',
+    sans-serif;
+}
+
+.WrapBg {
+  position: absolute;
+  top: -200px;
+  height: 174px;
+  width: 220px;
+}
+
+.Left {
+  left: -80px;
+}
+
+.Right {
+  right: -70px;
+}
+
+.Mobile {
+  display: none;
+}
+
+@media (max-width: 599px) {
+  .Mobile {
+    display: block;
+  }
+  .WorkProcess {
+    padding: 60px 16px;
+  }
+  .PolicyList {
+    gap: 6px;
+  }
+  .Policy {
+    padding: 18px 6px;
+    min-width: 92px;
+    height: auto;
+  }
+
+  .Policy img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .TextNote {
+    font-size: 14px;
+  }
+  .FirstStep {
+    margin-bottom: 60px;
+  }
+  .FirstProcess {
+    flex-direction: column;
+    margin: 43px auto 0;
+  }
+  .SecondStep {
+    margin-bottom: 60px;
+  }
+  .Process2::before {
+    display: none;
+  }
+  .Process3::before {
+    display: none;
+  }
+  .Process1::after {
+    width: 1px;
+    height: 35px;
+    border-left: 1px dashed #db6a05;
+    top: 0;
+    left: 0;
+    margin-top: 17px;
+    margin-left: 15px;
+    border-bottom: 0;
+  }
+
+  .Process2::after {
+    width: 1px;
+    height: 32px;
+    border-left: 1px dashed #db6a05;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+    margin-left: 15px;
+    border-bottom: 0;
+  }
+  .Process3::after {
+    width: 1px;
+    height: 27px;
+    border-left: 1px dashed #db6a05;
+    top: 0;
+    left: 0;
+    margin-top: 24px;
+    margin-left: 15px;
+    border-bottom: 0;
+  }
+  .Process4::after {
+    display: none;
+  }
+  .Process {
+    padding: 0;
+    width: 160px;
+    margin: 0 auto;
+    text-align: left;
+    padding-left: 40px;
+  }
+  .Process br {
+    display: none;
+  }
+  .Dot {
+    left: 0;
+    top: 50%;
+  }
+
+  .Dot1 {
+    margin-top: -4px;
+    left: 16px;
+  }
+
+  .Dot2 {
+    margin-top: -4px;
+    left: 16px;
+  }
+  .Dot3 {
+    margin-top: -4px;
+    left: 16px;
+  }
+  .Dot4 {
+    margin-top: -4px;
+    left: 16px;
+  }
+
+  .DesignConstruction {
+    flex-direction: column;
+    padding-bottom: 200px;
+    padding-top: 216px;
+  }
+
+  .Step {
+    margin-bottom: 5px;
+  }
+
+  .Left {
+    left: 50%;
+    margin-left: -110px;
+  }
+  .Right {
+    right: 50%;
+    margin-right: -110px;
+    top: -100%;
+    margin-top: 107px;
+  }
+  .ArrowIcon {
+    transform: rotate(90deg);
+  }
+}

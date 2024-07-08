@@ -1,0 +1,185 @@
+.SchechuleBlock {
+  padding: 30rem 20rem 0 20rem;
+  border-radius: 20rem;
+  background: var(--ffffff, #fff);
+  box-shadow:
+    20rem 20rem 60rem 0rem rgba(139, 140, 160, 0.4),
+    5rem 5rem 15rem 0rem rgba(139, 140, 160, 0.15);
+
+  :global {
+    .schechuleBlock_b-head {
+      margin-bottom: 24rem;
+      padding-left: 10rem;
+      h3 {
+        font-size: 24rem;
+        line-height: 140%;
+        letter-spacing: -1px;
+        margin-bottom: 12rem;
+        word-break: keep-all;
+        white-space: break-spaces;
+        max-width: 250rem;
+      }
+      p {
+        font-size: 12rem;
+        font-weight: 500;
+        color: var(--414751);
+      }
+    }
+    .schechuleBlock_b-body {
+      border-radius: 12rem;
+      background: var(--ffb-25-c, #ffb25c);
+      padding: 20rem;
+      max-height: 280rem;
+      overflow-y: hidden;
+      ul {
+        margin-bottom: 7rem;
+        li {
+          display: inline-block;
+          margin-right: 6rem;
+          margin-bottom: 6rem;
+          text-align: center;
+          span {
+            border-radius: 4rem;
+            display: inline-block;
+            height: 30rem;
+            line-height: 30rem;
+            padding: 0 10rem;
+            background: var(--ffffff);
+            box-shadow: 2rem 2rem 5rem 0rem rgba(139, 140, 160, 0.25);
+            min-width: 72rem;
+            font-size: 10rem;
+            font-weight: 600;
+          }
+          &.hasOpacity {
+            span {
+              opacity: 0.6;
+              box-shadow: none;
+            }
+          }
+        }
+      }
+      .schechuleBlock_b-time {
+        border-radius: 12rem;
+        background: var(--ffffff, #fff);
+        padding: 8rem;
+        box-shadow:
+          5rem 5rem 10rem 0rem rgba(139, 140, 160, 0.25),
+          2rem 2rem 5rem 0rem rgba(139, 140, 160, 0.1);
+        text-align: center;
+        margin-bottom: 8rem;
+        .schechuleBlock-title {
+          font-size: 10rem;
+          font-weight: 600;
+          margin-bottom: 8rem;
+        }
+        .schechuleBlock-time {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          p {
+            font-size: 10rem;
+            font-weight: 500;
+            span {
+              display: inline-block;
+              height: 26rem;
+              line-height: 26rem;
+              border-radius: 5.93rem;
+              background: var(--f-6-f-6-f-6, #f6f6f6);
+              margin-right: 1px;
+              margin-left: 1px;
+              min-width: 32rem;
+            }
+          }
+        }
+        &:nth-child(2) {
+          opacity: 0.6;
+        }
+        &:nth-child(3) {
+          opacity: 0.4;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .SchechuleBlock {
+    padding: 80rem 40rem 0 40rem;
+    border-radius: 40rem;
+    :global {
+      .schechuleBlock_b-head {
+        margin-bottom: 60rem;
+        max-width: 500rem;
+        padding-left: 40rem;
+        h3 {
+          font-size: 40rem;
+          margin-bottom: 20rem;
+          max-width: 380rem;
+        }
+        p {
+          font-size: 20rem;
+        }
+      }
+      .schechuleBlock_b-body {
+        border-radius: 20rem;
+        padding: 48rem 40rem 40rem 40rem;
+        max-height: 537rem;
+        ul {
+          margin-bottom: 22rem;
+          width: 80%;
+          li {
+            margin-right: 8rem;
+            margin-bottom: 8rem;
+            span {
+              border-radius: 8rem;
+              height: 40rem;
+              line-height: 40rem;
+              padding: 0 12rem;
+              box-shadow:
+                5rem 5rem 10rem 0rem rgba(139, 140, 160, 0.25),
+                2rem 2rem 5rem 0rem rgba(139, 140, 160, 0.1),
+                -1px -1px 2rem 0rem rgba(255, 255, 255, 0.25);
+              min-width: 102rem;
+              font-size: 14rem;
+            }
+          }
+        }
+        .schechuleBlock_b-time {
+          padding: 32rem 10rem;
+          margin-bottom: 10rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .schechuleBlock-title {
+            font-size: 14rem;
+            font-weight: 600;
+            margin-bottom: 0;
+            margin-right: 8rem;
+          }
+          .schechuleBlock-time {
+            p {
+              font-size: 14rem;
+              span {
+                height: 32rem;
+                line-height: 32rem;
+                border-radius: 8rem;
+                margin-right: 4rem;
+                margin-left: 4rem;
+                min-width: 44rem;
+              }
+            }
+          }
+          &:nth-child(2) {
+            opacity: 1;
+          }
+          &:nth-child(3) {
+            opacity: 0.6;
+          }
+          &:nth-child(4) {
+            opacity: 0.4;
+          }
+        }
+      }
+    }
+  }
+}

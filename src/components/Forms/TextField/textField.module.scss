@@ -1,0 +1,101 @@
+.label {
+  color: var(--neutral-black);
+  font-size: 14px;
+  font-family:
+    var(--font-Pretendard-bold),
+    -apple-system,
+    BlinkMacSystemFont,
+    'Malgun Gothic',
+    sans-serif;
+  line-height: 20px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  display: block;
+}
+.inputFiled,
+.specialLabel,
+.radioField {
+  padding: 0 40px;
+  margin-bottom: 24px;
+}
+.inputFiled {
+  width: 100%;
+}
+
+.textFiled {
+  position: relative;
+  width: 100%;
+}
+
+.textFiled input {
+  width: 100%;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 4px;
+  border: 1px solid #e1e2e8;
+  background: #fff;
+  padding: 1px 14px 0 42px;
+}
+
+.textFiled input::placeholder {
+  color: var(--neutral-sub-2);
+}
+.textFiled input:focus {
+  outline: none;
+  border: 1px solid #212121;
+}
+.textFiled img {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+.erorInput {
+  border: 1px solid #f33c52 !important;
+}
+.erorText {
+  margin-top: 6px;
+  color: #dd3348;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px; /* 123.077% */
+  letter-spacing: -0.5px;
+}
+.virtualInput {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  z-index: 1;
+  background-color: #fff;
+  user-select: text;
+}
+.textFiled:has(.virtualInput) input {
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .textFiled input {
+    height: 40px;
+  }
+  .inputFiled {
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .textFiled input {
+    height: 36px;
+  }
+  .inputFiled {
+    padding: 0 15px;
+    margin-bottom: 15px;
+  }
+}

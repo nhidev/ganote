@@ -1,0 +1,87 @@
+@import '@/app/styles/_mixin';
+
+.IntroductionSection {
+  padding: 48rem 0;
+  background-color: var(--f-8-f-1-ec);
+  :global {
+    .introduction-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 32rem;
+      .introduction_b-left {
+        .introduction-top {
+          text-align: center;
+          margin-bottom: 30rem;
+          h1 {
+            @include H1_34pt_bold;
+            margin-bottom: 8rem;
+          }
+          p {
+            @include P1_18pt_regular;
+            color: var(--414751);
+          }
+        }
+        .introduction-bottom {
+          display: flex;
+          justify-content: center;
+          gap: 8rem;
+          button {
+            height: 48rem;
+            font-size: 16rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .IntroductionSection {
+    padding: 80rem 0;
+    :global {
+      .introduction-container {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 110rem;
+        max-width: 1280rem;
+        margin: auto;
+        .introduction_b-left {
+          .introduction-top {
+            text-align: left;
+            margin-bottom: 60rem;
+            h1 {
+              @include H1_56pt_bold;
+              margin-bottom: 16rem;
+            }
+            p {
+              @include P1_20pt_medium;
+            }
+          }
+          .introduction-bottom {
+            gap: 16rem;
+            justify-content: flex-start;
+
+            button {
+              height: 56rem;
+              font-size: 18rem;
+            }
+          }
+        }
+        .introduction_b-right {
+          display: block;
+          width: 600rem;
+          height: 560rem;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+

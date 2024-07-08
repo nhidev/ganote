@@ -1,0 +1,119 @@
+.ItemSavingBlock {
+  padding: 30rem 30rem;
+  border-radius: 20rem;
+  background: var(--ffffff, #fff);
+  overflow: hidden;
+  margin-bottom: 20rem;
+  box-shadow:
+    20rem 20rem 60rem 0rem rgba(139, 140, 160, 0.4),
+    5rem 5rem 15rem 0rem rgba(139, 140, 160, 0.15);
+  :global {
+    .itemSavingBlock_b-head {
+      margin-bottom: 24rem;
+      h3 {
+        font-size: 24rem;
+        line-height: 140%;
+        letter-spacing: -1px;
+        margin-bottom: 12rem;
+        white-space: break-spaces;
+      }
+      p {
+        font-size: 12rem;
+        font-weight: 500;
+        color: var(--414751);
+        white-space: break-spaces;
+      }
+    }
+    .itemSavingBlock_b-body {
+      table {
+        .ant-table-thead {
+          tr {
+            .ant-table-cell {
+              text-align: center;
+              font-family: 'Pretendard', sans-serif;
+              font-size: 12rem;
+              font-weight: 500;
+              line-height: 170%;
+              color: var(--09101-d, #09101d);
+              padding: 6rem 2rem;
+              height: auto;
+              background: var(--ffe-8-ce, #ffe8ce);
+              &:first-child {
+                border-radius: 4rem 0 0 4rem;
+              }
+              &:last-child {
+                border-radius: 0 4rem 4rem 0;
+              }
+              &::before {
+                display: none;
+              }
+            }
+          }
+        }
+        .ant-table-tbody {
+          tr {
+            .ant-table-cell {
+              text-align: center;
+              font-family: 'Pretendard', sans-serif;
+              font-size: 12rem;
+              font-weight: 500;
+              line-height: 170%;
+              color: var(--798087, #798087);
+              padding: 12rem 2rem;
+              height: auto;
+            }
+            &:last-child {
+              .ant-table-cell {
+                border-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .ItemSavingBlock {
+    padding: 80rem;
+    border-radius: 40rem;
+    :global {
+      .itemSavingBlock_b-head {
+        margin-bottom: 60rem;
+        h3 {
+          font-size: 40rem;
+        }
+        p {
+          font-size: 20rem;
+        }
+      }
+      .itemSavingBlock_b-body {
+        table {
+          .ant-table-thead {
+            tr {
+              .ant-table-cell {
+                font-size: 16rem;
+                padding: 12rem 2rem;
+                &:first-child {
+                  border-radius: 8rem 0 0 8rem;
+                }
+                &:last-child {
+                  border-radius: 0 8rem 8rem 0;
+                }
+              }
+            }
+          }
+          .ant-table-tbody {
+            tr {
+              .ant-table-cell {
+                font-size: 16rem;
+                padding: 20rem 2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

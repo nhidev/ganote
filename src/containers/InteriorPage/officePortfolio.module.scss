@@ -1,0 +1,152 @@
+.OfficePortfolio {
+  padding: 130rem 0;
+  background: var(--f-4-f-6-f-9);
+  :global {
+    .officePortfolio_b-container {
+      .officePortfolio_b-head {
+        text-align: center;
+        margin: 0 auto 40rem;
+        h2 {
+          font-size: 30rem;
+          font-weight: 700;
+          line-height: 140%;
+          letter-spacing: -1px;
+          white-space: break-spaces;
+          color: var(--09101-d);
+        }
+      }
+
+      .officePortfolio_b-body {
+        margin: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .OfficePortfolio_InteriorSwiper {
+    width: 100%;
+    padding-bottom: 0;
+    :global {
+      .swiper {
+        min-height: 520rem;
+        height: auto;
+        box-shadow: none;
+        border-radius: 0;
+        .swiper-wrapper {
+          .swiper-slide {
+            .slide-item {
+              height: 280rem;
+              .slide-item_desc {
+                width: calc(100% - 40rem);
+                transform: translate(-50%, 85%);
+                left: 50%;
+                padding: 30rem;
+                .slide-item_quote {
+                  p {
+                    white-space: pre;
+                    padding: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .swiper-scrollbar {
+          height: 2rem;
+          right: 20rem;
+          bottom: 5rem;
+          background: var(--f-4-f-6-f-9);
+        }
+        .swiper-pagination {
+          color: var(--f-4-f-6-f-9);
+          bottom: -5rem;
+          left: 20rem;
+          span {
+            &.swiper-pagination-current {
+              color: var(--798087, #798087);
+            }
+            &.swiper-pagination-total {
+              color: var(--f-4-f-6-f-9);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .OfficePortfolio {
+    padding: 160rem 0;
+    :global {
+      .officePortfolio_b-container {
+        .officePortfolio_b-head {
+          margin-bottom: 80rem;
+          h2 {
+            font-size: 48rem;
+            white-space: initial;
+          }
+        }
+        .officePortfolio_b-body {
+          max-width: 1280rem;
+          box-sizing: content-box;
+          margin: auto;
+          position: relative;
+          &::before {
+            content: '';
+            top: 10%;
+            right: 0;
+            width: 380rem;
+            height: 404rem;
+            border-radius: 20rem;
+            position: absolute;
+            box-shadow:
+              20rem 20rem 60rem 0px rgba(139, 140, 160, 0.4),
+              5rem 5rem 15rem 0px rgba(139, 140, 160, 0.15);
+          }
+        }
+      }
+    }
+  }
+  .OfficePortfolio_InteriorSwiper {
+    max-width: 1280rem;
+    box-shadow: none;
+    :global {
+      .swiper {
+        box-shadow: none;
+        min-height: 640rem;
+        .slide-item {
+          max-width: 1060rem;
+          img {
+            border-radius: 40rem;
+          }
+          .slide-item_desc {
+            padding: 60rem;
+            bottom: unset;
+            top: 10%;
+            right: 0;
+            box-shadow: none;
+            width: 510rem;
+            height: 76%;
+            white-space: pre;
+            h3 {
+              font-size: 40rem;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 140%; /* 56px */
+              letter-spacing: -1px;
+              white-space: pre;
+            }
+            .slide-item_quote {
+              p {
+                max-width: 100%;
+                padding: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

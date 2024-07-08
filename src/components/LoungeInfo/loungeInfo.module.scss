@@ -1,0 +1,173 @@
+.LoungeInfo {
+  border-radius: 12rem;
+  background: var(--ffffff, #fff);
+  padding: 16rem;
+  box-shadow:
+    5rem 5rem 10rem 0rem rgba(139, 140, 160, 0.25),
+    2rem 2rem 5rem 0rem rgba(139, 140, 160, 0.1);
+  :global {
+    .loungeInfo_b-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 12rem;
+      border-bottom: 1px solid #e3e7eb;
+      margin-bottom: 12rem;
+      p {
+        font-size: 12rem;
+        font-weight: 700;
+        &.right-text {
+          font-size: 12rem;
+          font-weight: 500;
+          display: flex;
+          align-items: center;
+          img {
+            width: 12rem;
+            height: 12rem;
+            margin-right: 4rem;
+          }
+        }
+      }
+    }
+    .loungeInfo_b-mid {
+      .loungeInfo-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8rem;
+        p {
+          display: flex;
+          align-items: center;
+          font-size: 12rem;
+          font-weight: 500;
+          &.right-label {
+            font-size: 10rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            color: var(--798087, #798087);
+            border-radius: 57rem;
+            background: var(--f-6-f-6-f-6, #f6f6f6);
+            padding: 3rem 10rem;
+            img {
+              width: 12rem;
+              height: 12rem;
+              margin-right: 4rem;
+            }
+          }
+        }
+      }
+      .loungeInfo-body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 8rem;
+        .loungeInfo_b-img {
+          width: calc(50% - 5rem);
+          text-align: center;
+          img {
+            width: 126rem;
+            height: auto;
+            object-fit: cover;
+            margin-bottom: 4rem;
+            border-radius: 6rem;
+            overflow: hidden;
+          }
+          p {
+            font-size: 10rem;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    .loungeInfo_b-bot {
+      .loungeInfo-head {
+        margin-bottom: 4rem;
+        p {
+          font-size: 12rem;
+          font-weight: 500;
+          span {
+            color: var(--a-9-a-9-a-9, #b1b7bd);
+          }
+        }
+      }
+      .loungeInfo-body {
+        border-radius: 6rem;
+        background: var(--f-6-f-6-f-6, #f6f6f6);
+        padding: 20rem 0;
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .LoungeInfo {
+    border-radius: 20rem;
+    padding: 48rem 72rem 32rem 48rem;
+    transform: translate(0, 36rem);
+    position: relative;
+    border-top-right-radius: 0;
+    :global {
+      .loungeInfo_b-top {
+        padding-bottom: 24rem;
+        margin-bottom: 24rem;
+        p {
+          font-size: 20rem;
+          font-weight: 600;
+
+          &.right-text {
+            font-size: 16rem;
+            img {
+              width: 22rem;
+              height: 22rem;
+            }
+          }
+        }
+      }
+      .loungeInfo_b-mid {
+        .loungeInfo-head {
+          margin-bottom: 21rem;
+          p {
+            font-size: 16rem;
+            &.right-label {
+              font-size: 14rem;
+              border-radius: 100rem;
+              padding: 4rem 12rem;
+              img {
+                width: 20rem;
+                height: 20rem;
+              }
+            }
+          }
+        }
+        .loungeInfo-body {
+          margin-bottom: 15rem;
+          .loungeInfo_b-img {
+            width: calc(50% - 10rem);
+            img {
+              width: 220rem;
+              height: 170rem;
+              margin-bottom: 8rem;
+              border-radius: 12rem;
+            }
+            p {
+              font-size: 14rem;
+              color: var(--a-9-a-9-a-9, #b1b7bd);
+            }
+          }
+        }
+      }
+      .loungeInfo_b-bot {
+        .loungeInfo-head {
+          margin-bottom: 8rem;
+          p {
+            font-size: 16rem;
+          }
+        }
+        .loungeInfo-body {
+          border-radius: 12rem;
+          padding: 40rem 0;
+        }
+      }
+    }
+  }
+}

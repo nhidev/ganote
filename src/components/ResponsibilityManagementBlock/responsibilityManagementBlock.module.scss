@@ -1,0 +1,58 @@
+.ResponsibilityManagementBlock {
+  padding: 30rem 20rem;
+  border-radius: 20rem;
+  background: #fff7ef;
+  box-shadow:
+    20rem 20rem 60rem 0rem rgba(139, 140, 160, 0.4),
+    5rem 5rem 15rem 0rem rgba(139, 140, 160, 0.15);
+
+  :global {
+    .responsibilityManagementBlock_b-head {
+      margin-bottom: 40rem;
+      padding-left: 10rem;
+      h3 {
+        font-size: 24rem;
+        line-height: 140%;
+        margin-bottom: 12rem;
+        letter-spacing: -0.24rem;
+      }
+      p {
+        font-size: 12rem;
+        font-weight: 500;
+        color: var(--414751);
+      }
+    }
+    .responsibilityManagementBlock_b-body {
+      text-align: center;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .ResponsibilityManagementBlock {
+    padding: 80rem 40rem;
+    border-radius: 40rem;
+    :global {
+      .responsibilityManagementBlock_b-head {
+        margin-bottom: 60rem;
+        padding: 0 40rem;
+        h3 {
+          font-size: 40rem;
+          margin-bottom: 20rem;
+        }
+        p {
+          font-size: 20rem;
+        }
+      }
+      .responsibilityManagementBlock_b-body {
+        img {
+          width: 407rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,299 @@
+.leadForm {
+  position: relative;
+  background: #fff;
+  width: 512px;
+  max-height: calc(100vh - 80px);
+  padding: 40px 0 92px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.formBody {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  margin-right: 3px;
+}
+.formBody::-webkit-scrollbar {
+  position: absolute;
+  width: 10px;
+}
+
+.formBody::-webkit-scrollbar-track {
+  position: absolute;
+
+  background: transparent;
+  margin: 20px 0;
+}
+
+.formBody::-webkit-scrollbar-thumb {
+  position: absolute;
+
+  background: #e1e2e8;
+  border-radius: 100px;
+}
+
+.formTitle {
+  color: #212121;
+  text-align: center;
+  font-size: 28px;
+  font-family:
+    var(--font-Pretendard-bold),
+    -apple-system,
+    BlinkMacSystemFont,
+    'Malgun Gothic',
+    sans-serif;
+  margin-bottom: 40px;
+}
+.visible {
+  display: none;
+}
+.phoneInput {
+  position: relative;
+  width: 100%;
+  height: max-content;
+}
+.phoneInput input {
+  color: transparent;
+}
+.virtualPhone {
+  pointer-events: none;
+  top: 50%;
+  left: calc(40px + 46px);
+  position: absolute;
+}
+.specialLabel,
+.radioField {
+  padding: 0 40px;
+  margin-bottom: 24px;
+}
+
+.specialLabel {
+  width: 100%;
+  color: var(--neutral-black);
+  font-size: 16px;
+  font-family:
+    var(--font-Pretendard-bold),
+    -apple-system,
+    BlinkMacSystemFont,
+    'Malgun Gothic',
+    sans-serif;
+  line-height: 24px;
+  text-align: left;
+}
+
+.radioField input,
+.acceptInput input {
+  cursor: pointer;
+  position: relative;
+  appearance: none;
+  -webkit-appearance: none;
+  margin-right: 8px;
+  accent-color: #2ea380;
+}
+.radioField input:checked,
+.acceptInput input:checked {
+  appearance: auto;
+  -webkit-appearance: auto;
+  accent-color: #2ea380;
+}
+
+.radioField input::before {
+  content: '';
+  position: absolute;
+  width: 91%;
+  height: 91%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #b0b0b0;
+  z-index: 1;
+}
+.radioField input:checked::before {
+  border: 2px solid #2ea380;
+}
+
+.acceptInput input {
+  border-radius: 4px;
+  border: 2px solid #b0b0b0;
+}
+
+.radioField input:hover,
+.radioField input:active,
+.acceptInput input:hover,
+.acceptInput input:active {
+  accent-color: #2ea380;
+}
+
+.acceptInput label,
+.radioField label {
+  color: var(--neutral-black);
+  font-size: 16px;
+  line-height: 26px;
+  cursor: pointer;
+}
+
+.acceptInput {
+  padding: 24px 0;
+  margin: 0 40px;
+  border-top: 1px solid rgba(85, 81, 81, 0.08);
+  display: flex;
+  align-items: center;
+}
+.acceptInput input {
+  width: 22px;
+  height: 22px;
+}
+.acceptInput input::before {
+  border-radius: 4px;
+  width: 17px;
+  height: 17px;
+}
+.acceptInput input:checked:before {
+  display: none;
+}
+
+.radioField {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.radioField input {
+  width: 22px;
+  height: 22px;
+}
+.radioField input::before {
+  border-radius: 50%;
+}
+
+.formFooter {
+  width: 100%;
+  position: absolute;
+  padding: 16px 40px 32px;
+  border-radius: 0 0 24px 24px;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  z-index: 1;
+  box-shadow: 6px 0px 6px 0px rgba(18, 18, 18, 0.06);
+}
+.formFooter button {
+  width: calc(100% - 13px);
+  display: flex;
+  justify-content: center;
+  pointer-events: unset;
+  border: 0;
+  cursor: pointer;
+}
+.footerBtn {
+  background-color: transparent;
+}
+.downloadLink {
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+.disableLink {
+  pointer-events: none;
+}
+@media (max-width: 600px) {
+  .leadForm {
+    max-height: calc(100vh - 140px);
+    width: 400px;
+    padding-bottom: 83px;
+  }
+  .formTitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .inputFiled,
+  .specialLabel,
+  .radioField {
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+  .acceptInput {
+    padding: 20px 0;
+    margin: 0 20px;
+    align-items: flex-start;
+  }
+
+  .acceptInput input {
+    min-width: 22px;
+    height: 22px;
+    margin-top: 3px;
+  }
+
+  .formFooter {
+    padding: 16px 20px 32px;
+  }
+}
+
+@media (max-width: 450px) {
+  .leadForm {
+    width: 334px;
+    padding-bottom: 83px;
+  }
+  .formTitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .inputFiled,
+  .specialLabel,
+  .radioField {
+    padding: 0 15px;
+    margin-bottom: 15px;
+  }
+
+  .label {
+    font-size: 12px;
+  }
+  .textFiled input {
+    height: 40px;
+    font-size: 14px;
+  }
+  .radioField input {
+    width: 20px;
+    height: 20px;
+  }
+  .acceptInput input {
+    max-width: 20px;
+    min-width: 20px;
+    height: 20px;
+  }
+
+  .acceptInput {
+    padding: 12px 0;
+    margin: 0 15px;
+  }
+
+  .acceptInput label,
+  .radioField label {
+    font-size: 14px;
+  }
+  .acceptInput label {
+    width: 85%;
+  }
+  .formFooter {
+    padding: 16px 15px 32px;
+  }
+}
+
+@media (max-width: 350px) {
+  .leadForm {
+    width: 300px;
+  }
+}
+@media (max-width: 600px) {
+  @supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */
+    .formFooter button {
+      width: 100%;
+    }
+  }
+}

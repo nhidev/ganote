@@ -1,0 +1,118 @@
+@import '@/app/styles/_mixin';
+
+.SavingBlock {
+  border-radius: 20rem;
+
+  background: var(--ffc-98-d);
+  box-shadow:
+    20rem 20rem 60rem 0rem rgba(139, 140, 160, 0.4),
+    5rem 5rem 15rem 0rem rgba(139, 140, 160, 0.15);
+  padding: 30rem;
+
+  :global {
+    .savingBlock_b-head {
+      margin-bottom: 40rem;
+      h3 {
+        color: var(--ffffff);
+        font-size: 24rem;
+        font-weight: 700;
+        line-height: 140%;
+        letter-spacing: -0.24rem;
+        margin-bottom: 12rem;
+      }
+      p {
+        @include p1-3_12pt_medium;
+      }
+    }
+    .savingBlock_b-body {
+      ul {
+        max-width: 228rem;
+        margin: 0 auto 10rem;
+        li {
+          border-radius: 12rem;
+          list-style: none;
+          background: var(--ffffff);
+          box-shadow:
+            5rem 5rem 10rem 0rem rgba(139, 140, 160, 0.25),
+            2rem 2rem 5rem 0rem rgba(139, 140, 160, 0.1);
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 12rem 20rem;
+          margin-bottom: 10rem;
+          p {
+            span {
+              display: inline-block;
+              font-size: 12rem;
+              font-weight: 500;
+              margin-right: 8rem;
+            }
+          }
+          img {
+            width: 16rem;
+            height: auto;
+          }
+          &.hasOpacity {
+            opacity: 0.6;
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+      .savingBlock-sub {
+        color: var(--414751);
+        font-size: 10rem;
+        font-weight: 500;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .SavingBlock {
+    border-radius: 40rem;
+    padding: 80rem;
+
+    :global {
+      .savingBlock_b-head {
+        margin-bottom: 60rem;
+        h3 {
+          color: var(--09101-d);
+          font-size: 40rem;
+          letter-spacing: -1px;
+          margin-bottom: 20rem;
+        }
+        p {
+          @include P1_20pt_medium;
+        }
+      }
+      .savingBlock_b-body {
+        ul {
+          max-width: 320rem;
+          margin: 0 auto 20rem;
+
+          li {
+            border-radius: 20rem;
+            padding: 20rem 30rem;
+            margin-bottom: 12rem;
+            p {
+              span {
+                display: inline-block;
+                font-size: 16rem;
+              }
+            }
+            img {
+              width: 24rem;
+              height: auto;
+            }
+          }
+        }
+        .savingBlock-sub {
+          font-size: 14rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.InteriorConsultationSection {
+  padding: 130rem 0;
+  background: var(--f-8-f-1-ec, #f8f1ec);
+  :global {
+    .interiorConsultationSection_b-container {
+      padding: 0 20rem;
+      max-width: 1280rem;
+      margin: 0 auto;
+      box-sizing: content-box;
+      text-align: center;
+      .interiorConsultationSection_b-head {
+        margin-bottom: 40rem;
+        h2 {
+          font-size: 30rem;
+          font-weight: 700;
+          line-height: 140%;
+          letter-spacing: -1px;
+          &:nth-child(2) {
+            color: var(--d-29-d-7-e, #d29d7e);
+          }
+        }
+      }
+      .interiorConsultationSection_b-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .InteriorConsultationSection {
+    padding: 160rem 0;
+    :global {
+      .interiorConsultationSection_b-container {
+        .interiorConsultationSection_b-head {
+          margin-bottom: 60rem;
+          h2 {
+            font-size: 48rem;
+          }
+        }
+
+        .interiorConsultationSection_b-btn {
+          gap: 16rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+@import '@/app/styles/_mixin';
+
+.GeneralNoteSection {
+  padding: 130rem 0;
+  background-color: var(--d-29-d-7-e);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40rem;
+  :global {
+    .genera-note_top {
+      text-align: center;
+      color: var(--ffffff);
+      p {
+        @include P1_18pt_medium;
+        margin: 0 auto 12rem;
+        white-space: pre;
+        color: var(--ffffff);
+      }
+      h2 {
+        @include H2_30pt_bold;
+        color: var(--ffffff);
+        margin: auto;
+        span {
+          color: var(--09101-d);
+        }
+      }
+    }
+    .genera-note_bottom {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .submit-btn.g-cta-button {
+      background: var(--09101-d);
+      color: var(--ffffff);
+      &.ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+        color: var(--ffffff);
+      }
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+  .GeneralNoteSection {
+    padding: 160rem 0;
+    flex-direction: row;
+    gap: 130rem;
+    :global {
+      .genera-note_top {
+        text-align: left;
+        p {
+          @include P1_20pt_medium;
+           white-space: unset;
+        }
+        h2 {
+          @include H2_48pt_bold;
+          margin-bottom: 60rem;
+        }
+      }
+      .genera-note_bottom {
+        height: 400rem;
+        width: 730rem;
+      }
+    }
+  }
+}

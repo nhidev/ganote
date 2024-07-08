@@ -1,0 +1,188 @@
+@import '@/app/styles/_mixin';
+
+.CleaningSection11th {
+  background: var(--ffffff, #FFF);
+  padding: 130rem 20rem;
+
+  :global {
+    .cleaningSection11th-wrapper {
+      max-width: 920rem;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 40rem;
+
+      .cleaningSection11th_b-head {
+        text-align: center;
+
+        h2 {
+          @include H2_30pt_bold;
+
+          &:first-child {
+            color: var(--a-9-a-9-a-9, #B1B7BD);
+            @include H4_20pt_bold;
+          }
+        }
+      }
+
+      .cleaningSection11th_b-body {
+        display: flex;
+        list-style: none;
+        gap: 38rem;
+
+        // CUSTOM COLLAPSE ANTD
+        .ant-collapse {
+          background: none;
+          border: none;
+          display: flex;
+          overflow: hidden;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 8rem;
+          width: 100%;
+
+        }
+
+        .ant-collapse-item {
+          border-radius: var(--Spacing-3, 12rem);
+          background: var(--f-4-f-6-f-9, #F4F6F9);
+          border-bottom: none;
+          padding: 22rem 30rem;
+          width: 100%;
+
+          .ant-collapse-expand-icon {
+            min-width: 32rem;
+            height: 20rem;
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .ant-collapse-item-active {
+          img {
+            transform: rotate(180deg);
+            transition: transform 0.15s ease 0s;
+          }
+
+          .ant-collapse-header {
+            padding: 0 0 12rem;
+          }
+
+        }
+
+        .ant-collapse-header {
+          @include P2_16pt_semi;
+          padding: 0;
+
+          &::before {
+            content: "Q ";
+            width: 25rem;
+          }
+
+        }
+
+        .ant-collapse-content {
+          border-top: 1rem solid #B1B7BD;
+
+          .ant-collapse-content-box {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 8rem;
+            background: var(--f-4-f-6-f-9, #F4F6F9);
+            padding: 12rem 0 0;
+
+            &::before {
+              content: "A ";
+              width: 25rem;
+              @include P2_16pt_semi;
+              position: absolute;
+              left: 0;
+            }
+
+            p {
+              @include P3_14pt_regular;
+              display: flex;
+              flex-direction: column;
+              padding-left: 20rem;
+
+              span {
+                @include P2_16pt_semi;
+              }
+            }
+          }
+        }
+
+        //END CUSTOM ANTD
+
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .CleaningSection11th {
+    padding: 160rem 0;
+
+    :global {
+      .cleaningSection11th-wrapper {
+        gap: 80rem;
+
+        .cleaningSection11th_b-head {
+          h2 {
+            @include H2_48pt_bold;
+
+            &:first-child {
+              @include H4_26pt_bold;
+              margin-bottom: 8rem;
+            }
+          }
+        }
+
+        .cleaningSection11th_b-body {
+          .ant-collapse-item-active {
+            .ant-collapse-header {
+              padding: 0 0 28rem;
+            }
+          }
+
+          .ant-collapse-header {
+            @include P1_18pt_semi;
+            align-items: center;
+          }
+
+          .ant-collapse-item {
+            border-radius: var(--Spacing-5, 20rem);
+            padding: 24rem 45rem 23rem 50rem;
+
+            .ant-collapse-expand-icon {
+              min-width: 36rem;
+              height: 24rem;
+            }
+          }
+
+          .ant-collapse-content {
+            .ant-collapse-content-box {
+              padding: 28rem 0;
+              gap: 16rem;
+
+              p {
+                @include P2_16pt_regular;
+                display: flex;
+                flex-direction: column;
+
+                span {
+                  @include P1_18pt_semi;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
