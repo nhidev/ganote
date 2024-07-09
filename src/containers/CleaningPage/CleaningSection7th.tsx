@@ -11,7 +11,18 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import styles from './cleaningSection7th.module.scss';
 import Image from 'next/image';
 
-const dataNav = ['기업 로고', '기업 로고', '기업 로고', '기업 로고', '기업 로고', '기업 로고', '기업 로고', '기업 로고', '기업 로고', '기업 로고', '기업 로고', '기업 로고', '기업 로고', '기업 로고', '기업 로고',]
+const dataNav = [
+  "furiosa.png",
+  "genalab.png",
+  "cni-engineering.png",
+  "culture-think.png",
+  "imweb.png",
+  "prone.png",
+  "protium-science.png",
+  "witu.png",
+  "siita.png",
+  "smatch-corporation.png",
+]
 const dataContent = [
   {
     id: 1,
@@ -45,9 +56,9 @@ const CleaningSection7th = memo(({ className = "" }: CleaningSection7thProps) =>
 
         <div className='cleaningSection7th_b-body'>
           <div className='cards-nav'>
-            {dataNav.map((item, index) => (
-              <span key={index}>
-                {item}
+            {dataNav.map((image, index) => (
+              <span >
+                <Image key={index} src={`/imagesN/${image}`} quality={100} width={95} height={43} alt={'logo'} />
               </span>
             ))}
           </div>
@@ -59,8 +70,8 @@ const CleaningSection7th = memo(({ className = "" }: CleaningSection7thProps) =>
             pagination={{
               type: 'fraction',
             }}
-            // autoplay={{ delay: 3000, disableOnInteraction: false }}
-            // loop
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            loop
             className={styles.CleaningSwiper}
           >
             {dataContent.map((item) => (

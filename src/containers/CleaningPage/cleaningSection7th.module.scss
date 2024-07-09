@@ -40,19 +40,18 @@
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
-          gap: 16rem;
+          gap: 12rem;
 
           span {
-            @include P4_14pt_medium;
+            padding: 0 6rem;
+            position: relative;
+            overflow: hidden;
+            background: #fff;
             display: flex;
-            padding: 6rem 20rem;
-            justify-content: center;
-            align-items: center;
-            border-radius: 56rem;
-            border: 1rem solid var(--e-3-e-7-eb, #E3E7EB);
-            background: var(--f-4-f-6-f-9, #F4F6F9);
-            height: 36rem;
-            margin: 0 2rem;
+
+            img {
+              object-fit: contain;
+            }
           }
         }
       }
@@ -84,12 +83,15 @@
           width: auto;
 
           .cards-nav {
-            max-width: 810rem;
+            max-width: 830rem;
             margin-bottom: 0;
             gap: 20rem;
 
             span {
-              padding: 6rem 44rem;
+              img {
+                width: 129rem;
+                height: 59rem;
+              }
             }
           }
         }
