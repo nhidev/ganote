@@ -21,23 +21,23 @@ const SurveySection = memo(({ className = "" }: SurveySectionProps) => {
   const elementsRef = useRef<HTMLDivElement[]>([]);
   const surveyContainerRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
+   useEffect(() => {
     const scrollContainer = scrollContainerRef.current;
     const elements = elementsRef.current;
     const surveyContainer = surveyContainerRef.current;
-
-    if (!surveyContainer || !scrollContainer) return;
-
-    const tl = gsap.timeline({ repeat: -1, yoyo: false });
+    
+    if(!surveyContainer || !scrollContainer) return;
+ 
+    const tl = gsap.timeline({ repeat: -1, yoyo: false});
 
     tl.to(scrollContainer, { duration: 80, y: -scrollContainer.offsetHeight, ease: 'linear' });
     const observerCallback: IntersectionObserverCallback = entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          gsap.to(entry.target, { transform: 'scale(1)', opacity: 1, duration: 1, ease: 'linear' });
+          gsap.to(entry.target, { transform: 'scale(1)',  opacity: 1, duration: 1, ease: 'linear' });
           entry.target.classList.remove(styles.NextText);
         } else {
-          gsap.to(entry.target, { transform: 'scale(0.64)', opacity: 0.6, duration: 1, ease: 'linear' });
+          gsap.to(entry.target, { transform: 'scale(0.64)',  opacity: 0.6, duration: 1, ease: 'linear' });
           entry.target.classList.add(styles.NextText);
         }
       });
@@ -65,7 +65,7 @@ const SurveySection = memo(({ className = "" }: SurveySectionProps) => {
       }
       }>
         <div className="text-wrap">
-          <Image className="survey-icon" width={96} height={96} quality={100} src={`/iconsN/${item.icon}`} alt="icon" />
+          <Image className="survey-icon" width={96} height={96} quality={100}  src={`/iconsN/${item.icon}`} alt="icon" />
           <div className="desc-wrap">
             <div className="desc-box">{item.text}</div>
           </div>
@@ -79,9 +79,9 @@ const SurveySection = memo(({ className = "" }: SurveySectionProps) => {
         인사총무팀 담당자님 <br /> 지난주에는 왜 야근하셨나요?
       </h2>
       <div className={`${styles.SurveyContainer}`} ref={surveyContainerRef}>
-        <div className={`scroll-container`} ref={scrollContainerRef}>
-          {LIFE_CYCLE.map((item, index) => surveySlide(item, index))}
-        </div>
+      <div className={`scroll-container`} ref={scrollContainerRef}>
+        {LIFE_CYCLE.map((item, index) => surveySlide(item, index))}
+      </div>
       </div>
     </section>
   );

@@ -27,9 +27,9 @@ const CleaningSection3rd = memo(({ className = "" }: CleaningSection3rdProps) =>
         {useMounted(
           isMobile ?
             <h2>
-              {`수많은 사무실\n`}<span>{`청소 체크리스트,\n`}</span>{`총무님은 신경쓰지마세요\n`}<span>{`총무노트`}</span>{`가`}<span>{`알아서`}</span>{`\n관리해드립니다.`}
+              {`수많은 사무실\n`}<span>{`청소 체크리스트,\n`}</span>{`총무님은 신경쓰지마세요\n`}<span>{`총무노트`}</span>{`가`} <span>{`알아서`}</span>{`\n관리해드립니다.`}
             </h2> :
-            <h2>{`수많은`} <span>{`사무실 청소 체크리스트,\n`}</span>{`총무님은 신경쓰지마세요\n`}<span>{`총무노트`}</span>{`가`} <span>{`알아서\n`}</span>{`관리해드립니다.`}
+            <h2>{`수많은`} <span>{`사무실 청소 체크리스트,\n`}</span>{`총무님은 신경쓰지마세요\n`}<span>{`총무노트`}</span>{`가`} <span>{`알아서`}</span>{`\n관리해드립니다.`}
             </h2>
 
         )}

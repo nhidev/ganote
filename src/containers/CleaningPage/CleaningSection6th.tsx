@@ -76,8 +76,7 @@ const CleaningSection6th = memo(() => {
     },
     {
       title: `철저한 \n보안 관리`,
-      text: isMobile ? `모든 인원은 보안유지협약서 작성 후 현장에 투입됩니다.` : `영업배상 책임보험에\n가입되어 있어요\n안심하고 이용하세요`,
-      subText: `*법인카드 결제 가능`,
+      text: isMobile ? `모든 인원은 보안유지협약서 작성 후 \n현장에 투입됩니다.` : `모든 인원은 \n보안유지협약서 작성 후 \n현장에 투입됩니다.`,
       image: 'cleaning-section6th-5.svg',
       imageWidth: 140,
       imageHeight: 130,
@@ -118,13 +117,13 @@ const CleaningSection6th = memo(() => {
             <div className="cleaningSection6thFoot_b-left">
               <CleanCard className="clean-card-top fade-up-element" title={cleanCardData[3].title} text={cleanCardData[3].text} image={cleanCardData[3].image} imageWidth={cleanCardData[3].imageWidth} imageHeight={cleanCardData[3].imageHeight} />
               {!isMobile &&
-                <CleanCard className="clean-card-bot fade-up-element" title={cleanCardData[4].title} text={cleanCardData[4].text} subText={cleanCardData[4].subText} image={cleanCardData[4].image} imageWidth={cleanCardData[4].imageWidth} imageHeight={cleanCardData[4].imageHeight} />
+                <CleanCard className="clean-card-bot fade-up-element" title={cleanCardData[4].title} text={cleanCardData[4].text} image={cleanCardData[4].image} imageWidth={cleanCardData[4].imageWidth} imageHeight={cleanCardData[4].imageHeight} />
               }
             </div>
             <div className="cleaningSection6thFoot_b-right">
               <CleanCard className="clean-card-col fade-up-element" title={`100% 만족 보장 \n사무실 전문 매니저 교육`} text={`담당자 상관 없이 100% 만족스러운 청소 퀄리티,\n총무노트는 각 사무실의 특징에 대해\n2주 이상 교육 받은 전문 매니저님들로 구성되어 있어요`} image="cleaning-section6th-5.png" imageWidth={256} imageHeight={160} image2="cleaning-section6th-6.png" image2Width={256} image2Height={160} />
               {isMobile &&
-                <CleanCard className="clean-card-bot fade-up-element" title={cleanCardData[4].title} text={cleanCardData[4].text} subText={cleanCardData[4].subText} image={cleanCardData[4].image} imageWidth={cleanCardData[4].imageWidth} imageHeight={cleanCardData[4].imageHeight} />
+                <CleanCard className="clean-card-bot fade-up-element" title={cleanCardData[4].title} text={cleanCardData[4].text} image={cleanCardData[4].image} imageWidth={cleanCardData[4].imageWidth} imageHeight={cleanCardData[4].imageHeight} />
               }
             </div>
           </div>

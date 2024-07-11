@@ -166,12 +166,6 @@ const Header = memo(() => {
                   </li>
                 </ul>
               </li>
-              <li>
-                <NavLink href={ROUTE.CLEANING} exact scroll={true}>
-                  인테리어
-                </NavLink>
-              </li>
-
               {/* <li>
                 <NavLink href={ROUTE.INTERIOR} exact scroll={true}>
                   인테리어

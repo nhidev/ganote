@@ -18,15 +18,6 @@
 
         h2 {
           @include H2_30pt_bold;
-
-          span {
-            color: var(--be-7346, #BE7346);
-          }
-
-          &:first-child {
-            color: var(--d-29-d-7-e, #D29D7E);
-            @include H4_20pt_bold;
-          }
         }
       }
 
@@ -40,20 +31,12 @@
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
-          gap: 12rem;
+          gap: 16rem;
 
-          span {
-            padding: 0 6rem;
-            position: relative;
-            overflow: hidden;
-            background: #fff;
-            display: flex;
-
-            img {
-              width: 90rem;
-              height: auto;
-              object-fit: contain;
-            }
+          img {
+            width: 92rem;
+            height: auto;
+            object-fit: contain;
           }
         }
       }
@@ -73,11 +56,6 @@
 
           h2 {
             @include H2_48pt_bold;
-
-            &:first-child {
-              @include H4_26pt_bold;
-              margin-bottom: 8rem;
-            }
           }
         }
 
@@ -87,13 +65,11 @@
           .cards-nav {
             max-width: 830rem;
             margin-bottom: 0;
-            gap: 20rem;
+            gap: 24rem;
 
-            span {
-              img {
-                width: 129rem;
-                height: 59rem;
-              }
+            img {
+              width: 140rem;
+              height: 44rem;
             }
           }
         }
@@ -121,10 +97,11 @@
         box-shadow: var(--drop-shadow1);
 
         img {
-          width: 85rem;
-          height: 32rem;
+          width: 118rem;
+          height: 28rem;
+          border-radius: 100rem;
           margin-bottom: 12rem;
-          object-fit: contain;
+          object-fit: none;
         }
 
         h5 {
@@ -204,7 +181,8 @@
 
           img {
             width: 140rem;
-            height: 59rem;
+            height: 36rem;
+            border-radius: 56rem;
           }
 
           h5 {

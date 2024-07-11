@@ -12,35 +12,35 @@ import styles from './cleaningSection7th.module.scss';
 import Image from 'next/image';
 
 const dataNav = [
-  "furiosa.png",
-  "genalab.png",
-  "cni-engineering.png",
-  "culture-think.png",
-  "imweb.png",
-  "prone.png",
-  "protium-science.png",
-  "witu.png",
-  "siita.png",
-  "smatch-corporation.png",
+  "com-logo1.svg",
+  "com-logo2.svg",
+  "com-logo3.svg",
+  "com-logo4.svg",
+  "com-logo5.svg",
+  "com-logo6.svg",
+  "com-logo7.svg",
+  "com-logo8.svg",
+  "com-logo9.svg",
+  "com-logo10.svg",
 ]
 const dataContent = [
   {
     id: 1,
-    logo: 'furiosa.png',
-    title: '업무 능률이 \n올랐어요',
-    text: '늘 깨끗한 사무실과 탕비실, 회의실을 마주해서인지 직원들의 업무 능률이 올랐어요. 시즌에 맞게 에어컨 청소랑 카페트 청소도 프로모션을 해주셔서 합리적으로 청결을 유지할 수 있어요.'
+    logo: 'com-logo1.svg',
+    title: '총무팀의 일원이 \n되어주셨어요',
+    text: `총무노트 담당자 분과 미팅을 하며가장 인상 깊었던 말은, '총무 팀의 일원이되어 드리겠다'는 말이었어요. 메신저를 통한 실시간 대응과 웹사이트 솔루션을 통해 상황을 공유하고 리포트를 제공 받는다는 점이 매우 든든했습니다.`
   },
   {
     id: 2,
-    logo: 'genalab.png',
-    title: '항상 빠르게 \n답변해주세요',
-    text: '급하게 사무실 청소가 필요한 일들이 생기는데, 그럴 때마다 1시간 안에 답변해주셔서 믿음직해요. 무분별한 견적이 아니라 저희가 필요한 장소에 필요한 시간만큼만 선택할 수 있어서 합리적이에요.'
+    logo: 'com-logo2.svg',
+    title: '어떤 상황에도\n든든해요',
+    text: `총무노트가 전담 어카운트 매니저가 배정되어사무실 비품 관리부터, 시설 유지 보수,F&B 관리까지 케어를 해주니 따로 리소스를쓸 필요가 없어요.비품이나 청소 소모품이 필요한사소한 상황부터 시설 유지 보수까지모두 대응해 주셔서 아주 든든합니다.`
   },
   {
     id: 3,
-    logo: 'cni-engineering.png',
-    title: '작은 사무실도 \n사용하기 좋아요',
-    text: '저희같은 개발 전문 사무실의 경우 야근이랑 회의가 많아 늘 지저분한데, 매주 2시간 사용으로 이렇게 깔끔해질 수 있다는게 놀라워요. 사무실 정기 청소 이후에 비염이 없어져서 더 쾌적하게 업무에 집중할 수 있어요'
+    logo: 'com-logo3.svg',
+    title: '근무자들의 만족도가\n크게 올랐어요',
+    text: '솔루션을 통해 인력 배치 현황과근무 스케줄 확인, 발주 품목의 실시간재고 관리로 매우 편리해졌고 담당자의리소스 절감은 물론, 근무자들의 만족도도크게  향상되었습니다. 무엇보다 총무노트의친절하고 책임감 있는 태도에 가장 만족하며,신뢰가 더 깊어졌습니다.'
   }
 ]
 const CleaningSection7th = memo(({ className = "" }: CleaningSection7thProps) => {
@@ -50,16 +50,12 @@ const CleaningSection7th = memo(({ className = "" }: CleaningSection7thProps) =>
     <section className={`${styles.CleaningSection7th} ${className}`}>
       <div className='cleaningSection7th-container'>
         <div className='cleaningSection7th_b-head'>
-          <h2> 국내 유일 GA SaaS 플랫폼</h2>
-          <h2>총무노트는 가능합니다</h2>
+          <h2>성장하는 기업은 총무노트와 함께합니다</h2>
         </div>
-
         <div className='cleaningSection7th_b-body'>
           <div className='cards-nav'>
             {dataNav.map((image, index) => (
-              <span >
-                <Image key={index} src={`/imagesN/${image}`} quality={100} width={250} height={115} alt={'logo'} />
-              </span>
+              <Image key={index} src={`/imagesN/${image}`} quality={100} width={140} height={44} alt={'logo'} />
             ))}
           </div>
           <Swiper
@@ -76,7 +72,7 @@ const CleaningSection7th = memo(({ className = "" }: CleaningSection7thProps) =>
           >
             {dataContent.map((item) => (
               <SwiperSlide key={item.id} className='card-item'>
-                <Image src={`/imagesN/${item.logo}`} quality={100} width={250} height={115} alt={'logo'} />
+                <Image src={`/imagesN/${item.logo}`} quality={100} width={140} height={44} alt={'logo'} />
                 <h5>{item.title}</h5>
                 <p>
                   <Image src="/iconsN/quote-icon.svg" width={24} height={24} alt="arrow-right" />

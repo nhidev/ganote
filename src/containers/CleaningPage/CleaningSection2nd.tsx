@@ -18,7 +18,7 @@ interface CleaningCycleProps {
   nextText: CleanCycleItem;
 }
 
-const LIFE_CYCLE = [...ClEANING_CYCLE, ...ClEANING_CYCLE, ...ClEANING_CYCLE];
+const LIFE_CYCLE = [...ClEANING_CYCLE, ...ClEANING_CYCLE, ...ClEANING_CYCLE, ...ClEANING_CYCLE, ...ClEANING_CYCLE, ...ClEANING_CYCLE, ...ClEANING_CYCLE, ...ClEANING_CYCLE, ...ClEANING_CYCLE, ...ClEANING_CYCLE];
 
 const CleaningSection2nd = memo(({ className = "" }: CleaningSection2ndProps) => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
@@ -84,7 +84,7 @@ const CleaningSection2nd = memo(({ className = "" }: CleaningSection2ndProps) =>
   return (
     <section className={`${styles.CleaningSection2nd} ${className}`}>
       <div className='cleaningSection2nd-wrapper'>
-        <h2>총무노트 사무실 정기 청소<br />평수, 인원, 구조, 업종에 따라<br /><span>최적의 청소 주기</span>{`\n를 추천드려요`} </h2>
+        <h2>총무노트 사무실 정기 청소<br />평수, 인원, 구조, 업종에 따라<br /><span>최적의 청소 주기</span>{`를 \n추천드려요`} </h2>
         <div className={`${styles.CleaningCycleContainer}`} ref={cleaningSection2ndContainerRef}>
           <div className={`scroll-container`} ref={scrollContainerRef}>
             {LIFE_CYCLE.map((item, index) => cleaningCycleSlide(item, index))}

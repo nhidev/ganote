@@ -1,10 +1,10 @@
 'use client';
 
 import { memo } from 'react';
-import { useMediaQuery } from 'react-responsive';
-
+import Image from 'next/image';
+import Link from 'next/link';
 import { CleanBlock, EducationBlock, MessageTooltip, RequestBlock, SchechuleBlock } from '@/components';
-import { MEDIA_SIZE } from '@/utils/constants';
+import { ROUTE } from '@/utils/constants';
 import styles from './operationSection4th.module.scss';
 
 const messages = [
@@ -68,51 +68,54 @@ const block2Data: any = {
   sub: '작업 과정은 대시보드에서 확인',
 };
 
-const OperationSection4th = memo(() => {
-  const isMobile = useMediaQuery({ maxWidth: MEDIA_SIZE.tablet });
-
-  return (
-    <section className={styles.OperationSection4th} id="office-cleaning">
-      <div className={styles.OperationSection4thTop}>
-        <div className="operationSection4thTop_container">
-          <div className="operationSection4thTop_b-head">
-            <h2>직원 불만이 확 줄어드는</h2>
-            <h2>오피스 클리닝</h2>
-          </div>
-          <div className="operationSection4thTop_b-body">
-            {messages.map((item: any, index) => (
-              <MessageTooltip placement={item.placement} key={item.content + index} className="tooltip-item">
-                {item.content}
-              </MessageTooltip>
-            ))}
-          </div>
+const OperationSection4th = memo(() => (
+  <section className={styles.OperationSection4th} id="office-cleaning">
+    <div className={styles.OperationSection4thTop}>
+      <div className="operationSection4thTop_container">
+        <div className="operationSection4thTop_b-head">
+          <h2>직원 불만이 확 줄어드는</h2>
+          <h2>오피스 클리닝</h2>
+          <Link href={ROUTE.CLEANING} className={styles.cleaningButton}>
+            <span>더 자세히 보기</span>
+            <Image width={16} height={16} src="/iconsN/ic-arrow-right.svg" alt="icon" />
+          </Link>
+        </div>
+        <div className="operationSection4thTop_b-body">
+          {messages.map((item: any, index) => (
+            <MessageTooltip placement={item.placement} key={item.content + index} className="tooltip-item">
+              {item.content}
+            </MessageTooltip>
+          ))}
         </div>
       </div>
+    </div>
 
-      <div className={styles.Line}>
-        <i />
-      </div>
-      <div className={styles.OperationSection4thMiddle}>
-        <div className="operationSection4thMiddle_container">
-          <div className="operationSection4thMiddle_b-left">
-            <SchechuleBlock className="fade-up-element" />
-          </div>
-          <div className="operationSection4thMiddle_b-right">
-            <CleanBlock className="operationSection4thMiddle-cleanBlock fade-up-element" />
-            <EducationBlock className="fade-up-element" />
-          </div>
+    <div className={styles.Line}>
+      <i />
+    </div>
+    <div className={styles.OperationSection4thMiddle}>
+      <div className="operationSection4thMiddle_container">
+        <div className="operationSection4thMiddle_b-left">
+          <SchechuleBlock className="fade-up-element" />
+        </div>
+        <div className="operationSection4thMiddle_b-right">
+          <CleanBlock className="operationSection4thMiddle-cleanBlock fade-up-element" />
+          <EducationBlock className="fade-up-element" />
         </div>
       </div>
-      <div className={`${styles.OperationSection4thFoot} fade-up-element`}>
-        <RequestBlock
-            title={`담당자 부재, 연락 두절, 늦은 피드백 등으로 \n마음고생하던 추가 요청도 정말 쉬워집니다.`}
-            titleMobile={`담당자 부재, 연락 두절, \n늦은 피드백 등으로 \n마음고생하던 추가 요청도 \n정말 쉬워집니다.`}
-            block1={block1Data}
-            block2={block2Data}
-        />
-      </div>
-    </section>
-  );
-});
+    </div>
+    <div className={`${styles.OperationSection4thFoot} fade-up-element`}>
+      <RequestBlock
+        title={`담당자 부재, 연락 두절, 늦은 피드백 등으로 \n마음고생하던 추가 요청도 정말 쉬워집니다.`}
+        titleMobile={`담당자 부재, 연락 두절, \n늦은 피드백 등으로 \n마음고생하던 추가 요청도 \n정말 쉬워집니다.`}
+        block1={block1Data}
+        block2={block2Data}
+      />
+      <Link href={ROUTE.CLEANING} className={styles.cleaningButton}>
+        <span>+ 더 자세히 알아보기</span>
+      </Link>
+    </div>
+  </section>
+));
 
 export default OperationSection4th;

@@ -13,6 +13,7 @@
         text-align: center;
         margin: auto;
         margin-bottom: 40rem;
+        max-width: 210rem;
 
         h2 {
           @include H4_30pt_bold;
@@ -106,6 +107,7 @@
             }
 
             .type {
+              @include H4_26pt_medium;
               line-height: 26rem;
             }
           }

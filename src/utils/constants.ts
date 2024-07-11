@@ -316,7 +316,7 @@ export const ClEANING_CYCLE = [
     text: {
       subText: '재택 근무가 많은 IT 회사',
       mainText: {
-        size: '50평  20명  주 ',
+        size: '50평  20명 ',
         time: '주 1회 청소',
       },
     },
@@ -339,7 +339,7 @@ export const ClEANING_CYCLE = [
     nextText: {
       subText: '클라이언트 방문이 많은 광고 회사',
       mainText: {
-        size: '1200평  50명  ',
+        size: '1200평  50명 ',
         time: '주 3회 청소',
       },
     },
@@ -355,7 +355,7 @@ export const ClEANING_CYCLE = [
     nextText: {
       subText: '연구소 청결이 중요한 제약 회사',
       mainText: {
-        size: '500평  100명  ',
+        size: '500평  100명 ',
         time: '주 3회 청소',
       },
     },
@@ -364,7 +364,7 @@ export const ClEANING_CYCLE = [
     text: {
       subText: '연구소 청결이 중요한 제약 회사',
       mainText: {
-        size: '500평  100명  ',
+        size: '500평  100명 ',
         time: '주 3회 청소',
       },
     },
