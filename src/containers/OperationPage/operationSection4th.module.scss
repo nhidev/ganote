@@ -239,6 +239,9 @@
     line-height: 170%; /* 30.6px */
     color: var(--ffffff);
   }
+  &:hover {
+    background: #cc926c
+  }
 }
 @media (min-width: 768px) {
   .cleaningButton{
