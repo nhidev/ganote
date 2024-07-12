@@ -97,11 +97,11 @@
         box-shadow: var(--drop-shadow1);
 
         img {
-          width: 118rem;
+          width: auto;
           height: 28rem;
           border-radius: 100rem;
+          object-fit: contain;
           margin-bottom: 12rem;
-          object-fit: none;
         }
 
         h5 {
@@ -180,7 +180,6 @@
           border-radius: var(--Spacing-10, 40rem);
 
           img {
-            width: 140rem;
             height: 36rem;
             border-radius: 56rem;
           }
