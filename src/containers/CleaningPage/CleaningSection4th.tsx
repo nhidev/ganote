@@ -72,7 +72,7 @@ const CleaningSection4th = memo(({ className = "" }: CleaningSection4thProps) =>
         <Swiper
           modules={[Autoplay]}
           spaceBetween={0}
-          autoplay={{ delay: 10000, disableOnInteraction: false }}
+          // autoplay={{ delay: 10000, disableOnInteraction: false }}
           loop
           className={styles.CleaningSwiper}
         >

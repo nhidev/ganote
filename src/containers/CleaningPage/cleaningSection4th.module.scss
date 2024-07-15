@@ -77,8 +77,10 @@
 
       .cleaningSection4th_b-bot {
         background: var(--ebd-5-c-7, #EBD5C7);
-        padding: 116rem 19rem 129rem 19rem;
+        padding: 116rem 19rem 129rem;
+        padding: 116rem 0 129rem;
         margin-top: -76rem;
+        width: 100%;
       }
     }
   }

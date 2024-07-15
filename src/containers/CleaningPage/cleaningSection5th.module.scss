@@ -89,7 +89,7 @@
             background: var(--d-29-d-7-e, #D29D7E);
             box-shadow: var(--drop-shadow1);
             width: 100%;
-            padding: 30rem 20rem 0 20rem;
+            padding: 30rem 20rem 24rem 20rem;
           }
         }
 
@@ -307,11 +307,11 @@
 }
 
 .ManagementGraphChart {
-  margin-bottom: 23rem;
 
   .ManagementGraph {
     margin: 0 0 6rem;
-    width: 295rem;
+    // width: 295rem;
+    width: 100%;
     background-color: var(--ffffff);
     padding: 5rem 25rem;
 
@@ -405,7 +405,7 @@
     display: flex;
     flex-flow: row wrap;
     gap: 5.5rem;
-    justify-content: flex-end;
+    justify-content: flex-start;
     margin: 0;
     position: relative;
     z-index: 1;
@@ -416,8 +416,8 @@
       }
 
       .managementPieChart-pie {
-        width: 50%;
-        max-width: 69rem;
+        width: 23.5%;
+        // max-width: 69rem;
         padding: 9rem 7rem 13rem 7rem;
         gap: 5rem;
 
@@ -453,8 +453,8 @@
 
   .RequestBlock {
     display: flex;
-    width: 50%;
-    max-width: 69rem;
+    width: 23.5%;
+    // max-width: 69rem;
     padding: 16rem 10rem;
     padding: 9rem 6rem 8rem 6rem;
     flex-direction: column;
@@ -564,7 +564,6 @@
 
 @media (min-width: 768px) {
   .ManagementGraphChart {
-    margin-bottom: 0;
     align-self: center;
 
     .ManagementGraph {
@@ -639,8 +638,9 @@
     }
 
     .newBenefits_b-body {
-      padding: 20.362px 19.328px 0px 19.327px;
+      padding: 20rem 19rem 0 19rem;
       border-radius: 12rem;
+      overflow: hidden;
 
       h4 {
         font-size: 7rem;
@@ -652,8 +652,14 @@
       }
 
       .image-block {
-        .image-item label {
-          font-size: 7rem;
+        margin-bottom: -5rem;
+
+        .image-item {
+          width: 47%;
+
+          label {
+            font-size: 7rem;
+          }
         }
       }
     }
@@ -684,7 +690,7 @@
           gap: 20rem;
           max-height: 280rem;
           overflow: hidden;
-
+          margin-bottom: 0;
           .image-item {
             width: 257rem;
             height: auto;
