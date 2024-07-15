@@ -113,6 +113,12 @@
               span {
                 @include P2_16pt_semi;
               }
+
+              >p,
+              a {
+                display: inline;
+                padding: 0;
+              }
             }
           }
         }

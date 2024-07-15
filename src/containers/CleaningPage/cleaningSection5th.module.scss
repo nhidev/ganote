@@ -69,6 +69,9 @@
               background: var(--f-8-f-1-ec, #F8F1EC);
               box-shadow: var(--drop-shadow2);
               text-align: center;
+              display: flex;
+              align-items: center;
+              justify-content: center;
             }
 
             .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
@@ -171,6 +174,7 @@
 
           &:hover {
             color: var(--ffffff, #fff);
+            background: var(--09101-d, #09101d);
           }
         }
       }

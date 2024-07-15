@@ -62,6 +62,16 @@
             color: var(--be-7346, #BE7346);
             @include H4_20pt_bold;
           }
+
+          &:first-child .text-color {
+            span:first-child {
+              @include P1_18pt_semi;
+            }
+
+            span:last-child {
+              @include H3_24pt_bold;
+            }
+          }
         }
       }
 
@@ -134,6 +144,17 @@
             .text-color {
               white-space: pre-line;
               @include H4_26pt_bold;
+
+            }
+
+            &:first-child .text-color {
+              span:first-child {
+                @include P1_20pt_semi;
+              }
+
+              span:last-child {
+                @include H3_40pt_bold;
+              }
             }
           }
         }

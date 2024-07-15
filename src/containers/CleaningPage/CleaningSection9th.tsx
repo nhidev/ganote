@@ -5,27 +5,27 @@ import { Button, Table } from 'antd';
 import Image from 'next/image';
 import { useSetAtom } from 'jotai';
 import { leadFormModalAtom } from '@/atoms';
-
+import withTheme from '@/theme';
 import styles from './cleaningSection9th.module.scss';
 
 export const COLUMNS_CLEANING = [
   {
-    title: `사무실 \n면적`,
+    title: <>사무실 <br/>면적</>,
     dataIndex: 'area',
     key: 'area',
   },
   {
-    title: `예상 청소 시간\n(1주)`,
+    title: <>예상 청소 시간<br />(1주)</>,
     dataIndex: 'price',
     key: 'price',
   },
   {
-    title: `단기 청소\n(1회)`,
+    title: <>단기 청소<br/>(1회)</>,
     dataIndex: 'shortCleaning',
     key: 'shortCleaning',
   },
   {
-    title: `정기 청소\n(2회)`,
+    title: <>정기 청소<br/>(2회)</>,
     dataIndex: 'regularCleaning',
     key: 'regularCleaning',
     render(regularCleaning: string[]) {
@@ -90,7 +90,9 @@ const CleaningSection9th = memo(() => {
           <h2>수도권 어디서나 합리적으로</h2>
         </div>
         <div className="cleaningSection9th_b-body">
-          <Table className='custom-table' columns={COLUMNS_CLEANING} dataSource={DATA_CLEANING} pagination={false} />
+          {withTheme(
+            <Table className='custom-table' columns={COLUMNS_CLEANING} dataSource={DATA_CLEANING} pagination={false} />
+          )}
           <p className='table-note'>{`총무노트 사무실청소의 가격은 주소지와 멤버십 가입, \n청소 횟수에 따라 비용이 달라질 수 있습니다.`}</p>
         </div>
         <div className="cleaningSection9th_b-foot">

@@ -1,3 +1,4 @@
+/* eslint-disable unicorn/numeric-separators-style */
 /* eslint-disable consistent-return */
 'use client';
 import React, { memo } from 'react';
@@ -62,7 +63,7 @@ const CleaningSection4th = memo(({ className = "" }: CleaningSection4thProps) =>
         {data.map((item) => (
           <li key={item.id}>
             <h4>{item.text1}{`\n`}{item.text2}</h4>
-            <p className='text-color'>{item.text3}{`\n`}{item.text4}</p>
+            <p className='text-color'><span>{item.text3}</span>{`\n`}<span>{item.text4}</span></p>
           </li>
         ))}
       </ul>
@@ -71,7 +72,7 @@ const CleaningSection4th = memo(({ className = "" }: CleaningSection4thProps) =>
         <Swiper
           modules={[Autoplay]}
           spaceBetween={0}
-          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          autoplay={{ delay: 10000, disableOnInteraction: false }}
           loop
           className={styles.CleaningSwiper}
         >

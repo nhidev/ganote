@@ -38,6 +38,7 @@
       color: var(--ffffff);
       &.ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
         color: var(--ffffff);
+        background: var(--09101-d);
       }
     }
   }

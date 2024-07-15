@@ -29,6 +29,7 @@
       .cleaningSection9th_b-body {
         margin-bottom: 40rem;
         text-align: center;
+        width: 100%;
 
         .custom-table {
           width: 100%;
@@ -51,7 +52,6 @@
               padding: 16rem 0;
               @include P4_12pt_semi;
               text-align: center;
-              white-space: pre-line;
 
               &:before {
                 display: none;
@@ -103,6 +103,7 @@
 
           &:hover {
             color: var(--ffffff, #fff);
+            background: var(--09101-d, #09101d);
           }
         }
       }
@@ -141,7 +142,10 @@
               .ant-table-cell {
                 @include P1_18pt_semi;
                 padding: 16rem 14rem;
-                white-space: initial;
+
+                br {
+                  display: none;
+                }
               }
             }
 

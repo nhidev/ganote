@@ -18,23 +18,23 @@ interface CleaningCycleProps {
   nextText: CleanCycleItem;
 }
 
-const LIFE_CYCLE = [...ClEANING_CYCLE, ...ClEANING_CYCLE, ...ClEANING_CYCLE, ...ClEANING_CYCLE, ...ClEANING_CYCLE, ...ClEANING_CYCLE, ...ClEANING_CYCLE, ...ClEANING_CYCLE, ...ClEANING_CYCLE, ...ClEANING_CYCLE];
+const LIFE_CYCLE = [...ClEANING_CYCLE, ...ClEANING_CYCLE, ...ClEANING_CYCLE, ...ClEANING_CYCLE];
 
 const CleaningSection2nd = memo(({ className = "" }: CleaningSection2ndProps) => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const elementsRef = useRef<HTMLDivElement[]>([]);
-  const cleaningSection2ndContainerRef = useRef<HTMLDivElement>(null);
+  const cleaningContainerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const scrollContainer = scrollContainerRef.current;
     const elements = elementsRef.current;
-    const surveyContainer = cleaningSection2ndContainerRef.current;
+    const cleaningContainer = cleaningContainerRef.current;
 
-    if (!surveyContainer || !scrollContainer) return;
+    if (!cleaningContainer || !scrollContainer) return;
 
     const tl = gsap.timeline({ repeat: -1, yoyo: false });
 
-    tl.to(scrollContainer, { duration: 80, y: -scrollContainer.offsetHeight, ease: 'linear' });
+    tl.to(scrollContainer, { duration: 40, y: -scrollContainer.offsetHeight, ease: 'linear' });
     const observerCallback: IntersectionObserverCallback = entries => {
       for (const entry of entries) {
         if (entry.isIntersecting) {
@@ -48,7 +48,7 @@ const CleaningSection2nd = memo(({ className = "" }: CleaningSection2ndProps) =>
     };
 
     const io = new IntersectionObserver(observerCallback, {
-      root: surveyContainer,
+      root: cleaningContainer,
       threshold: 0.5,
     });
 
@@ -62,6 +62,7 @@ const CleaningSection2nd = memo(({ className = "" }: CleaningSection2ndProps) =>
 
   const cleaningCycleSlide = (item: CleaningCycleProps, index: number) => (
     <div key={index} className={`${styles.CleaningCycleSlide} scroll-element`} ref={(el: HTMLDivElement) => {
+
       if (el && !elementsRef.current.includes(el)) {
         elementsRef.current.push(el);
       }
@@ -85,7 +86,7 @@ const CleaningSection2nd = memo(({ className = "" }: CleaningSection2ndProps) =>
     <section className={`${styles.CleaningSection2nd} ${className}`}>
       <div className='cleaningSection2nd-wrapper'>
         <h2>총무노트 사무실 정기 청소<br />평수, 인원, 구조, 업종에 따라<br /><span>최적의 청소 주기</span>{`를 \n추천드려요`} </h2>
-        <div className={`${styles.CleaningCycleContainer}`} ref={cleaningSection2ndContainerRef}>
+        <div className={`${styles.CleaningCycleContainer}`} ref={cleaningContainerRef}>
           <div className={`scroll-container`} ref={scrollContainerRef}>
             {LIFE_CYCLE.map((item, index) => cleaningCycleSlide(item, index))}
           </div>

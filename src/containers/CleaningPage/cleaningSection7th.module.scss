@@ -68,7 +68,7 @@
             gap: 24rem;
 
             img {
-              width: 140rem;
+              width: auto;
               height: 44rem;
             }
           }
@@ -91,17 +91,17 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        padding: 30rem;
+        padding: 30rem 28rem;
         border-radius: var(--Spacing-5, 20rem);
         background: var(--ffffff, #FFF);
         box-shadow: var(--drop-shadow1);
-
-        img {
+        min-height: 415rem;
+        .company-logo {
           width: auto;
           height: 28rem;
           border-radius: 100rem;
           object-fit: contain;
-          margin-bottom: 12rem;
+          margin-bottom: 12rem
         }
 
         h5 {
@@ -115,10 +115,10 @@
           @include P2_16pt_medium;
           color: var(--414751, #414751);
           display: flex;
+          align-items: flex-start;
           flex-direction: column;
           gap: 10rem;
-
-
+          white-space: pre-line;
         }
       }
     }
@@ -178,10 +178,12 @@
           width: 400rem;
           padding: var(--Spacing-10, 40rem);
           border-radius: var(--Spacing-10, 40rem);
+          min-height: 541rem;
 
-          img {
+          .company-logo {
             height: 36rem;
             border-radius: 56rem;
+            margin-bottom: 14rem
           }
 
           h5 {

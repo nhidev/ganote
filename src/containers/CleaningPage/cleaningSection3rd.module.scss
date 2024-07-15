@@ -45,6 +45,7 @@
           li {
             display: flex;
             flex-direction: row;
+            align-items: center;
             gap: 8rem;
 
             h4 {
@@ -87,7 +88,7 @@
           padding: 20rem 19rem 0;
 
           ul {
-            padding: 74rem 87rem 35rem 87rem;
+            padding: 74rem 87rem 35rem 86rem;
             gap: 12rem;
 
             li {

@@ -6,7 +6,7 @@ import type { TabsProps } from 'antd';
 
 import Image from 'next/image';
 import { LoungeInfo, NewBenefits, GraphBlock, PieChartBlock } from '@/components';
-
+import withTheme from '@/theme';
 import { useSetAtom } from 'jotai';
 import { leadFormModalAtom } from '@/atoms';
 import styles from './cleaningSection5th.module.scss';
@@ -172,7 +172,7 @@ const TabContent1 = () => (
     <div className='tabs-content-left' >
       <h3>청소 후<br />
         사진 제공</h3>
-      <p>사무실 청소 전후 사진을 제공해드려요.<br />
+      <p>사무실 청소 후 사진을 제공해드려요.<br />
         클리닝 만족도와 직원 만족도가 함께 올라가요</p>
     </div>
     <LoungeInfo className='tabs-content-right' image1='cleaning-section5-1.jpg' image2='cleaning-section5-2.jpg' />
@@ -290,7 +290,7 @@ const CleaningSection5th = memo(({ className = "" }: CleaningSection5thProps) =>
           </h2>
         </div>
         <div className='cleaningSection5th_b-body fade-up-element'>
-          <Tabs defaultActiveKey="1" items={items} onChange={onChange} />
+          {withTheme(<Tabs defaultActiveKey="1" items={items} onChange={onChange} />)}
         </div>
         <div className="cleaningSection5th_b-foot">
           <Button

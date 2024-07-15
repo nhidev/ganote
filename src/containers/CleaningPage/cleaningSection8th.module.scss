@@ -73,6 +73,9 @@
               box-shadow: var(--drop-shadow2);
               text-align: center;
               min-width: 130rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
             }
 
             .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
@@ -113,11 +116,14 @@
 
           li {
             display: flex;
-            align-items: flex-start;
             gap: 8rem;
             color: var(--09101-d, #09101D);
             @include P2_16pt_semi;
             z-index: 1;
+
+            img {
+              margin-top: 3rem;
+            }
           }
 
           &:after {
@@ -205,6 +211,14 @@
             padding: 50rem 60rem;
             gap: 12rem;
             height: inherit;
+
+            li {
+              @include P1_18pt_medium;
+
+              img {
+                margin-top: 2rem;
+              }
+            }
 
             &:after {
               width: 648rem;

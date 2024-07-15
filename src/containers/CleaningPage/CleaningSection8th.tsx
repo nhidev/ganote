@@ -4,7 +4,7 @@ import React, { memo } from 'react';
 import { Tabs } from 'antd';
 import type { TabsProps } from 'antd';
 import Image from 'next/image';
-
+import withTheme from '@/theme';
 import styles from './cleaningSection8th.module.scss';
 interface TabItemProps {
   id: number;
@@ -15,22 +15,22 @@ interface TabItemProps {
 const data: TabItemProps[] = [
   {
     id: 1,
-    image: '/imagesN/cleaning-section8-bg1.png',
+    image: '/imagesN/cleaning-section8-bg1.jpg',
     textArr: ['회의실, 라운지, 흡연실, 폰부스 등 정리 및 청소', '정리정돈', '파지함 비우기', '집기, 가구', '전자제품 표면 청소', '손이 닿는 유리창 청소', '회의실 유리문 청소', '창문 틈새 먼지 닦기', '쓰레기 분리수거 및 배출', '화분 물주기']
   },
   {
     id: 2,
-    image: '/imagesN/cleaning-section8-bg2.png',
+    image: '/imagesN/cleaning-section8-bg2.jpg',
     textArr: ['설거지', '싱크대 청소 및 정리정돈', '개수대 청소', '조리대, 전자렌지 등 탕비실 가전 표면 청소', '커피머신 커피 찌꺼기 청소', '수납장 정리정돈', '음식물 쓰레기 배출']
   },
   {
     id: 3,
-    image: '/imagesN/cleaning-section8-bg3.png',
+    image: '/imagesN/cleaning-section8-bg3.jpg',
     textArr: ['화장실 바닥 청소', '물걸레 청소', '세면대, 거울 청소', '변기 청소', '화장실 휴지통 비우기', '수납장 및 욕실 용품 정리정돈', '화장실 문, 문고리 청소']
   },
   {
     id: 4,
-    image: '/imagesN/cleaning-section8-bg4.png',
+    image: '/imagesN/cleaning-section8-bg4.jpg',
     textArr: ['에어컨 분리 청소', '사무실 입주 청소', '카페트 청소', '엘리베이터 청소', '계단 및 복도 청소']
   }
 ];
@@ -91,7 +91,10 @@ const CleaningSection8th = memo(({ className = "" }: CleaningSection8thProps) =>
           </h2>
         </div>
         <div className='cleaningSection8th_b-body fade-up-element'>
-          <Tabs defaultActiveKey="1" items={items} onChange={onChange} />
+          {withTheme(
+            <Tabs defaultActiveKey="1" items={items} onChange={onChange} />
+          )}
+
         </div>
       </div>
     </section>
