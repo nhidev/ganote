@@ -105,19 +105,23 @@
             }
 
             p {
-              @include P3_14pt_regular;
+              @include P2_16pt_semi;
               display: flex;
               flex-direction: column;
               padding-left: 20rem;
 
               span {
-                @include P2_16pt_semi;
+                @include P3_14pt_regular;
               }
 
               >p,
               a {
                 display: inline;
                 padding: 0;
+              }
+              a {
+                text-decoration: underline;
+                color: var(--09101-d, #09101D);
               }
             }
           }
@@ -173,16 +177,17 @@
 
           .ant-collapse-content {
             .ant-collapse-content-box {
-              padding: 28rem 0;
+              padding: 28rem 0 0;
               gap: 16rem;
 
               p {
-                @include P2_16pt_regular;
+                @include P1_18pt_semi;
                 display: flex;
                 flex-direction: column;
 
                 span {
-                  @include P1_18pt_semi;
+                  @include P2_16pt_regular;
+
                 }
               }
             }
