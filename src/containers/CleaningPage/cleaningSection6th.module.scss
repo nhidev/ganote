@@ -149,6 +149,8 @@
               background: var(--e-3-e-7-eb, #E3E7EB);
               box-shadow: var(--drop-shadow1);
               margin-left: initial;
+              width: 256rem;
+              height: 160rem;
 
               &:last-child {
                 margin-top: -68rem;
@@ -368,12 +370,10 @@
               gap: 60rem;
 
               img {
-                width: 404rem;
-                height: 268rem;
+                width: 400rem;
+                height: 244rem;
 
                 &:last-child {
-                  width: 402rem;
-                  height: 246rem;
                   margin-top: -130rem;
                   margin-left: 60rem;
                 }

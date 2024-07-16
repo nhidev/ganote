@@ -121,7 +121,7 @@ const CleaningSection6th = memo(() => {
               }
             </div>
             <div className="cleaningSection6thFoot_b-right">
-              <CleanCard className="clean-card-col fade-up-element" title={`100% 만족 보장 \n사무실 전문 매니저 교육`} text={`담당자 상관 없이 100% 만족스러운 청소 퀄리티,\n총무노트는 각 사무실의 특징에 대해\n2주 이상 교육 받은 전문 매니저님들로 구성되어 있어요`} image="cleaning-section6th-5.png" imageWidth={256} imageHeight={160} image2="cleaning-section6th-6.png" image2Width={256} image2Height={160} />
+              <CleanCard className="clean-card-col fade-up-element" title={`100% 만족 보장 \n사무실 전문 매니저 교육`} text={`담당자 상관 없이 100% 만족스러운 청소 퀄리티,\n총무노트는 각 사무실의 특징에 대해\n2주 이상 교육 받은 전문 매니저님들로 구성되어 있어요`} image="cleaning-section6th-5.png" imageWidth={400} imageHeight={244} image2="cleaning-section6th-6.png" image2Width={400} image2Height={244} />
               {isMobile &&
                 <CleanCard className="clean-card-bot fade-up-element" title={cleanCardData[4].title} text={cleanCardData[4].text} image={cleanCardData[4].image} imageWidth={cleanCardData[4].imageWidth} imageHeight={cleanCardData[4].imageHeight} />
               }
