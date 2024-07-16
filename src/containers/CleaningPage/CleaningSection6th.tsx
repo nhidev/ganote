@@ -129,7 +129,7 @@ const CleaningSection6th = memo(() => {
           </div>
           <div className="cleaningSection6thFoot_b-bot fade-up-element">
             <div className="cleaningSection6thFoot_b-head">
-              <h3>{`추가요청도\n메시지로 빠르고 간편하게`}</h3>
+              <h3>{`문의사항과 추가요청도\n메세지로 빠르고 간편하게`}</h3>
               <p>{`전화해도 받지 않던 전화,\n늦은 피드백으로 업무에 집중하지 못하셨다구요?\n총무노트는 1시간 내의 빠른 메세지 답변을 드리기에 \n믿고 안심하며 사용하실 수 있어요`}</p>
             </div>
             <RequestBlock

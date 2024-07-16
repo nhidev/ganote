@@ -68,6 +68,12 @@
         align-items: center;
         color: var(--ffffff, #FFF);
       }
+      &:hover {
+        background: var(--09101-d);
+      }
+    }
+    .ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+      background: var(--09101-d);
     }
   }
 
