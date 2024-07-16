@@ -48,7 +48,8 @@
           flex-direction: column;
           gap: 10rem;
           padding: var(--Spacing-4, 16rem) 0;
-          box-shadow: var(--drop-shadow1);
+          // box-shadow: var(--drop-shadow1);
+          box-shadow: 5px 5px 15px 0px rgba(139, 140, 160, 0.15), 20px 20px 60px 0px rgba(139, 140, 160, 0.30);
           border-radius: var(--Spacing-4, 16rem);
           background: var(--ffffff, #FFF);
           height: 116rem;
@@ -111,15 +112,15 @@
           padding: 44rem 133rem 44rem 134rem;
           border-radius: var(--Spacing-5, 20rem);
           max-width: 1060rem;
-          box-shadow: var(--drop-shadow1);
-          border-radius: var(--Spacing-4, 16rem);
+          // box-shadow: var(--drop-shadow1);
+          box-shadow: 5px 5px 15px 0px rgba(139, 140, 160, 0.15), 20px 20px 60px 0px rgba(139, 140, 160, 0.30);
           background: var(--ffffff, #FFF);
-          padding: 35rem 0;
 
           li {
             box-shadow: none;
             border-radius: 0;
             height: auto;
+            padding: 0;
 
             &:after {
               position: absolute;
