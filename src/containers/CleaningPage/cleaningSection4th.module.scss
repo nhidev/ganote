@@ -163,7 +163,7 @@
 
         .cleaningSection4th_b-bot {
           border-radius: var(--Spacing-5, 20rem);
-          padding: 164rem 244rem 72rem 244rem;
+          padding: 164rem 0 72rem;
           margin-top: -92rem;
         }
       }
@@ -204,7 +204,8 @@
 
 @media (min-width: 768px) {
   .CleaningSwiper {
-    max-width: 835rem;
+    min-width: 1005rem;
+    max-width: 100%;
 
     :global {
       .slide-item {
