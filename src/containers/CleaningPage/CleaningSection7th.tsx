@@ -58,7 +58,7 @@ const CleaningSection7th = memo(({ className = "" }: CleaningSection7thProps) =>
         <div className='cleaningSection7th_b-body'>
           <div className='cards-nav'>
             {dataNav.map((image, index) => (
-              <Image key={index} src={`/imagesN/${image}`} quality={100} width={140} height={44} alt={'logo'} />
+              <Image key={index} src={`/imagesN/${image}`} quality={100} width={182} height={57} alt={'logo'} />
             ))}
           </div>
           <Swiper
