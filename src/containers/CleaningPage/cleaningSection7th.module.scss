@@ -88,7 +88,7 @@
       .swiper-slide {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: flex-start;
         padding: 30rem 28rem;
         border-radius: var(--Spacing-5, 20rem);
