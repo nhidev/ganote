@@ -60,8 +60,8 @@
     .g-cta-button {
       background-color: var(--09101-d);
       box-shadow: none;
-      padding: 0;
       height: 44rem;
+      padding: 0 30rem;
       span {
         @include P3_14pt_bold;
         display: flex;
@@ -69,12 +69,16 @@
         color: var(--ffffff, #FFF);
       }
       &:hover {
-        background: var(--09101-d);
+        background: var(--09101-d) !important;
+      }
+      &.btn-color {
+        background-color: #FF8F43;        
+        &:hover {
+          background-color: #FF8F43 !important;
+        }
       }
     }
-    .ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
-      background: var(--09101-d);
-    }
+  
   }
 
 }
