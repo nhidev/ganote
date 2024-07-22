@@ -10,7 +10,7 @@ import styles from './cleaningSection9th.module.scss';
 
 export const COLUMNS_CLEANING = [
   {
-    title: <>사무실 <br/>면적</>,
+    title: <>사무실 <br />면적</>,
     dataIndex: 'area',
     key: 'area',
   },
@@ -20,16 +20,16 @@ export const COLUMNS_CLEANING = [
     key: 'price',
   },
   {
-    title: <>단기 청소<br/>(1회)</>,
+    title: <>단기 청소<br />(1회)</>,
     dataIndex: 'shortCleaning',
     key: 'shortCleaning',
   },
   {
-    title: <>정기 청소<br/>(2회)</>,
+    title: <>정기 청소<br />(2회)</>,
     dataIndex: 'regularCleaning',
     key: 'regularCleaning',
     render(regularCleaning: string[]) {
-      return <>{regularCleaning[0]} <span>{regularCleaning[1]}</span></>;
+      return <><span className='price'>{regularCleaning[0]} </span><span className='discount'>{regularCleaning[1]}</span></>;
     },
   },
 ];
@@ -40,42 +40,42 @@ export const DATA_CLEANING = [
     area: '50평 이상',
     price: '1시간',
     shortCleaning: '250,000원',
-    regularCleaning: ['400,000원', '20% OFF'],
+    regularCleaning: ['500,000원', '400,000원'],
   },
   {
     key: '2',
     area: '100평 이상',
     price: '1.5시간',
     shortCleaning: '450,000원',
-    regularCleaning: ['650,000원', '28% OFF'],
+    regularCleaning: ['900,000원', '650,000원'],
   },
   {
     key: '3',
     area: '200평 이상',
     price: '2.5시간',
     shortCleaning: '700,000원',
-    regularCleaning: ['1,000,000원', '29% OFF'],
+    regularCleaning: ['1,400,000원', '1,000,000원'],
   },
   {
     key: '4',
     area: '300평 이상',
     price: '3시간',
     shortCleaning: '900,000원',
-    regularCleaning: ['1,400,000원', '22% OFF'],
+    regularCleaning: ['1,800,000원', '1,400,000원'],
   },
   {
     key: '5',
     area: '400평 이상',
     price: '3.5시간',
     shortCleaning: '1,100,000원',
-    regularCleaning: ['1,700,000원', '23% OFF'],
+    regularCleaning: ['2,200,000원', '1,700,000원'],
   },
   {
     key: '6',
     area: '500평 이상',
     price: '4시간',
     shortCleaning: '1,300,000원',
-    regularCleaning: ['2,000,000원', '23% OFF'],
+    regularCleaning: ['2,600,000원', '2,000,000원'],
   },
 ];
 
@@ -104,7 +104,7 @@ const CleaningSection9th = memo(() => {
               event.currentTarget.blur();
             }}
           >
-            1회 사용도 가능! 상담 받아보기
+            1회 사용도 가능! 상담 받아보기
           </Button>
         </div>
       </div>

@@ -73,11 +73,35 @@
 
               &:last-child {
                 padding-right: 20rem;
-              }
+                width: 75rem;
+                .price {
+                  @include p4_10pt_medium;
+                  position: relative;
+                  width: 75rem;
+                  height: 18rem;
+                  display: flex;
+                  justify-content: center;
 
-              span {
-                color: var(--ff-8-f-43, #FF8F43);
-                display: block
+                  &::before {
+                    content: "";
+                    background-image: url('/iconsN/line-through-down.svg');
+                    background-size: cover;
+                    display: block;
+                    position: absolute;
+                    width: 75rem;
+                    height: 9rem;
+                    left: 0;
+                    right: 0;
+                    bottom: 2rem;
+                    margin: auto;
+                  }
+                }
+
+                .discount {
+                  @include P5_12pt_bold;
+                  color: var(--ff-8-f-43, #FF8F43);
+                  display: flex;
+                }
               }
             }
           }
@@ -155,8 +179,31 @@
                 @include P1_18pt_regular;
                 padding: 16rem 0 17rem;
 
-                span {
-                  display: inline;
+                &:last-child {
+                  padding-right: 20rem;
+                  width: auto;
+                  .price {
+                    @include P3_14pt_medium;
+                    width: 97rem;
+                    height: initial;
+                    display: inline-flex;
+                    justify-content: center;
+                    margin-right: 16rem;
+
+                    &::before {
+                      content: "";
+                      background-image: url('/iconsN/line-through.svg');
+                      top: 0;
+                      bottom: 0;
+                      width: 97rem;
+                      height: 8rem;
+                    }
+                  }
+
+                  .discount {
+                    @include P1_18pt_bold;
+                    display: inline-flex;
+                  }
                 }
               }
             }
