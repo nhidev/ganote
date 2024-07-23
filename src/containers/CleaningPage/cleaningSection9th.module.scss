@@ -74,6 +74,7 @@
               &:last-child {
                 padding-right: 20rem;
                 width: 75rem;
+
                 .price {
                   @include p4_10pt_medium;
                   position: relative;
@@ -92,7 +93,7 @@
                     height: 9rem;
                     left: 0;
                     right: 0;
-                    bottom: 2rem;
+                    bottom: 1rem;
                     margin: auto;
                   }
                 }
@@ -182,6 +183,7 @@
                 &:last-child {
                   padding-right: 20rem;
                   width: auto;
+
                   .price {
                     @include P3_14pt_medium;
                     width: 97rem;
@@ -191,12 +193,11 @@
                     margin-right: 16rem;
 
                     &::before {
-                      content: "";
                       background-image: url('/iconsN/line-through.svg');
+                      background-size: contain;
                       top: 0;
                       bottom: 0;
-                      width: 97rem;
-                      height: 8rem;
+                      padding: 0 12rem;
                     }
                   }
 
