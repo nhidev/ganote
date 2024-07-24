@@ -1,6 +1,6 @@
-import useSWR from 'swr';
+import useSWR from "swr";
 
-import { getAPI, HttpError } from '@/utils';
+import { getAPI, HttpError } from "@/utils";
 
 export interface IPostItem {
   id: number;
@@ -44,7 +44,7 @@ export interface IReviewParams {
 }
 
 export const a: number = 1;
-export const LIMIT: number = 3;
+export const LIMIT: number = 15;
 
 export const encodeQueryData = (data = {}) => {
   const obj = {
@@ -53,8 +53,8 @@ export const encodeQueryData = (data = {}) => {
   };
 
   return Object.entries(obj)
-    .map(pair => pair.map(element => encodeURIComponent(element)).join('='))
-    .join('&');
+    .map((pair) => pair.map((element) => encodeURIComponent(element)).join("="))
+    .join("&");
 };
 
 // export const useGetListPost = (params = {}) => {
