@@ -29,6 +29,9 @@ const ReviewList = () => {
         setReviews(initialReviews.records);
         setOffset((prevOffset) => prevOffset + LIMIT);
         setLoading(false);
+        if (Number(initialReviews?.count) < offset + LIMIT) {
+          setHasMoreData(false);
+        }
       } catch (error) {
         console.error(error);
       }
@@ -46,7 +49,7 @@ const ReviewList = () => {
         limit: LIMIT,
       });
 
-      if ((Number(apiReviews?.count) - 1) <= offset) {
+      if (Number(apiReviews?.count) < offset + LIMIT) {
         setHasMoreData(false);
       }
       setReviews((prevReviews) => [...prevReviews, ...apiReviews.records]);

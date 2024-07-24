@@ -30,6 +30,9 @@ const PostList = () => {
         setPosts(initialPosts.records);
         setOffset((prevOffset) => prevOffset + LIMIT);
         setLoading(false);
+        if (Number(initialPosts?.count) < offset + LIMIT) {
+          setHasMoreData(false);
+        }
       } catch (error) {
         console.error(error);
       }
