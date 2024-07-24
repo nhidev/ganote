@@ -5,7 +5,7 @@ import {
   GeneralNoteSection,
   IntroductionSection,
   NoteServicesSection,
-  OfficeInteriorSection,
+  // OfficeInteriorSection,
   OperationsManagementSection,
   SaasSection,
   ServiceSection,

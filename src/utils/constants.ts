@@ -4,6 +4,8 @@ export const ROUTE = {
   OPERATION: '/operation',
   INTERIOR: '/interior',
   CLEANING: '/cleaning',
+  BLOGS: '/blogs',
+  REVIEWS: '/reviews',
 };
 export const MEDIA_SIZE = {
   tablet: 768,

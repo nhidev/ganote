@@ -59,6 +59,9 @@
   @mixin P2_18pt_medium {
     @include font(18rem, 500, 170%);
   }
+  @mixin P2_18pt_regular {
+    @include font(18rem, 400, 170%);
+  }
   
   @mixin P3_16pt_bold {
     @include font(16rem, 700, 170%);

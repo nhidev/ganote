@@ -34,6 +34,9 @@ import { CleaningHero,
   CleaningSection10th,
   CleaningSection11th
  } from './CleaningPage';
+import {  PostList } from './BlogPage';
+import { PostDetail } from './PostDetail';
+import { ReviewList } from './ReviewPage';
 export {
   OperationHero,
   Footer,
@@ -66,5 +69,8 @@ export {
   CleaningSection8th,
   CleaningSection9th,
   CleaningSection10th,
-  CleaningSection11th
+  CleaningSection11th,
+  PostList,
+  PostDetail,
+  ReviewList
 };

@@ -1,0 +1,51 @@
+@import '@/app/styles/_mixin';
+
+.LineClamp {
+  :global {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12rem;
+
+    img {
+      width: 30rem;
+      height: 30rem;
+    }
+
+    .quote {
+      @include P1_18pt_regular;
+      color: var(--414751, #414751);
+      margin-bottom: 4rem;
+
+      &.line-clamp {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 5;
+      }
+    }
+
+    button {
+      @include P2_16pt_medium;
+      background: none;
+      border: none;
+      color: var(--ff-8-f-43, #FF8F43);
+      cursor: pointer;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .LineClamp {
+    gap: 12rem;
+
+    :global {
+      .quote {
+        margin-bottom: 12rem;
+        &.line-clamp {
+          -webkit-line-clamp: 3;
+        }
+      }
+    }
+  }
+}

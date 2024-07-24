@@ -10,6 +10,7 @@ const NavLink = memo(({ href, exact, children, className = '', scroll = false }:
   const pathname = usePathname();
   const isActive = exact ? pathname === href : pathname.startsWith(href);
   const classNameGroup = [isActive ? 'isActive' : '', className];
+
   return (
     <Link href={href} className={classNameGroup.join(' ')} scroll={scroll}>
       {children}

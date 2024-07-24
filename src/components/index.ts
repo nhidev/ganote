@@ -25,6 +25,9 @@ import { SchechuleBlock } from './SchechuleBlock';
 import { ScrollTrigger } from './ScrollTrigger';
 import { TimeSpentBlock } from './TimeSpentBlock';
 import { CleanCard } from './CleanCard';
+import { LineClamp } from './LineClamp';
+import { BlogLoadable } from './BlogLoadable';
+import { ReviewLoadable } from './ReviewLoadable';
 
 export {
   NavLink,
@@ -56,5 +59,8 @@ export {
   InteriorSwiper,
   ReportDocument,
   ScrollTrigger,
-  CleanCard
+  CleanCard,
+  LineClamp,
+  BlogLoadable,
+  ReviewLoadable
 };

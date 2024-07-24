@@ -1,0 +1,145 @@
+@import '@/app/styles/_mixin';
+
+.ReviewList {
+  padding: 40rem 0;
+  background: #fff;
+
+  :global {
+    .reviewList-container {
+      padding: 0 20rem;
+      max-width: 1280rem;
+      margin: 0 auto;
+      box-sizing: content-box;
+      display: flex;
+      flex-direction: column;
+      gap: 32rem;
+
+      .reviewList-head {
+        display: flex;
+        flex-direction: column;
+        gap: 16rem;
+        align-items: flex-start;
+
+        .title {
+          @include H1_34pt_bold;
+        }
+
+        .desc {
+          @include P1_20pt_medium;
+        }
+      }
+
+      .reviewList-body {
+        display: flex;
+        flex-direction: column;
+        gap: 40rem;
+
+        article {
+          display: flex;
+          flex-direction: column;
+          gap: 32rem;
+
+          .card-image {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 600/400;
+            border-radius: 20rem;
+          }
+
+          .review-text {
+            display: flex;
+            flex-direction: column;
+            gap: 32rem;
+
+            .review-info {
+              display: flex;
+              align-items: center;
+              gap: 16rem;
+            }
+
+            .company-logo {
+              width: 64rem;
+              height: 23rem;
+              object-fit: contain;
+            }
+          }
+
+          .quote {
+            @include P1_18pt_regular;
+            color: var(--414751, #414751);
+
+            &.line-clamp-3 {
+              overflow: hidden;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 3;
+            }
+          }
+        }
+      }
+
+      .g-cta-button {
+        display: flex;
+        width: fit-content;
+        align-self: center;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+  .ReviewList {
+    padding: 80rem 0;
+
+    :global {
+      .reviewList-container {
+        gap: 80rem;
+
+        .reviewList-head {
+          align-items: center;
+          gap: 24rem;
+
+          .title {
+            @include H1_56pt_bold;
+          }
+
+          .desc {
+            @include H4_26pt_medium;
+          }
+        }
+
+        .reviewList-body {
+          gap: 60rem;
+
+          article {
+            flex-direction: row;
+            gap: 68rem;
+
+            .card-image {
+              width: 600rem;
+              height: 400rem;
+            }
+
+            .review-text {
+              gap: 40rem;
+
+              .review-info {
+                gap: 24rem;
+              }
+
+              .company-logo {
+                width: 88rem;
+                height: 32rem;
+              }
+            }
+
+            .quote {
+              @include P1_18pt_regular;
+            }
+          }
+        }
+      }
+    }
+  }
+}

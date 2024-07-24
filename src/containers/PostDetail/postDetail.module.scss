@@ -1,0 +1,85 @@
+@import '@/app/styles/_mixin';
+
+.PostDetail {
+  padding: 40rem 0;
+  background: #fff;
+
+  :global {
+    .postDetail-container {
+      padding: 0 20rem;
+      max-width: 1280rem;
+      margin: 0 auto;
+      box-sizing: content-box;
+      display: flex;
+      flex-direction: column;
+      gap: 32rem;
+
+      .postDetail-head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 16rem;
+
+        .title {
+          @include H1_34pt_bold;
+        }
+
+        .date {
+          @include P3_14pt_regular;
+          color: var(--a-9-a-9-a-9, #B1B7BD);
+        }
+      }
+
+      .postDetail-body {
+        .banner {
+          border-radius: 20rem;
+          aspect-ratio: 1280/853;
+          width: 100%;
+          height: auto;
+          margin-bottom: 32rem;
+
+          .content {
+            @include P3_16pt_regular;
+            margin-bottom: 16rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .PostDetail {
+    padding: 80rem 0;
+
+    :global {
+      .postDetail-container {
+        gap: 60rem;
+
+        .postDetail-head {
+          gap: 33rem;
+
+          .title {
+            @include H1_56pt_bold;
+          }
+
+          .date {
+            @include P1_20pt_regular;
+          }
+        }
+
+        .postDetail-body {
+          .banner {
+            margin-bottom: 60rem
+          }
+
+          .content {
+            @include P2_18pt_regular;
+            margin-bottom: 24rem;
+          }
+        }
+      }
+    }
+  }
+}

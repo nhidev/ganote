@@ -480,3 +480,9 @@ header {
     border-color: transparent
   }
 }
+
+@keyframes skeleton-glare {
+  to {
+    transform: translateX(100%)
+  }
+}
