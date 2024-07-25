@@ -21,7 +21,7 @@ const PostDetail = () => {
 
           <div className='postDetail-body'>
             <Image className='banner' width={1280} height={853} src={data.cover_image} priority alt="banner post" />
-            <div className='content' dangerouslySetInnerHTML={{ __html: data.content }} />
+            <div className='ql-editor' dangerouslySetInnerHTML={{ __html: data.content }} />
           </div>
         </div>
       </> : <></>}

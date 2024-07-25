@@ -18,9 +18,11 @@ export default function LineClamp({ text }: LineClampProps) {
         const lineHeight = nodeStyles
           .getPropertyValue('line-height')
           .replace('px', '');
-        const elLineCount = elHeight / Number.parseInt(lineHeight, 10);
+        const elLineCount = Math.round(elHeight / Number.parseInt(lineHeight, 10));
         const limitLine = isMobile ? 5 : 3;
 
+        console.log('elLineCount', elLineCount);
+        console.log('limitLine', limitLine);
         setShouldTruncate(elLineCount > limitLine);
       }
     },

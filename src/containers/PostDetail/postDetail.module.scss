@@ -39,7 +39,7 @@
           height: auto;
           margin-bottom: 32rem;
 
-          .content {
+          .ql-editor {
             @include P3_16pt_regular;
             margin-bottom: 16rem;
           }
@@ -74,7 +74,7 @@
             margin-bottom: 60rem
           }
 
-          .content {
+          .ql-editor {
             @include P2_18pt_regular;
             margin-bottom: 24rem;
           }

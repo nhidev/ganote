@@ -2,7 +2,7 @@
 @import './global';
 @import './mixin';
 @import './typography';
-
+@import './quill.snow';
 html {
   font-size: calc(1px + ((100vw - 375px) / 375) * 1);
 }
