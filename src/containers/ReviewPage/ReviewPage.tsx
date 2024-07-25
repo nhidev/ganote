@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { Button } from 'antd';
 import withTheme from '@/theme';
 import { LineClamp } from '@/components/LineClamp';
-import { useGetReviews, IReviewItem, LIMIT } from '@/hooks/useBlogReview';
+import { useGetReviews, IReviewItem, REVIEWLIMIT } from '@/hooks/useBlogReview';
 import { ReviewLoadable } from '@/components';
 import styles from './reviewPage.module.scss';
 
@@ -23,13 +23,13 @@ const ReviewList = () => {
       try {
         const initialReviews = await getListReview({
           offset,
-          limit: LIMIT,
+          limit: REVIEWLIMIT,
         });
 
         setReviews(initialReviews.records);
-        setOffset((prevOffset) => prevOffset + LIMIT);
+        setOffset((prevOffset) => prevOffset + REVIEWLIMIT);
         setLoading(false);
-        if (Number(initialReviews?.count) < offset + LIMIT) {
+        if (Number(initialReviews?.count) < offset + REVIEWLIMIT) {
           setHasMoreData(false);
         }
       } catch (error) {
@@ -46,14 +46,14 @@ const ReviewList = () => {
     if (hasMoreData) {
       const apiReviews = await getListReview({
         offset,
-        limit: LIMIT,
+        limit: REVIEWLIMIT,
       });
 
-      if (Number(apiReviews?.count) < offset + LIMIT) {
+      if (Number(apiReviews?.count) < offset + REVIEWLIMIT) {
         setHasMoreData(false);
       }
       setReviews((prevReviews) => [...prevReviews, ...apiReviews.records]);
-      setOffset((prevOffset) => prevOffset + LIMIT);
+      setOffset((prevOffset) => prevOffset + REVIEWLIMIT);
       setLoadingMore(false);
     }
   }
@@ -71,7 +71,7 @@ const ReviewList = () => {
             <p className='desc'>Discover case studies on how GA Note is being used around the world</p>
           </div>
           <div className='reviewList-body'>
-            {reviews?.slice(1).map((item, index) => (
+            {reviews?.map((item, index) => (
               <article key={index}>
                 <Image className='card-image' src={item?.cover_image} quality={100} width={600} height={400} alt='review image' />
                 <div className='review-text'>

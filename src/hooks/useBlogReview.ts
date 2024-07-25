@@ -44,11 +44,12 @@ export interface IReviewParams {
 }
 
 export const a: number = 1;
-export const LIMIT: number = 15;
+export const POSTLIMIT: number = 12;
+export const REVIEWLIMIT: number = 5;
 
 export const encodeQueryData = (data = {}) => {
   const obj = {
-    limit: LIMIT,
+    limit: POSTLIMIT,
     ...data,
   };
 

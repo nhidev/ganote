@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { Button } from 'antd';
 import withTheme from '@/theme';
 import { BlogLoadable } from '@/components';
-import { useGetListPost, IPostItem, LIMIT } from '@/hooks/useBlogReview';
+import { useGetListPost, IPostItem, POSTLIMIT } from '@/hooks/useBlogReview';
 import { ROUTE, formatDate } from '@/utils';
 import styles from './postList.module.scss';
 
@@ -24,13 +24,13 @@ const PostList = () => {
       try {
         const initialPosts = await getListPost({
           offset,
-          limit: LIMIT,
+          limit: POSTLIMIT + 1,
         });
 
         setPosts(initialPosts.records);
-        setOffset((prevOffset) => prevOffset + LIMIT);
+        setOffset((prevOffset) => prevOffset + POSTLIMIT + 1);
         setLoading(false);
-        if (Number(initialPosts?.count) < offset + LIMIT) {
+        if (Number(initialPosts?.count) < offset + POSTLIMIT + 1) {
           setHasMoreData(false);
         }
       } catch (error) {
@@ -47,14 +47,14 @@ const PostList = () => {
     if (hasMoreData) {
       const apiPosts = await getListPost({
         offset,
-        limit: LIMIT,
+        limit: POSTLIMIT,
       });
 
-      if (Number(apiPosts?.count) < offset + LIMIT) {
+      if (Number(apiPosts?.count) < offset + POSTLIMIT) {
         setHasMoreData(false);
       }
       setPosts((prevPosts) => [...prevPosts, ...apiPosts.records]);
-      setOffset((prevOffset) => prevOffset + LIMIT);
+      setOffset((prevOffset) => prevOffset + POSTLIMIT);
       setLoadingMore(false);
     }
   }
