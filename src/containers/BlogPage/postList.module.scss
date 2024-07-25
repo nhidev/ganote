@@ -19,6 +19,7 @@
           width: 100%;
           height: auto;
           aspect-ratio: 720/480;
+          object-fit: cover;
           border-radius: var(--Spacing-5, 20rem);
 
           &:hover {
@@ -138,6 +139,7 @@
             aspect-ratio: 400/266;
             border-radius: var(--Spacing-5, 20rem);
             margin-bottom: 16rem;
+            object-fit: cover;
 
             &:hover {
               opacity: 0.8;
