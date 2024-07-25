@@ -31,10 +31,14 @@
       .hero_b-right {
         display: flex;
         flex-direction: column;
-        gap: 16rem;
+        gap: 12rem;
 
         .title {
           @include H1_34pt_bold;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 3;
         }
 
         .desc {
@@ -44,14 +48,6 @@
           display: -webkit-box;
           -webkit-box-orient: vertical;
           -webkit-line-clamp: 5;
-
-          p {
-            overflow: hidden;
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 5;
-            display: contents;
-          }
         }
 
         .date {
@@ -84,7 +80,7 @@
 
         .hero_b-right {
           width: calc(100% - 720rem);
-          gap: 12rem;
+          gap: 16rem;
 
           .title {
             @include H1_56pt_bold;

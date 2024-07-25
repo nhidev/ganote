@@ -107,6 +107,9 @@
 
       .card__body {
         width: calc(100% - 668rem);
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
       }
     }
   }

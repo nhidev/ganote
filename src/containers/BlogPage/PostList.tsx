@@ -76,7 +76,7 @@ const PostList = () => {
                 <Link href={`${ROUTE.BLOGS}/${posts[0].id}`}>
                   <h1 className='title'>{posts[0].title}</h1>
                 </Link>
-                <div className='desc' dangerouslySetInnerHTML={{ __html: posts[0].content }} />
+                <div className='desc' dangerouslySetInnerHTML={{ __html: posts[0].content?.replace(/<[^>]+>/g, '') }} />
                 <div className='date'>{formatDate(posts[0].create_date)}
                 </div>
               </div>
