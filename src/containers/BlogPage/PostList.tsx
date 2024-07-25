@@ -87,8 +87,8 @@ const PostList = () => {
         <section className={styles.PostList}>
           <div className='postList-container'>
             <div className='postList-head'>
-              <h2>Latest articles</h2>
-              <p className='desc'>Explore insightful articles, tips and service news</p>
+              <h2>BLOG</h2>
+              <p className='desc'>총무들에게 꼭 필요한 팁 부터 총무노트 서비스 정보까지</p>
             </div>
             <div className='postList-body'>
               {posts?.slice(1).map((item, index) => (
@@ -111,7 +111,7 @@ const PostList = () => {
                   onClick={loadMorePosts}
                   disabled={isLoadingMore}
                 >
-                  {isLoadingMore ? 'Loading...' : 'More posts'}
+                  {isLoadingMore ? '로딩중...' : '더보기'}
                 </Button> : <></>
 
             )}

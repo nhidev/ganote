@@ -67,8 +67,8 @@ const ReviewList = () => {
       <section className={`${styles.ReviewList}`}>
         <div className='reviewList-container'>
           <div className='reviewList-head'>
-            <h1 className='title'>Customer stories</h1>
-            <p className='desc'>Discover case studies on how GA Note is being used around the world</p>
+            <h1 className='title'>고객 후기</h1>
+            <p className='desc'>총무노트와 함께한 기업들의 실제 후기</p>
           </div>
           <div className='reviewList-body'>
             {reviews?.map((item, index) => (
@@ -92,7 +92,7 @@ const ReviewList = () => {
                 onClick={loadMoreReviews}
                 disabled={isLoadingMore}
               >
-                {isLoadingMore ? 'Loading...' : 'More posts'}
+                {isLoadingMore ? '로딩중...' : '더보기'}
               </Button> : <></>
 
           )}
