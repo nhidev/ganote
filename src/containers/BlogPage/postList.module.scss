@@ -17,7 +17,8 @@
 
         img {
           width: 100%;
-          height: 100%;
+          height: auto;
+          aspect-ratio: 720/480;
           border-radius: var(--Spacing-5, 20rem);
 
           &:hover {
@@ -136,9 +137,10 @@
 
         article {
           img {
-            width: 335rem;
-            height: 227rem;
-            border-radius: var(--Spacing-5, 20px);
+            width: 100%;
+            height: auto;
+            aspect-ratio: 400/266;
+            border-radius: var(--Spacing-5, 20rem);
             margin-bottom: 16rem;
 
             &:hover {
