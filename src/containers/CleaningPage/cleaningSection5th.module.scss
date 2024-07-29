@@ -238,10 +238,11 @@
           .tabs-content {
             flex-direction: row;
             gap: 0;
-            min-height: 480rem;
+            height: 480rem;
+            padding-top: 37rem;
 
             .tabs-content-left {
-              margin-top: 80rem;
+              margin-top: 43rem;
 
               h3 {
                 @include H3_40pt_bold;
@@ -568,8 +569,6 @@
 
 @media (min-width: 768px) {
   .ManagementGraphChart {
-    align-self: center;
-
     .ManagementGraph {
       margin: 14rem 0 36rem;
 
