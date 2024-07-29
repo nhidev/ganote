@@ -256,10 +256,6 @@ const TabContent3 = () => (
 const CleaningSection5th = memo(({ className = "" }: CleaningSection5thProps) => {
   const setLeadFormModal = useSetAtom(leadFormModalAtom);
 
-  const onChange = (key: string) => {
-    console.log(key);
-  };
-
   const items: TabsProps['items'] = [
     {
       key: '1',
@@ -290,7 +286,7 @@ const CleaningSection5th = memo(({ className = "" }: CleaningSection5thProps) =>
           </h2>
         </div>
         <div className='cleaningSection5th_b-body fade-up-element'>
-          {withTheme(<Tabs defaultActiveKey="1" items={items} onChange={onChange} />)}
+          {withTheme(<Tabs defaultActiveKey="1" items={items}/>)}
         </div>
         <div className="cleaningSection5th_b-foot">
           <Button

@@ -11,7 +11,7 @@ export default function GraphBlock({ className = '', image, title, subTitle, tot
         <p className="graphBlock-subtitle">{subTitle}</p>
         <p className="graphBlock-amount">{total}</p>
       </div>
-      <Image src={`/imagesN/${image}`} quality={100} width={557} height={310} alt={'chart'} />
+      <Image src={`/imagesN/${image}`} quality={100} width={530} height={234} alt={'chart'} loading="lazy" />
     </div>
   );
 }
