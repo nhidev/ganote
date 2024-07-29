@@ -96,12 +96,26 @@
           position: relative;
           min-width: auto;
           display: flex;
-          justify-content: space-between;
+          justify-content: flex-start;
           border-radius: var(--Spacing-5, 20rem);
           background: var(--ffffff, #FFF);
           box-shadow: var(--drop-shadow1);
           overflow: hidden;
           flex-direction: column;
+          min-height: 520rem;
+
+          &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: -webkit-fill-available;
+            bottom: 0;
+            transform: rotate(90deg);
+            flex-shrink: 0;
+            background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #FFF 57.25%);
+          }
         }
 
         .tabs-content-left {
@@ -125,27 +139,17 @@
               margin-top: 2rem;
             }
           }
-
-          &:after {
-            content: "";
-            position: absolute;
-            left: 0;
-            right: 0;
-            width: 100%;
-            height: -webkit-fill-available;
-            bottom: -70%;
-            transform: rotate(90deg);
-            flex-shrink: 0;
-            background: linear-gradient(270deg, rgba(255, 255, 255, 0.00) 0%, #FFF 57.25%);
-          }
         }
 
         .tabs-content-right {
-          margin-left: auto;
           width: 100%;
           height: auto;
-          object-fit: contain;
-          margin-top: -80rem;
+          object-fit: cover;
+          margin-top: 0;
+          min-height: 300rem;
+          position: absolute;
+          left: 0px;
+          bottom: 0;
         }
       }
     }
@@ -199,27 +203,12 @@
 
           // END CUTOM ANTDTABS
           .tabs-content {
-            border-radius: var(--Spacing-10, 40px);
+            border-radius: var(--Spacing-10, 40rem);
             min-width: 1060rem;
             min-height: 560rem;
             width: 100%;
             flex-direction: row;
             justify-content: space-between;
-          }
-
-          .tabs-content-left {
-            padding: 50rem 60rem;
-            gap: 12rem;
-            height: inherit;
-
-            li {
-              @include P1_18pt_medium;
-              align-items: center;
-           
-              img {
-                margin-top: 0;
-              }
-            }
 
             &:after {
               width: 648rem;
@@ -231,17 +220,27 @@
             }
           }
 
-          .tabs-content-right {
-            margin-top: 0;
-            right: 0;
-            position: absolute;
-            width: auto;
-            height: 560rem;
-            object-fit: fill;
+          .tabs-content-left {
+            padding: 50rem 60rem;
+            gap: 12rem;
+            height: inherit;
 
             li {
-              @include P1_18pt_semi;
+              @include P1_18pt_medium;
+              align-items: center;
+
+              img {
+                margin-top: 0;
+              }
             }
+          }
+
+          .tabs-content-right {
+            margin-top: 0;
+            margin-left: auto;
+            right: 0;
+            width: auto;
+            height: 560rem;
           }
         }
       }

@@ -52,10 +52,6 @@ const TabContent: React.FC<TabItemProps> = (item) => (
 
 const CleaningSection8th = memo(({ className = "" }: CleaningSection8thProps) => {
 
-  const onChange = (key: string) => {
-    console.log(key);
-  };
-
   const items: TabsProps['items'] = [
     {
       key: '1',
@@ -92,7 +88,7 @@ const CleaningSection8th = memo(({ className = "" }: CleaningSection8thProps) =>
         </div>
         <div className='cleaningSection8th_b-body fade-up-element'>
           {withTheme(
-            <Tabs defaultActiveKey="1" items={items} onChange={onChange} />
+            <Tabs defaultActiveKey="1" items={items} />
           )}
 
         </div>
