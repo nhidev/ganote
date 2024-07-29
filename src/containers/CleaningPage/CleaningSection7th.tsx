@@ -24,6 +24,7 @@ const dataNav = [
   "com-logo10.svg",
   "com-logo11.svg",
   "com-logo12.svg",
+  "com-logo13.svg",
 ]
 const dataContent = [
   {
